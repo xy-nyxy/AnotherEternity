@@ -1,4 +1,65 @@
 /*
+ $$$$$$\  $$\           $$\                 $$\           
+$$  __$$\ $$ |          $$ |                $$ |          
+$$ /  \__|$$ | $$$$$$\  $$$$$$$\   $$$$$$\  $$ | $$$$$$$\ 
+$$ |$$$$\ $$ |$$  __$$\ $$  __$$\  \____$$\ $$ |$$  _____|
+$$ |\_$$ |$$ |$$ /  $$ |$$ |  $$ | $$$$$$$ |$$ |\$$$$$$\  
+$$ |  $$ |$$ |$$ |  $$ |$$ |  $$ |$$  __$$ |$$ | \____$$\ 
+\$$$$$$  |$$ |\$$$$$$  |$$$$$$$  |\$$$$$$$ |$$ |$$$$$$$  |
+ \______/ \__| \______/ \_______/  \_______|\__|\_______/ 
+*/
+/*BD Addon Mini List by Disease#3749*/
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/bdAddonMini.css);
+:root {
+  /*Global variables that were made/edited by me*/
+  --Main-Color: rgb(250,0,0); /*main master color*/
+  --Secondary-Color: rgb(150,0,0); /*secondary color*/
+  --Third-Color: rgb(120,0,0); /*third color*/
+  --Color-4: rgb(90,0,0); /*color number 4*/
+  --Grey-Color: rgb(31, 31, 31); /*grey color*/
+  --Black: rgb(0,0,0); /*black color*/
+  --White: rgb(255,255,255); /*white color*/
+  --White-Second: rgb(175, 175, 175); /*white but gray color*/
+  --Neon-Line: 150,0,0; /*master neon color*/
+  --Neon-Rgb: var(--Neon-Line); /*neon node*/
+  /*Backgrounds*/
+  --master-background: color:var(--Grey-Color);/*url('https://wallpaperaccess.com/full/1201806.jpg');*/ /*master background*/
+  --background-floating: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)) , var(--master-background)50% 50%/cover !important; /*background used in normal discord's code*/
+  --background-black-and-white1: url('https://inspirationfeed.com/wp-content/uploads/2018/12/lou-batier-365323-unsplash-768x512.jpg'); /*background 3*/
+  --background-black-and-white2: url('https://inspirationfeed.com/wp-content/uploads/2018/12/martin-sattler-160751-unsplash-768x575.jpg'); /*background 4*/
+  /*Gifs for popouts and stuff*/
+  --loop-gif: url('https://c.tenor.com/2oQwi7vJz9wAAAAC/loop-space.gif'); /*Used in files background*/
+  --loop-gif2: url('https://64.media.tumblr.com/16314eedf67c43cc5cb711ffe8c0b08e/22caaa59656e483e-b3/s640x960/7f706f80fb11b3390532fea23ffca444a6f3ea32.gifv'); /*Used in guild popouts > User popout*/
+  --loop-gif3: url('https://i.pinimg.com/originals/d5/a7/cb/d5a7cb46e2f15a8fed10aaf1dd00965c.gif'); /*Used in message area input*/
+  --loop-gif4: url('https://64.media.tumblr.com/8da032603a2ff3343c32833d7959e7bc/tumblr_p61tzgchCN1qeyvpto1_500.gifv'); /*Used in guild popouts > Mentioned card*/
+  --loop-gif5: url('https://64.media.tumblr.com/998b664cb9fd89a155b3b105dbdc9a09/808262fefad64e38-9c/s500x750/5f09d008c448b11092d119bf69d0751e08d79631.gifv'); /*Used in emoji, sticker, gif, nitro, pinned messages and left click on dm in friends tab*/
+  --loop-gif-diamond: url('https://giffiles.alphacoders.com/143/14390.gif'); /*Used on home icon*/
+  /*Borders*/
+  --border1: 2px solid var(--Secondary-Color); /*master border*/
+  --border2: 2px solid var(--Third-Color); /*border 2*/
+  --border3: 2px solid rgb(90,0,0); /*border 3*/
+  
+  /*Others variables*/
+  /*Radial status*/
+  --rs-small-spacing: 0px; /* Gap between avatar and status for members list/dms | MUST end in px */
+  --rs-medium-spacing: 0.1px; /* Gap between avatar and status for User popout | MUST end in px */
+  --rs-large-spacing: 0px; /* Gap between avatar and status for User profiles | MUST end in px */
+  --rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
+  --rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
+  --rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
+  --rs-avatar-shape: 50%; /* 50% for round - 0% for square */
+  --rs-online-color: #21df00; /* Colour for online status */
+  --rs-idle-color: #ffffff; /* Colour for idle status */
+  --rs-dnd-color: #ee0000; /* Colour for dnd status */
+  --rs-offline-color: #636b75; /* Colour for offline status */
+  --rs-streaming-color: #b300fa; /* Colour for streaming status */
+  --rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
+  --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
+  /*edited only this one below*/
+  --rs-phone-visible: none; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+}
+
+/*
 $$$$$$$\                      $$\                                                               $$\ 
 $$  __$$\                     $$ |                                                              $$ |
 $$ |  $$ | $$$$$$\   $$$$$$$\ $$ |  $$\  $$$$$$\   $$$$$$\   $$$$$$\  $$\   $$\ $$$$$$$\   $$$$$$$ |
