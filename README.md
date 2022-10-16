@@ -11,7 +11,7 @@
 
 ### How do I install?
 
-▸ In order to install the theme, first we need to download it: [AnotherEternity.theme.css](github download link here/download/v6/latest) then add it to our BetterDiscord themes folder. After that, head on discord, open Settings, open themes tab and enable it.
+▸ In order to install the theme, first we need to download it: [AnotherEternity.theme.css](https://xy-nyxy.github.io/AnotherEternity/download) then add it to our BetterDiscord themes folder. After that, head on discord, open Settings, open themes tab and enable it.
 
 ### When it will be the next update?
 
@@ -19,7 +19,7 @@
 
 ### Can I see a live preview? 
 
-▸ Sure, [here](https://gibbu.github.io/ThemePreview/?file=https://xy-nyxy.github.io/draconic.exe/source.css) is a link for the live preview.
+▸ Sure, [here](https://gibbu.github.io/ThemePreview/?file=https://xy-nyxy.github.io/AnotherEternity/source.css) is a link for the live preview.
 
 ### Who is the creator?
 
