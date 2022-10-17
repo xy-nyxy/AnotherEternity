@@ -20,7 +20,7 @@
 
 /*Name, email, phone number colors*/
 .colorHeaderPrimary-jN_yGr {
-  color: var(--Main-Color);
+  color: var(--Main-Color) !important;
 }
 
 /*Name, email, phone number buttons colors*/
