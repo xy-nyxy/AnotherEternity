@@ -25,6 +25,6 @@ animation: slide-up 0.5s ease;
 }
 .spoilerText-27bIiA.hidden-3B-Rum > .inlineContent-2YnoDy {
   opacity: 1 !important;
-  filter: blur(3px);
+  filter: blur(3px) !important;
   pointer-events: unset;
 }
