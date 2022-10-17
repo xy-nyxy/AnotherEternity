@@ -3,7 +3,7 @@ div[class*="typeWindows-"]::after {
   font-weight: bold;
   line-height: 30px;
   color: var(--Purple-Color);
-  font-size: 13.5px;
+  font-size: 14px;
   position: absolute;
   padding: 0 15px;
   top: 0;
