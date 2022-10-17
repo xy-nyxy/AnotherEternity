@@ -126,9 +126,8 @@ sdahjidsjdshjdhasjj
 /*Triple code blocks text format*/
 .markup-eYLPri code {
   scrollbar-color: var(--Secondary-Color);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)) , var(--background-black-and-white2) 50% 50%/cover no-repeat!important;
-  border-color: rgb(var(--Neon-Rgb));
-  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+  background: black !important;
+  border-color: var(--Third-Color);
 }
 /*Single and double code block text format*/
 .markup-eYLPri code.inline {
