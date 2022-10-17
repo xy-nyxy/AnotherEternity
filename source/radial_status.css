@@ -2,7 +2,7 @@
 .status-2DiCMd {
   width: 100%;
   height: 100%;
-  background-color: var(--Black-Color);
+  background-color: var(--Black-Color) !important;
 }
 .pointerEvents-9SZWKj {
   pointer-events: auto;
