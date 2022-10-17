@@ -8,8 +8,9 @@
   --Black: rgb(0,0,0);                          /*black color*/
   --White: rgb(255,255,255);                    /*white color*/
   --White-Second: rgb(175, 175, 175);           /*white but gray color*/
-  --Neon-Line: 150,0,0;                           /*master neon color*/
+  --Neon-Line: rgb(150,0,150);                  /*master neon color*/
   --Neon-Rgb: var(--Neon-Line);                   /*neon node*/
+  --Cards-Background-Color: rgb(63, 0, 64);     /*darker cards color*/
   /*Backgrounds*/
   --master-background: url('https://wallpapercave.com/wp/uaJeudN.jpg');                                                                       /*master background*/
   --background-floating: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)) , var(--master-background)50% 50%/cover !important;       /*background used in normal discord's code*/
