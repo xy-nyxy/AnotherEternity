@@ -1,5 +1,5 @@
 div[class*="typeWindows-"]::after {
-  content: 'ANOTHERETERNITY';
+  content: 'ANOTHER ETERNITY';
   font-weight: bold;
   line-height: 30px;
   color: var(--Purple-Color);
