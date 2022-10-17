@@ -11,7 +11,7 @@
 
 ### How do I install?
 
-▸ In order to install the theme, first we need to download it: [AnotherEternity.theme.css](https://downgit.github.io/#/home?url=https://github.com/xy-nyxy/AnotherEternity/blob/gh-pages/AnotherEternity.theme.css) then add it to our BetterDiscord themes folder. After that, head on discord, open Settings, open themes tab and enable it.
+▸ In order to install the theme, first we need to download it: [AnotherEternity.theme.css](https://downgit.github.io/#/home?url=https://github.com/xy-nyxy/AnotherEternity/blob/main/AnotherEternity.theme.css) then add it to our BetterDiscord themes folder. After that, head on discord, open Settings, open themes tab and enable it.
 
 ### When it will be the next update?
 
