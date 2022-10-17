@@ -3,6 +3,16 @@
 # 🪐AnotherEternity🪐
 
 ### There is another world, another place that everyone can visit...
+![PreviewImage](https://media.discordapp.net/attachments/1031695417198530610/1031695490540122222/Screenshot_1.png?width=1662&height=701)
+
+# ⚠️DISCLAIMER⚠️
+
+</div>
+
+<h3 align="center">The theme is still in pre-alpha developement state. Please be patient while I fix and add new features.</h3>
+<h3 align="center">Thanks for understanding.</h3>
+
+<div align="center">
 
 # 🌠Informations🌠
 
@@ -26,4 +36,4 @@
 
 ### What is the current status about the theme?
 
-> Current status: changing the scripts and making the workarounds for files, adding imports and recreating every file
+> Current status: Working on bug fixes, adding new features and solving problems.
