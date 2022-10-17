@@ -1,13 +1,12 @@
-/* #################### User popout in guilds #################### */
 /*User popout*/
 .userPopout-2j1gM4 {
   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.6)) , var(--loop-gif2) 50% 50%/cover !important;
-  border-color: rgb(var(--Neon-Rgb))!important;
-  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb))!important;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
-/*The "+" popout, add roles*/
+/*Add more roles popout after clicking the +*/
 .container-2O1UgZ {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)) , var(--background-black-and-white1) 50% 50%/cover no-repeat!important;
+  background: black !important;
   border-color: rgb(var(--Neon-Rgb));
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
@@ -17,7 +16,7 @@
   color: var(--Main-Color);
 }
 
-/* #################### Guilds unread & mentioned popouts #################### */
+/*Guilds unread & mentioned popouts*/
 /*Unread*/
 .unread-2wipsx {
   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)) , var(--loop-gif) 50% 50%/cover !important;
@@ -49,13 +48,13 @@
 }
 /*Guild info popout when hover (Thanks Disease)*/
 .tooltip-14MtrL {
-  background: var(--Black)!important;
-  border: var(--border2)!important;
+  background: var(--Black) !important;
+  border: var(--border1) !important;
   border-radius: 15px;
 }
 
 /*Guild Roles*/
-/* Default permissions */
+/*Default permissions*/
 .container-_phMUq {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,13 +130,13 @@
   box-sizing: border-box;
   padding: 8px;
   background-color: var(--Black);
-  border: var(--border2);
+  border: var(--border1);
 }
 
 /*Unread message bar "X+ new messages since XX:XXPM/AM" color and background*/
 .newMessagesBar-1hF-9G {
-  border: none;
-  background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.4)) , var(--background-black-and-white1) 50% 50%/cover !important;
+  border: var(--border1);
+  background: black !important;
 }
 
 /* #################### Server boost tab #################### */
@@ -182,6 +181,13 @@
 }
 .theme-dark .perk-19D_HN {
   background-color: transparent;
+}
+/*Text Color*/
+.text-sm-medium-3Pz3rB, .text-sm-normal-3Zj3Iv {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--Main-Color) !important;
 }
 
 /*"Read to boost?" card from below*/

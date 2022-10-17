@@ -1,4 +1,4 @@
-/*friends tab*/
+/*Friends tab*/
 /*Main container background*/
 .theme-dark .container-2cd8Mz {
   background-color: transparent !important;
@@ -10,6 +10,54 @@
 }
 .theme-dark .outer-2JOHae.active-1W_Gl9, .theme-dark .outer-2JOHae.interactive-2zD88a:hover {
   background-color: var(--Cards-Background-Color) !important;
+}
+
+/*It's quiet from now message*/
+.emptyCard-KDifrB {
+  background: transparent !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 16px;
+  color: var(--Main-Color) !important;
+}
+
+/*Message, more options for friends*/
+/*Stable*/
+.actionButton-3-B2x- {
+  color: var(--Main-Color) !important;
+  background-color: transparent !important;
+}
+/*Hover*/
+.actionButton-3-B2x-:hover {
+  color: var(--Secondary-Color);
+  background-color: transparent !important;
+}
+
+/*Search icon from search section*/
+.medium-2NClDM .iconContainer-6pgShY {
+  width: 20px;
+  height: 20px;
+  color: var(--Main-Color) !important;
+}
+
+/*Friends and Nitro Icons Colors*/
+.linkButtonIcon-7rsZcu {
+  width: 24px;
+  height: 24px;
+  color: var(--Main-Color) !important;
 }
 
 /*Active now Text Color*/

@@ -246,3 +246,17 @@ sdahjidsjdshjdhasjj
 .top-K_jibn .selected-g-kMVV.themed-2-lozF.item-3XjbnG, .top-K_jibn .themed-2-lozF.item-3XjbnG {
   border-bottom: none;
 }
+
+/*Almost all buttons*/
+/*Stable*/
+.button-f2h6uQ .contents-3ca1mk {
+  --button--underline-color: transparent;
+  background-image: linear-gradient(0deg,transparent,transparent 1px,var(--button--underline-color) 0,var(--button--underline-color) 2px,transparent 0);
+  color: var(--Main-Color) !important;
+}
+/*Hover*/
+.button-f2h6uQ .contents-3ca1mk:hover {
+  --button--underline-color: transparent;
+  background-image: linear-gradient(0deg,transparent,transparent 1px,var(--button--underline-color) 0,var(--button--underline-color) 2px,transparent 0);
+  color: var(--Secondary-Color) !important;
+}

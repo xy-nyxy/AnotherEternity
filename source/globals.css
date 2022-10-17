@@ -1,14 +1,14 @@
 :root {
   /*Global variables that were made/edited by me*/
   --Main-Color: rgb(113, 0, 158);               /*main master color*/
-  --Secondary-Color: rgb(250, 0, 158);          /*secondary color*/
+  --Secondary-Color: rgb(210, 0, 158);          /*secondary color*/
   --Third-Color: rgb(120,0,158);                /*third color*/
   --Color-4: rgb(90,0,158);                     /*color number 4*/
   --Grey-Color: rgb(31, 31, 31);                /*grey color*/
   --Black: rgb(0,0,0);                          /*black color*/
   --White: rgb(255,255,255);                    /*white color*/
   --White-Second: rgb(175, 175, 175);           /*white but gray color*/
-  --Neon-Line: rgb(150,0,150);                  /*master neon color*/
+  --Neon-Line: rgb(150, 0, 150);                  /*master neon color*/
   --Neon-Rgb: var(--Neon-Line);                   /*neon node*/
   --Cards-Background-Color: rgb(63, 0, 64);     /*darker cards color*/
   /*Backgrounds*/
