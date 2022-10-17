@@ -205,44 +205,6 @@ sdahjidsjdshjdhasjj
   color: var(--text-normal);
 }
 
-/*Screen share popout*/
-/*Applications & Screens text colors*/
-/*selected*/
-.theme-dark .selected-2xa993 {
-  color: var(--Main-Color);
-  border-bottom: 2px solid var(--Main-Color);
-}
-/*normal*/
-.item-LN5zvA {
-  color: var(--Main-Color);
-}
-/*Go live button background color*/
-.lookFilled-yCfaCM.colorBrand-I6CyqQ:disabled {
-  background-color: var(--Secondary-Color);
-}
-
-/*Screen share popout after clicking on Go live button*/
-/*"What you are streaming & Streaming channel" text, background, border colors*/
-.card-m7VgZ8 {
-  color: var(--Main-Color);
-  border: none;
-  background: transparent;
-}
-/*"What you are streaming" icons color*/
-.selectedIcon-277z4I {
-  color: var(--Main-Color);
-}
-/*"Streaming channel" icon color*/
-.channelIcon-1BydE- {
-  color: var(--Main-Color);
-}
-/*[LIVE] Icon color*/
-.liveIconSpacing-1SWxCn {
-  margin-left: 6px;
-  color: var(--Main-Color)!important;
-  background-color: hsl(359,calc(var(--Secondary-Color, 1)*82.6%),59.4%)!important;
-}
-
 /*Reactions popout from "See reactions" background*/
 .theme-dark .container-KM8BU6 {
   background-color: transparent;

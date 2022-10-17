@@ -1,0 +1,13 @@
+/*Screen Share Popout*/
+.theme-dark .root-g14mjS {
+    -webkit-box-shadow: 0 0 0 1px hsla(216,calc(var(--saturation-factor, 1)*7.2%),13.5%,.6),0 2px 10px 0 hsla(0,calc(var(--saturation-factor, 1)*0%),0%,.2);
+    box-shadow: 0 0 0 1px hsla(216,calc(var(--saturation-factor, 1)*7.2%),13.5%,.6),0 2px 10px 0 hsla(0,calc(var(--saturation-factor, 1)*0%),0%,.2);
+    background-color: black !important;
+    border-radius: 15px; 
+}
+/*"Select something to stream and have your friends grab a seat!" text color*/
+.headerDescription-yFPU-Q {
+    text-align: center;
+    padding: 0 32px;
+    color: var(--Main-Color) !important;
+}
