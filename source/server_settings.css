@@ -15,7 +15,7 @@
 /*When sub-category selected > border and color*/
 .brand-3g5E0C.item-3XjbnG, .themed-2-lozF.item-3XjbnG[aria-selected=true] {
   color: var(--Main-Color);
-  border-left: 2px solid var(--Main-Color);
+  border-left: 0px;
 }
 
 /*Server boost status color text and background*/
