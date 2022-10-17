@@ -30,4 +30,4 @@
 
 ### What is the current status about the theme?
 
-> Current status: changing the scripts and making the workarounds for files, adding imports and recreating every file
+> Current status: Working on bug fixes, adding new features and solving problems.
