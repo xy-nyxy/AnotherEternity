@@ -1,0 +1,242 @@
+/* #################### User popout in guilds #################### */
+/*User popout*/
+.userPopout-2j1gM4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.6)) , var(--loop-gif2) 50% 50%/cover !important;
+  border-color: rgb(var(--Neon-Rgb))!important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb))!important;
+}
+/*The "+" popout, add roles*/
+.container-2O1UgZ {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)) , var(--background-black-and-white1) 50% 50%/cover no-repeat!important;
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+}
+
+/*All in channel icons, Threads, Notifications, Pinned messages, Hide member List, Notes*/
+.clickable-ZD7xvu .icon-2xnN2Y {
+  color: var(--Main-Color);
+}
+.icon-2xnN2Y {
+  color: var(--Main-Color);
+}
+
+/*Server name color*/
+.name-3Uvkvr {
+  color: var(--Main-Color);
+}
+
+/*Selected channels in guild*/
+/*channel text color*/
+.modeConnected-NrO4cP .name-28HaxV, .modeConnected-NrO4cP:hover .name-28HaxV, .modeSelected-3DmyhH .name-28HaxV, .modeSelected-3DmyhH:hover .name-28HaxV, .modeUnread-3Cxepe .name-28HaxV, .modeUnread-3Cxepe:hover .name-28HaxV, .notInteractive-2tFrlE.modeConnected-NrO4cP .name-28HaxV, .notInteractive-2tFrlE.modeSelected-3DmyhH .name-28HaxV {
+  color: var(--Main-Color);
+}
+/*icon color*/
+.modeSelected-3DmyhH .icon-2W8DHg, .modeSelected-3DmyhH:hover .icon-2W8DHg, .modeUnread-3Cxepe .icon-2W8DHg, .modeUnread-3Cxepe:hover .icon-2W8DHg {
+  color: var(--Main-Color);
+}
+
+/* #################### Guilds unread & mentioned popouts #################### */
+/*Unread*/
+.unread-2wipsx {
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)) , var(--loop-gif) 50% 50%/cover !important;
+  opacity: .9;
+  border: solid 2px var(--Secondary-Color);
+}
+/*Metioned*/
+.mention-3XBnnZ {
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)) , var(--loop-gif4) 50% 50%/cover !important;
+  opacity: .9;
+  border-radius: 5px;
+  border-color:var(--Black);
+}
+
+/* #################### Guild Channel Slow Mode warning ####################*/
+.base-3bcbY3 .cooldownWrapper-2k1jHK {
+  color: var(--Main-Color)!important;
+}
+
+/*Guild folders*/
+.expandedFolderBackground-1kSAf6 {
+  position: absolute;
+  top: 0px;
+  left: 9.5px;
+  bottom: 0px;
+  width: 50px;
+  border-radius: 20px;
+  background: var(--Black);
+  border: solid 2px var(--Secondary-Color);
+}
+/*Closed guilds folder blur effect*/
+.closedFolderIconWrapper-3tRb2d {
+  filter: blur(3px);
+}
+/*Guild info popout when hover (Thanks Disease)*/
+.tooltip-14MtrL {
+  background: var(--Black)!important;
+  border: var(--border2)!important;
+  border-radius: 15px;
+}
+
+/*In guild hover on voice channel popout (playing, listening to spotify)*/
+.container-8Futzw {
+  background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.4)) , var(--background-black-and-white1) 50% 50%/cover !important;
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+}
+
+/*In guild channel, roles acces*/
+.role-23oyrw {
+  color: var(--text-normal);
+  background-color: transparent;
+  border: var(--border2);
+  border-radius: 15px;
+}
+
+/*Guild Roles*/
+/* Default permissions */
+.container-_phMUq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  color: var(--Main-Color);
+  border-radius: 0px;
+  padding: 16px 24px 16px 16px;
+  cursor: pointer;
+}
+.container-_phMUq:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: var(--Black-Color);
+  color: var(--Main-Color);
+  border-radius: 0px;
+  padding: 16px 24px 16px 16px;
+  cursor: pointer;
+}
+/* Search Roles */
+.container-cMG81i {
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: transparent;
+}
+/*Roles Column Margins*/
+.rolesList-3uZoaa {
+  margin-bottom: 20px;
+}
+/*Roles margin left-right*/
+.role-2TIOKu {
+  font-size: 12px;
+  font-weight: 500;
+  background: var(--background-secondary-alt);
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 22px;
+  margin: 0 4px 4px 0;
+  padding: 4px;
+  margin-right: 200px;
+}
+/*Roles card in guilds*/
+.userPopout-2j1gM4 {
+  -webkit-box-shadow: var(--elevation-high);
+  box-shadow: var(--elevation-high);
+  background-color: var(--background-floating);
+  border-radius: 8px;
+  border-color: var(--Main-Color);
+  overflow: hidden;
+  max-height: calc(100vh - 20px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+/*+ add roles popout*/
+.container-2O1UgZ {
+  width: 250px;
+  overflow: hidden;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 8px;
+  background-color: var(--Black);
+  border: var(--border2);
+}
+
+/*Unread message bar "X+ new messages since XX:XXPM/AM" color and background*/
+.newMessagesBar-1hF-9G {
+  border: none;
+  background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.4)) , var(--background-black-and-white1) 50% 50%/cover !important;
+}
+
+/* #################### Server boost tab #################### */
+/*background*/
+.theme-dark .perksModal-CLcR1c {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)) , var(--master-background) 50% 50%/cover !important;
+  background-color: transparent;
+}
+
+/*Everything below "server boost" text*/
+/*gift icon from "gift nitro"*/
+.theme-dark .giftIcon-2kmx1K {
+  color: var(--Main-Color);
+}
+
+/*Server boost icon "no boosts"*/
+.theme-dark .badgeIconWithoutSubscribers-1hjTfX {
+  color: var(--Main-Color);
+}
+/*Server boost icon "X boosts"*/
+.badgeIconWithSubscribers-2WYJsQ {
+  color: var(--Main-Color);
+}
+
+/*Progress bar stable*/
+.barForeground-2kwBa_ {
+  background-color: var(--Main-Color);
+}
+/*Progress bar when hover on a tier level*/
+.barSecondary-VouwoY {
+  background-color: var(--Third-Color);
+}
+
+/*Tiers*/
+.theme-dark .tierMarkerBackground-G8FoN4 {
+  background-color: var(--Third-Color);
+}
+
+/*"Get cool rewards for becoming a Booster!" the 3 cards below*/
+.perks-BtAudq {
+  background: transparent;
+}
+.theme-dark .perk-19D_HN {
+  background-color: transparent;
+}
+
+/*"Read to boost?" card from below*/
+.wrapper-3Zq_cJ {
+  background: transparent;
+  color: var(--Main-Color);
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+}
+/*"Learn more about discord nitro button" color and background*/
+/*normal*/
+.lookInverted-2mDUMi.colorBrand-I6CyqQ {
+  color: var(--Main-Color);
+  background-color: transparent;
+}
+/*hover*/
+.lookInverted-2mDUMi.colorBrand-I6CyqQ:hover {
+  color: var(--Black);
+  background-color: var(--Secondary-Color);
+}
