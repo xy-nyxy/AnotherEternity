@@ -24,7 +24,7 @@ Titlebar top buttons colors. Close, rezise and hide*/
 .channelTextArea-1FufC0 {
   margin-bottom: 24px;
   background: black !important;
-  border: var(--border1);
+  border: var(--Main-Color);
 }
 
 /*Atachements*/
@@ -160,7 +160,7 @@ sdahjidsjdshjdhasjj
 
 /*CTRL+F Search & find messages popout*/
 .theme-dark .container-2McqkF {
-  background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)) , var(--background-black-and-white1) 50% 50%/cover !important;;
+  background: black!important;
 }
 /*Also in this popout, the last thing thing from a button*/
 .option-ayUoaq:after {
@@ -221,6 +221,12 @@ sdahjidsjdshjdhasjj
 .channelIcon-1BydE- {
   color: var(--Main-Color);
 }
+/*[LIVE] Icon color*/
+.liveIconSpacing-1SWxCn {
+  margin-left: 6px;
+  color: var(--Main-Color)!important;
+  background-color: hsl(359,calc(var(--Secondary-Color, 1)*82.6%),59.4%)!important;
+}
 
 /*Reactions popout from "See reactions" background*/
 .theme-dark .container-KM8BU6 {
@@ -239,25 +245,4 @@ sdahjidsjdshjdhasjj
 }
 .top-K_jibn .selected-g-kMVV.themed-2-lozF.item-3XjbnG, .top-K_jibn .themed-2-lozF.item-3XjbnG {
   border-bottom: none;
-}
-
-/*Rounded user popouts and other poputs*/
-/* Rounded Context Menu */
-.menu-1QACrS, .colorDefault-CDqZdO { 
-  border-radius: 15px; 
-}
-
-/* Messages Slide In Chat */
-@keyframes slide-up {
-  0% {
-      opacity: 0;
-      transform: translateX(20px);
-  }
-  100% {
-      opacity: 1;
-      transform: translateX(0px);
-  }
-}
-.message-2CShn3 {
-animation: slide-up 0.5s ease;
 }

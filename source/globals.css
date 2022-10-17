@@ -25,7 +25,7 @@
   /*Borders*/
   --border1: 2px solid var(--Secondary-Color);                          /*master border*/
   --border2: 2px solid var(--Third-Color);                              /*border 2*/
-  --border3: 2px solid rgb(90,0,0);                                   /*border 3*/
+  --border3: 2px solid rgb(90,0,150);                                 /*border 3*/
   
   /*Others variables*/
   /*Radial status*/
@@ -57,8 +57,8 @@
   --status-positive-background: transparent!important;
   --status-positive-text: #fff;
   --status-warning-background: hsl(38,calc(var(--saturation-factor, 1)*95.7%),54.1%);
-  --status-danger-background: hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%);
-  --status-danger-text: #fff;
+  --status-danger-background: hsl(359,calc(var(--Secondary-Color, 1)*82.6%),59.4%);
+  --status-danger-text: var(--Main-Color);
   --focus-primary: hsl(197,calc(var(--saturation-factor, 1)*100%),47.8%);
 }
 .theme-dark {

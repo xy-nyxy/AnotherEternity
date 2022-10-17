@@ -25,6 +25,9 @@
 /*USER SETTINGS*/
 @import 'source/user_settings.css';
 
+/*QUALITY OF LIFE THINGS*/
+@import 'source/qol_things.css';
+
 /*GUILDS*/
 @import 'source/guilds/guilds.css';
 @import 'source/guilds/channels.css';

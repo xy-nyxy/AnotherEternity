@@ -8,6 +8,11 @@
   color: var(--Main-Color);
 }
 
+/*Hover on channel color*/
+.modeMuted-2T4MDZ:hover .name-28HaxV, .wrapper-NhbLHG:hover .name-28HaxV {
+  color: var(--Third-Color);
+}
+
 /*Unread Icon Color (The bubble before the channel name)*/
 .unreadRelevant-2f-VSK {
     background-color: var(--Main-Color);
