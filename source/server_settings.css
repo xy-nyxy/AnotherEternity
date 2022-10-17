@@ -20,15 +20,15 @@
 
 /*Server boost status color text and background*/
 .serverBoostTabItem-3QwA3W[aria-selected=true] {
-  background-color: transparent!important;
-  color: var(--Main-Color)!important;
-  border-left: 2px solid var(--Main-Color)!important;
+  background-color: transparent !important;
+  color: var(--Main-Color) !important;
+  border-left: 2px solid var(--Main-Color) !important;
 }
 
 /*All buttons*/
 .container-2nx-BQ {
   opacity: 0.3;
-  background-color: var(--Secondary-Color)!important;
+  background-color: var(--Secondary-Color) !important;
 }
 
 /* #################### Overview #################### */
@@ -74,12 +74,12 @@
 .theme-dark .lookOutlined-3yKVGo.colorPrimary-2AuQVo {
   color: var(--Main-Color);
   border-color: var(--border2);
-  background-color: transparent;
+  background-color: transparent !important;
 }
 .theme-dark .lookOutlined-3yKVGo.colorPrimary-2AuQVo:hover {
   color: var(--Secondary-Color);
   border-color: var(--border3);
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 /*System messages channel disabled messages*/
@@ -145,14 +145,14 @@
 /*Normal*/
 .lookFilled-yCfaCM.colorBrand-I6CyqQ {
   color: var(--Main-Color);
-  background-color: transparent;
+  background-color: transparent !important;
   border-color: rgb(var(--Neon-Rgb));
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
 /*Hover*/
 .lookFilled-yCfaCM.colorBrand-I6CyqQ:hover {
   color: var(--Secondary-Color);
-  background-color: transparent;
+  background-color: transparent !important;
   border-color: rgb(var(--Neon-Rgb));
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
@@ -203,21 +203,21 @@
 /*Normal*/
 .theme-dark .lookFilled-yCfaCM.colorGrey-2iAG-B {
   color: var(--Main-Color);
-  background-color: transparent;
+  background-color: transparent !important;
   border: var(--border2);
 }
 /*Hover*/
 .theme-dark .lookFilled-yCfaCM.colorGrey-2iAG-B:hover {
   color: var(--Secondary-Color);
-  background-color: transparent;
+  background-color: transparent !important;
   border: var(--border3);
 }
 
 /* #################### Stickers tab #################### */
 /*Get boosted card background*/
 .upsellContainer-22N_CL {
-  background-color: transparent!important;
-  background: transparent!important;
+  background-color: transparent !important;
+  background: transparent !important;
   border-color: rgb(var(--Neon-Rgb));
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
@@ -283,7 +283,7 @@
 }
 /*text normal*/
 .contents-3ca1mk {
-  color: var(--Main-Color)!important;
+  color: var(--Main-Color) !important;
 }
 /*background hover*/
 .lookFilled-yCfaCM.colorRed-rQXKgM:hover {
@@ -291,7 +291,7 @@
 }
 /*text hover*/
 .contents-3ca1mk:hover {
-  color: var(--White)!important;
+  color: var(--White) !important;
 }
 
 /* #################### Members tab #################### */
