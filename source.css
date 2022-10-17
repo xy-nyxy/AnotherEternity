@@ -7,14 +7,20 @@
 /*BACKGROUND*/
 @import 'source/background.css';
 
-/**/
+/*HOME*/
+@import 'source/home.css';
 
-/**/
+/*MENTIONS*/
+@import 'source/mentions.css';
 
-/**/
+/*PERMANENT*/
+@import 'source/permanent.css';
 
-/**/
+/*RADIAL STATUS*/
+@import 'source/radial_status.css';
 
-/**/
+/*SERVER SETTINGS*/
+@import 'source/server_settings.css';
 
-/**/
+/*USER SETTINGS*/
+@import 'source/user_settings.css';
