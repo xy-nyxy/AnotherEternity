@@ -22,7 +22,7 @@
 
 ### Who is the creator?
 
-▸ The theme is under developement and it's made by nyxy#6415
+▸ The theme is under developement and it's made by nyxy🖤#6415
 
 ### What is the current status about the theme?
 
