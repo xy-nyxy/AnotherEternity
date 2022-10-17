@@ -27,4 +27,4 @@
 
 ### What is the current status about the theme?
 
-> Current status: changing the scripts and making the workrounds for files, adding imports and recreating every file
+> Current status: changing the scripts and making the workarounds for files, adding imports and recreating every file
