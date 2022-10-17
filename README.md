@@ -3,7 +3,6 @@
 # 🪐AnotherEternity🪐
 
 ### There is another world, another place that everyone can visit...
-![unknown](preview link here)
 
 # 🌠Informations🌠
 
