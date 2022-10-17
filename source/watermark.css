@@ -2,7 +2,7 @@ div[class*="typeWindows-"]::after {
   content: '🔮ANOTHER ETERNITY🔮';
   font-weight: bold;
   line-height: 30px;
-  color: var(--Purple-Color);
+  color: var(--Main-Color);
   font-size: 14px;
   position: absolute;
   padding: 0 15px;
