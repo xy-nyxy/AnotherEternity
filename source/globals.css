@@ -10,7 +10,8 @@
   --Black: rgb(0,0,0); /*black color*/
   --White: rgb(255,255,255); /*white color*/
   --White-Second: rgb(175, 175, 175); /*white but gray color*/
-  --Purple-Color: rgb(113, 0, 158); /* Purple color */
+  --Purple-Color: rgb(113, 0, 158); /* Purple Color */
+  --White-Purple-Color: rgb(250, 0, 158); /*Whiter Purple Color*/
   --Neon-Line: 150,0,0; /*master neon color*/
   --Neon-Rgb: var(--Neon-Line); /*neon node*/
   /*Backgrounds*/
