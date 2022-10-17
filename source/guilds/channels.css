@@ -50,3 +50,55 @@
   border: var(--border2);
   border-radius: 15px;
 }
+
+/*Channel icon*/
+.emptyChannelIcon-1YdEz2 {
+  width: 68px;
+  height: 68px;
+  margin-top: 16px;
+  border-radius: 50%;
+  background-color: transparent !important;
+  background-image: url(/assets/750a8ea….svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  color: var(--Main-Color) !important;
+}
+
+/*Channel name "Welcome to [channel_name]"*/
+.defaultColor-HXu-5n {
+  color: var(--Secondary-Color) !important;
+}
+/*"This is the start of the [channel_name] channel." text color*/
+.description-22d6ux {
+  color: var(--Secondary-Color) !important;
+}
+
+/*In guilds channel, message options icons colors*/
+.wrapper-2vIMkT {
+  background-color: transparent !important;
+  -webkit-box-shadow: var(--elevation-stroke);
+  box-shadow: var(--elevation-stroke);
+  display: grid;
+  grid-auto-flow: column;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 32px;
+  border-radius: 4px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: -webkit-box-shadow .1s ease-out;
+  transition: -webkit-box-shadow .1s ease-out;
+  transition: box-shadow .1s ease-out;
+  transition: box-shadow .1s ease-out,-webkit-box-shadow .1s ease-out;
+  position: relative;
+  overflow: hidden;
+  color: var(--Secondary-Color) !important;
+}

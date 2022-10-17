@@ -1,15 +1,16 @@
 div[class*="typeWindows-"]::after {
-  content: '🔮ANOTHER ETERNITY🔮';
+  content: '🔮ANOTHER ETERNITY🔮 @PRE-ALPHA V0.1';
   font-weight: bold;
-  line-height: 30px;
-  color: var(--Main-Color);
+  font-style: italic;
   font-size: 14px;
-  position: absolute;
-  padding: 0 15px;
+  line-height: 30px;
   top: 0;
   left: 0;
+  position: absolute;
+  padding: 0 15px;
+  z-index: -1;
   width: 100%;
   height: 20px;
   background: transparent;
-  z-index: -1;
+  color: var(--Main-Color);
 }

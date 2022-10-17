@@ -49,6 +49,21 @@ Titlebar top buttons colors. Close, rezise and hide*/
   color: var(--Main-Color);
 }
 
+/*Emoji button*/
+.emojiButton-3FRTuj {
+  max-height: 50px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: var(--Main-Color) !important;
+}
 /*Emoji popout*/
 .emojiPickerInExpressionPicker-2nOwH8 .emojiPicker-6YCk8a {
   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)) , var(--loop-gif5) 50% 100%/cover !important;
