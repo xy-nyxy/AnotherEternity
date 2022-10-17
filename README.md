@@ -16,13 +16,13 @@
 
 ▸ I try to fix and update the theme as soon as possible after a new discord update is annouced so I can keep the users up to date with everything new that comes with discord.
 
-### Can I see a live preview? 
+### Can I see a live preview?
 
-▸ Sure, [here](https://gibbu.github.io/ThemePreview/?file=https://xy-nyxy.github.io/AnotherEternity/source.css) is a link for the live preview.
+▸ Sure, [here](https://gibbu.github.io/ThemePreview/?file=https://xy-nyxy.github.io/AnotherEternity/source.css) is a link for the live preview (Thanks to @Gibbu).
 
 ### Who is the creator?
 
-▸ The theme is under developement and it's made by nyxy#6415
+▸ The theme is under developement and it's made by nyxy🖤#6415
 
 ### What is the current status about the theme?
 
