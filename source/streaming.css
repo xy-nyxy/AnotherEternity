@@ -1,13 +1,107 @@
 /*Screen Share Popout*/
 .theme-dark .root-g14mjS {
     -webkit-box-shadow: 0 0 0 1px hsla(216,calc(var(--saturation-factor, 1)*7.2%),13.5%,.6),0 2px 10px 0 hsla(0,calc(var(--saturation-factor, 1)*0%),0%,.2);
-    box-shadow: 0 0 0 1px hsla(216,calc(var(--saturation-factor, 1)*7.2%),13.5%,.6),0 2px 10px 0 hsla(0,calc(var(--saturation-factor, 1)*0%),0%,.2);
     background-color: black !important;
     border-radius: 15px; 
+    border-color: rgb(var(--Neon-Rgb));
+    box-shadow: inset 0px 0px 2px 1px rgb(var(--Neon-Rgb)), 0px 0px 5px 1px rgb(var(--Neon-Rgb));
 }
+
+/*Footer background color*/
+.footer-31IekZ {
+    border-radius: 0 0 5px 5px;
+    background-color: black !important;
+}
+
 /*"Select something to stream and have your friends grab a seat!" text color*/
 .headerDescription-yFPU-Q {
     text-align: center;
     padding: 0 32px;
     color: var(--Main-Color) !important;
+}
+
+/*Stream Quality > Smoother Video Background*/
+.option-2eIyOn[aria-selected=true]:not(.option-2eIyOn.multi-1HXDiv) {
+    color: var(--interactive-active);
+    background-color: black !important;
+}
+
+/*Screen 1 text color*/
+.ellipsisText-1-5iVA {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+    font-weight: 500;
+    margin-right: 8px;
+    color: var(--Third-Color) !important;
+}
+/*Icon Color*/
+.selectedIcon-277z4I {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin-right: 8px;
+    color: var(--Third-Color) !important;
+}
+
+/*Streaming channel text color*/
+.channelName-3Ezu2W {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: var(--Third-Color);
+}
+/*Icon color*/
+.channelIcon-1BydE- {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    margin-right: 5px;
+    color: var(--Third-Color) !important;
+}
+
+/*"Notify my friends in this server that I'm streaming" Checkbox color*/
+inputDefault-2F39XG, .inputDisabled-sYasHz {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    color: var(--Third-Color) !important;
+}
+.checkboxWrapper-2fDzaA {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    font-size: 16px;
+    max-width: 100%;
+    color: var(--Third-Color) !important;
+}
+
+/*Streaming popout preview controls icons colors*/
+.bottomControls-34xgN7 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    color: var(--Main-Color) !important;
+}
+/*Streaming popout preview background*/
+.videoControls-e2Ogs3 {
+    border-color: rgb(var(--Neon-Rgb));
+    box-shadow: inset 0px 0px 2px 1px rgb(var(--Neon-Rgb)), 0px 0px 5px 1px rgb(var(--Neon-Rgb));
 }
