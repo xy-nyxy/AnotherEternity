@@ -5,13 +5,18 @@
 ### There is another world, another place that everyone can visit...
 ![PreviewImage](https://media.discordapp.net/attachments/1031695417198530610/1031695490540122222/Screenshot_1.png?width=1662&height=701)
 
-# 🌠Informations🌠
+# ⚠️!DISCLAIMER!⚠️
 
 </div>
 
-### DISCLAIMER! 
+<h3 align="center">The theme is still in pre-alpha developement state. Please be patient while I fix and add new features.</h3>
+<h3 align="center">Thanks for understanding.</h3>
 
-▸ The theme is still in pre-alpha developement state. Please be patient while I fix and add new features. Thank you for understanding.
+<div align="center">
+
+# 🌠Informations🌠
+
+</div>
 
 ### How do I install?
 
