@@ -8,6 +8,10 @@
 
 </div>
 
+### DISCLAIMER! 
+
+▸ The theme is still in pre-alpha developement state. Please be patient while I fix and add new features. Thank you for understanding.
+
 ### How do I install?
 
 ▸ In order to install the theme, first we need to download it: [AnotherEternity.theme.css](https://downgit.github.io/#/home?url=https://github.com/xy-nyxy/AnotherEternity/blob/main/AnotherEternity.theme.css) then add it to our BetterDiscord themes folder. After that, head on discord, open Settings, open themes tab and enable it.
