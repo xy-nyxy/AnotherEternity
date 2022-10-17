@@ -1,4 +1,9 @@
-/* Messages Slide In Chat */
+/*Rounded Context Popouts (by Lonk#6942)*/
+.menu-1QACrS, .colorDefault-CDqZdO { 
+  border-radius: 15px; 
+}
+
+/*Messages Slide In Chat (by Lonk#6942)*/
 @keyframes slide-up {
   0% {
       opacity: 0;
@@ -13,7 +18,13 @@
 animation: slide-up 0.5s ease;
 }
 
-/*Rounded Context Popouts*/
-.menu-1QACrS, .colorDefault-CDqZdO { 
-  border-radius: 15px; 
+/*Blur spolier text instead of hiding it (by rye.#3861)*/
+.spoilerText-27bIiA,
+.spoilerText-27bIiA.hidden-3B-Rum {
+  background-color: transparent !important;
+}
+.spoilerText-27bIiA.hidden-3B-Rum > .inlineContent-2YnoDy {
+  opacity: 1 !important;
+  filter: blur(3px);
+  pointer-events: unset;
 }
