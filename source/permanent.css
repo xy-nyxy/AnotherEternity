@@ -1,0 +1,263 @@
+/*Permanent things that you always see.
+Titlebar top buttons colors. Close, rezise and hide*/
+.winButton-3UMjdg {
+  color: var(--Main-Color);
+}
+/*Hide discord text from titlebar*/
+.wordmarkWindows-2dq6rw {
+  display: none;
+}
+
+/*Close pannel "ESC" button*/
+/*normal*/
+.closeButton-PCZcma, .keybind-13vtq8 {
+  color: var(--Main-Color);
+}
+.closeButton-PCZcma:hover, .keybind-13vtq8:hover {
+  color: var(--Secondary-Color);
+}
+.closeButton-PCZcma:hover, .closeButton-PCZcma:hover+.keybind-13vtq8 {
+  color: var(--Secondary-Color);
+}
+
+/*Message Input Area*/
+.channelTextArea-1FufC0 {
+  margin-bottom: 24px;
+  background: black !important;;
+}
+
+/*Atachements*/
+/*Files*/
+.attachment-1PZZB2 {
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+  background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.8)) , var(--loop-gif) 50% 50%/cover !important;
+}
+
+/*"You are viewing older messages" popout*/
+.jumpToPresentBar-1cEnH0 {
+  border: none;
+  background: black !important;
+}
+/*"You are viewing older messages" color*/
+.barButtonMain-2GIx4o {
+  color: var(--Main-Color);
+}
+/*"Jump To Present" color*/
+.barButtonAlt-TQoCdZ {
+  color: var(--Main-Color);
+}
+
+/*Emoji popout*/
+.emojiPickerInExpressionPicker-2nOwH8 .emojiPicker-6YCk8a {
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)) , var(--loop-gif5) 50% 100%/cover !important;
+}
+/*Emoji popout FROM message (icon click)*/
+.emojiPicker-6YCk8a {
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)) , var(--loop-gif5) 50% 100%/cover !important;
+}
+/*Sticker & gif popouts*/
+.emojiPickerInExpressionPicker-2nOwH8, .wrapper-1NB3WY, .container-3u7RcY {
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)) , var(--loop-gif5) 50% 100%/cover !important;
+}
+/*Gif popout, favorite fade*/
+.theme-dark .categoryFadeBlurple-1l49_Q, .theme-light .categoryFadeBlurple-1l49_Q {
+  background-color: transparent;
+}
+
+/*Nitro gift popout*/ /*Still need to work for the buttons and other things*/
+sdahjidsjdshjdhasjj
+
+/*Pinned messages popout*/
+.messagesPopoutWrap-3zryHW {
+  background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.7)) , var(--loop-gif5) 50% 50%/cover !important;
+}
+/*Popout: the pinned message that u wanna pin*/
+.theme-dark .message-G6O-Wv {
+  background-color: transparent;
+}
+/*Inbox messages popout*/
+.container-2ebMPP {
+  background-color: black;
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 2.5px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+}
+/*Threads popout*/ 
+.browser-mnQ1T7 {
+  background-color: black;
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 2.5px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+}
+
+/*Click on friend profile then hover on photo ["View Profile" fix]*/
+.avatarHint-k7pYop {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  opacity: 0;
+}
+
+/*Left click on friends tab popout*/
+.menu-1QACrS {
+  background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.7)) , var(--loop-gif5) 50% 50%/cover !important;
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 2.5px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+}
+/*Button clicked*/
+.colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) {
+  background-color: transparent;
+  color: var(--Main-Color);
+}
+/*Hover on buttons*/
+.colorDefault-CDqZdO.focused-3qFvc8 {
+  background-color: transparent;
+  color: var(--Main-Color);
+}
+
+/*Click on emoji for informations (in channels/dms)*/
+.popoutContainer-2wbmiM {
+  width: 288px;
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 2.5px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+  background: black;
+}
+
+/*Triple code blocks text format*/
+.markup-eYLPri code {
+  scrollbar-color: var(--Secondary-Color);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)) , var(--background-black-and-white2) 50% 50%/cover no-repeat!important;
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+}
+/*Single and double code block text format*/
+.markup-eYLPri code.inline {
+  border: none!important;
+  box-shadow: none;
+}
+
+/*Timestamps everywhere*/
+.content-3spvdd {
+  color: var(--text-muted);
+  background: black;
+  border: var(--border2);
+  padding: 3px;
+}
+.divider-2rZFJK {
+  border-top: var(--border2);
+}
+
+/*Emoji searching, matching When typing for an emoji in chat "ex: :wink"*/
+.theme-dark .autocomplete-3NRXG8 {
+  background: var(--Black);
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+}
+/*Found searched emoji, matched emoji*/
+.theme-dark .selected-3H3-RC {
+  background-color: transparent;
+  border: var(--border2);
+}
+
+/*CTRL+F Search & find messages popout*/
+.theme-dark .container-2McqkF {
+  background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)) , var(--background-black-and-white1) 50% 50%/cover !important;;
+}
+/*Also in this popout, the last thing thing from a button*/
+.option-ayUoaq:after {
+  display: none!important;
+}
+/*CTRL+F After search popout*/
+.searchResultsWrap-5RVOkx {
+  background-color: black;
+  border: var(--border2);
+}
+.theme-dark .focused-2FU0YH {
+  background-color: transparent;
+}
+
+/*Disable home icon*/
+.homeIcon-r0w4ny {
+  display: none;
+  width: 28px;
+  height: 20px;
+}
+
+/*Custom background for home icon and for guilds with no photos*/
+.childWrapper-1j_1ub {
+  -webkit-transition: background-color .15s ease-out,color .15s ease-out;
+  transition: background-color .15s ease-out,color .15s ease-out;
+  background: linear-gradient(rgba(255, 0, 0, 0.4),rgba(255, 0, 0, 0.3)) , var(--loop-gif-diamond) 50% 100%/cover !important;
+  color: var(--text-normal);
+}
+
+/*Screen share popout*/
+/*Applications & Screens text colors*/
+/*selected*/
+.theme-dark .selected-2xa993 {
+  color: var(--Main-Color);
+  border-bottom: 2px solid var(--Main-Color);
+}
+/*normal*/
+.item-LN5zvA {
+  color: var(--Main-Color);
+}
+/*Go live button background color*/
+.lookFilled-yCfaCM.colorBrand-I6CyqQ:disabled {
+  background-color: var(--Secondary-Color);
+}
+
+/*Screen share popout after clicking on Go live button*/
+/*"What you are streaming & Streaming channel" text, background, border colors*/
+.card-m7VgZ8 {
+  color: var(--Main-Color);
+  border: none;
+  background: transparent;
+}
+/*"What you are streaming" icons color*/
+.selectedIcon-277z4I {
+  color: var(--Main-Color);
+}
+/*"Streaming channel" icon color*/
+.channelIcon-1BydE- {
+  color: var(--Main-Color);
+}
+
+/*Reactions popout from "See reactions" background*/
+.theme-dark .container-KM8BU6 {
+  background-color: transparent;
+}
+.theme-dark .reactors-1VXca7 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)) , var(--loop-gif5) 50% 100%/cover !important;
+}
+.theme-dark .scroller-2GkvCq { 
+  background-color: transparent;
+}
+
+/*User popout cards, fix "User info, Activity border-bottom"*/
+.top-K_jibn .selected-g-kMVV.themed-2-lozF.item-3XjbnG, .top-K_jibn .themed-2-lozF.item-3XjbnG:active {
+  border-bottom: none;
+}
+.top-K_jibn .selected-g-kMVV.themed-2-lozF.item-3XjbnG, .top-K_jibn .themed-2-lozF.item-3XjbnG {
+  border-bottom: none;
+}
+
+/*Rounded user popouts and other poputs*/
+/* Rounded Context Menu */
+.menu-1QACrS, .colorDefault-CDqZdO { 
+  border-radius: 15px; 
+}
+
+/* Messages Slide In Chat */
+@keyframes slide-up {
+  0% {
+      opacity: 0;
+      transform: translateX(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0px);
+  }
+}
+.message-2CShn3 {
+animation: slide-up 0.5s ease;
+}

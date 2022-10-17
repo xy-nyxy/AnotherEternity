@@ -1,0 +1,191 @@
+/*#################### Page layouts ####################*/
+/*Sidebar (user settings, billing settings, app settings, etc)*/
+.sidebarRegion-1VBisG {
+  -ms-flex: 1 0 218px;
+  flex: 0 0 0px;
+  z-index: 1;
+  -ms-flex-pack: end;
+}
+
+/*#################### My account tab ####################*/
+/*Page layout*/
+.contentColumn-1C7as6, .customColumn-2n-oKU {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  max-width: 2000px;
+  min-width: 460px;
+  min-height: 100%;
+}
+
+/*Name, email, phone number colors*/
+.colorHeaderPrimary-jN_yGr {
+  color: var(--Main-Color);
+}
+
+/*Name, email, phone number buttons colors*/
+/*Normal*/
+.lookFilled-yCfaCM.colorPrimary-2AuQVo {
+  color: var(--Main-Color);
+  background-color: transparent;
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+}
+/*Hover*/
+.lookFilled-yCfaCM.colorPrimary-2AuQVo:hover {
+  background-color: var(--Secondary-Color);
+}
+
+/*Phone number "remove" & "Change Phone Number?" messages colors*/
+/*Normal*/
+.theme-dark .lookLink-15mFoz.colorPrimary-2AuQVo {
+  color: var(--Main-Color);
+}
+/*Hover*/
+.theme-dark .lookLink-15mFoz.colorPrimary-2AuQVo:hover .contents-3ca1mk {
+  background-image: linear-gradient(0deg,transparent,transparent 1px,var(--Main-Color) 0,var(--Main-Color) 2px,transparent 0);
+}
+
+/* #################### User profile tab #################### */
+/*Page layout*/
+.standardCustomizationSection-1cGbyD {
+  width: 636px; /*636*/
+  margin: 0px 0px;
+}
+/*Nitro tab profile view*/
+.improvedUpsellContainer-GX81ui {
+  width: 684px;
+  margin-top: 48px;
+  margin-left: -12px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background: linear-gradient(var(--background-primary),var(--background-primary)) padding-box,linear-gradient(45deg,hsl(269,calc(var(--saturation-factor, 1)*52.7%),52.7%),hsl(325,calc(var(--saturation-factor, 1)*31.7%),51.8%)) border-box;
+}
+
+/*"About me" text area background*/
+.bioTextArea-dDGOeC {
+  background-color: transparent;
+  --channel-text-area-placeholder: var(--input-placeholder-text);
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+}
+
+/* User popout preview */
+.preview-Z55SA3 {
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+}
+/* Disable Banner */
+.bannerNitroUpsell-2iP18z {
+  display: none;
+}
+.banner-3D8GgT {
+  width: 0%;
+}
+/*"Avatar, Profile color, Preview, Profile Banner, About me" text paddings*/
+.defaultMarginh5-3Jxf6f {
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+/*#################### Privacy and safety ####################*/
+/*Request data button color*/
+/*Button border and background*/
+/*Normal*/
+.lookOutlined-3yKVGo.colorBrand-I6CyqQ {
+  color: var(--Main-Color);
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+}
+/*Hover*/
+.lookOutlined-3yKVGo.colorBrand-I6CyqQ:hover {
+  background-color: var(--Secondary-Color);
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+}
+/*Text*/
+.contents-3ca1mk {
+  color: var(--Main-Color);
+}
+
+/*#################### Server boost tab ####################*/
+/*"Server boost" message*/
+.marketingLogoIcon-3HQY2K {
+  color: var(--Main-Color);
+}
+
+/*"Boost a server and get" & "Boosted servers can get" messages*/
+.base-21yXnu.muted-eZM05q {
+  color: var(--Main-Color);
+}
+/*All descriptions*/
+.descriptionStandalone-3ChjDk {
+  color: var(--Main-Color);
+}
+
+/*#################### Subscriptions tab ####################*/
+/*"Your subscriptions" description text message */
+.sectionDescription-2ealM1 {
+  color: var(--Main-Color);
+}
+/*"Subscription credit" description text message */ 
+.accountCreditDescription-1lEaJI {
+  color: var(--Main-Color);
+}
+/*"Your subscriptions" "You have no active subscriptions" text message*/
+.cardText-1KLO-g {
+  color: var(--Main-Color);
+}
+/*"Subscription credit" "You have no unused credits"*/
+.cardText-3dmnX6 {
+  color: var(--Main-Color);
+}
+
+/*#################### Gift inventory ####################*/
+/*"Reedem codes" text area input*/
+.input-2g-os5 {
+  color: var(--Main-Color);
+  background-color: transparent;
+  border-color: none;
+}
+
+/*#################### Biling ####################*/
+/*Transaction history*/
+/*"Date", "Description" & "Amount"*/
+.theme-dark .paymentPane-ut5qKZ {
+  background-color: transparent;
+  color: var(--Main-Color);
+}
+/*Under container details and background*/
+.theme-dark .paginator-1eqD2g {
+  background: transparent;
+}
+.theme-dark .bottomDivider-ZmTm-j {
+  background-color: transparent;
+}
+
+/*"Psst! Looking to redeem a Discord key? We've moved it to" message and card*/
+.theme-dark .codeRedemptionRedirect-2hYMSQ {
+  color: var(--Main-Color);
+  background-color: transparent;
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+}
+
+/*#################### Activity status ####################*/
+/*Add a new game popout*/
+.theme-dark .addGamePopout-2SKNIV {
+  background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.6)) , var(--background-black-and-white1) 50% 50%/cover !important;
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+}
+/*"Select" background card*/
+.lookFilled-1GseHa.select-1Ia3hD {
+  background-color: transparent;
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 2px 1px rgb(var(--Neon-Rgb)), 0px 0px 5px 1px rgb(var(--Neon-Rgb));
+}
+/*Select background game popout*/
+.popout-1KHNAq {
+  background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.6)) , var(--background-black-and-white1) 50% 50%/cover !important;
+}
