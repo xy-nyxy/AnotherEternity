@@ -1,13 +1,3 @@
-/*
- $$$$$$\  $$\           $$\                 $$\           
-$$  __$$\ $$ |          $$ |                $$ |          
-$$ /  \__|$$ | $$$$$$\  $$$$$$$\   $$$$$$\  $$ | $$$$$$$\ 
-$$ |$$$$\ $$ |$$  __$$\ $$  __$$\  \____$$\ $$ |$$  _____|
-$$ |\_$$ |$$ |$$ /  $$ |$$ |  $$ | $$$$$$$ |$$ |\$$$$$$\  
-$$ |  $$ |$$ |$$ |  $$ |$$ |  $$ |$$  __$$ |$$ | \____$$\ 
-\$$$$$$  |$$ |\$$$$$$  |$$$$$$$  |\$$$$$$$ |$$ |$$$$$$$  |
- \______/ \__| \______/ \_______/  \_______|\__|\_______/ 
-*/
 /*BD Addon Mini List by Disease#3749*/
 @import url(https://maendisease.github.io/BetterDiscordStuff/css/bdAddonMini.css);
 :root {
@@ -24,7 +14,7 @@ $$ |  $$ |$$ |$$ |  $$ |$$ |  $$ |$$  __$$ |$$ | \____$$\
   --Neon-Line: 150,0,0; /*master neon color*/
   --Neon-Rgb: var(--Neon-Line); /*neon node*/
   /*Backgrounds*/
-  --master-background: color:var(--Grey-Color);/*url('https://wallpaperaccess.com/full/1201806.jpg');*/ /*master background*/
+  --master-background: url('https://wallpapercave.com/wp/RvJcDj0.jpg'); /*master background*/
   --background-floating: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)) , var(--master-background)50% 50%/cover !important; /*background used in normal discord's code*/
   --background-black-and-white1: url('https://inspirationfeed.com/wp-content/uploads/2018/12/lou-batier-365323-unsplash-768x512.jpg'); /*background 3*/
   --background-black-and-white2: url('https://inspirationfeed.com/wp-content/uploads/2018/12/martin-sattler-160751-unsplash-768x575.jpg'); /*background 4*/
