@@ -100,7 +100,7 @@ sdahjidsjdshjdhasjj
 
 /*Left click on friends tab popout*/
 .menu-1QACrS {
-  background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.7)) , var(--loop-gif5) 50% 50%/cover !important;
+  background: black !important;
   border-color: rgb(var(--Neon-Rgb));
   box-shadow: inset 0px 0px 5px 2.5px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }

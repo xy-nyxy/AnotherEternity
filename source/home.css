@@ -1,12 +1,76 @@
 /*friends tab*/
-Main container background*/
+/*Main container background*/
 .theme-dark .container-2cd8Mz {
-  background-color: transparent;
+  background-color: transparent !important;
 }
+
 /*Activity cards background "In a voice channel"*/
 .theme-dark .inset-SbsSFp {
-  background-color: transparent;
+  background-color: var(--Cards-Background-Color) !important;
 }
 .theme-dark .outer-2JOHae.active-1W_Gl9, .theme-dark .outer-2JOHae.interactive-2zD88a:hover {
-  background-color: transparent;
+  background-color: var(--Cards-Background-Color) !important;
+}
+
+/*Active now Text Color*/
+.header-Imy05m {
+  font-family: var(--font-display);
+  margin: 8px 0 16px;
+  font-weight: 700;
+  color: var(--Main-Color) !important;
+}
+
+/*Online Text Color*/
+.title-x4dI75 {
+  margin: 16px 20px 8px 30px;
+  color: var(--Main-Color) !important;
+}
+
+/*Direct Messages Text Color*/
+.headerText-1qIDDT {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--Main-Color) !important;
+}
+
+/*Friends & Nitro Text Color*/
+.name-2m3Cms {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  color: var(--Main-Color) !important;
+}
+
+/*Friends Text Color*/
+.title-17SveM {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  overflow: hidden;
+  white-space: nowrap;
+  color: var(--Main-Color) !important;
+}
+
+/*Find or start a conversation Text Color*/
+.searchBar-3TnChZ .searchBarComponent-3N7dCG {
+  width: 100%;
+  height: 28px;
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: var(--background-tertiary);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  text-align: left;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  white-space: nowrap;
+  color: var(--Main-Color) !important;
 }
