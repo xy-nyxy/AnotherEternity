@@ -26,4 +26,5 @@
 @import 'source/user_settings.css';
 
 /*GUILDS*/
-@import 'source/guilds.css';
+@import 'source/guilds/guilds.css';
+@import 'source/guilds/channels.css';

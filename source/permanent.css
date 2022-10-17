@@ -23,7 +23,8 @@ Titlebar top buttons colors. Close, rezise and hide*/
 /*Message Input Area*/
 .channelTextArea-1FufC0 {
   margin-bottom: 24px;
-  background: black !important;;
+  background: black !important;
+  border: var(--border1);
 }
 
 /*Atachements*/

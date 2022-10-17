@@ -12,26 +12,8 @@
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
 
-/*All in channel icons, Threads, Notifications, Pinned messages, Hide member List, Notes*/
-.clickable-ZD7xvu .icon-2xnN2Y {
-  color: var(--Main-Color);
-}
-.icon-2xnN2Y {
-  color: var(--Main-Color);
-}
-
 /*Server name color*/
 .name-3Uvkvr {
-  color: var(--Main-Color);
-}
-
-/*Selected channels in guild*/
-/*channel text color*/
-.modeConnected-NrO4cP .name-28HaxV, .modeConnected-NrO4cP:hover .name-28HaxV, .modeSelected-3DmyhH .name-28HaxV, .modeSelected-3DmyhH:hover .name-28HaxV, .modeUnread-3Cxepe .name-28HaxV, .modeUnread-3Cxepe:hover .name-28HaxV, .notInteractive-2tFrlE.modeConnected-NrO4cP .name-28HaxV, .notInteractive-2tFrlE.modeSelected-3DmyhH .name-28HaxV {
-  color: var(--Main-Color);
-}
-/*icon color*/
-.modeSelected-3DmyhH .icon-2W8DHg, .modeSelected-3DmyhH:hover .icon-2W8DHg, .modeUnread-3Cxepe .icon-2W8DHg, .modeUnread-3Cxepe:hover .icon-2W8DHg {
   color: var(--Main-Color);
 }
 
@@ -48,11 +30,6 @@
   opacity: .9;
   border-radius: 5px;
   border-color:var(--Black);
-}
-
-/* #################### Guild Channel Slow Mode warning ####################*/
-.base-3bcbY3 .cooldownWrapper-2k1jHK {
-  color: var(--Main-Color)!important;
 }
 
 /*Guild folders*/
@@ -74,21 +51,6 @@
 .tooltip-14MtrL {
   background: var(--Black)!important;
   border: var(--border2)!important;
-  border-radius: 15px;
-}
-
-/*In guild hover on voice channel popout (playing, listening to spotify)*/
-.container-8Futzw {
-  background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.4)) , var(--background-black-and-white1) 50% 50%/cover !important;
-  border-color: rgb(var(--Neon-Rgb));
-  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
-}
-
-/*In guild channel, roles acces*/
-.role-23oyrw {
-  color: var(--text-normal);
-  background-color: transparent;
-  border: var(--border2);
   border-radius: 15px;
 }
 
