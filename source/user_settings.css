@@ -27,21 +27,59 @@
 .description-30xx7u, .labelDescriptor-34wZ-z {
   color: var(--Secondary-Color) !important;
 }
+/*Two factor authentificator icon color*/
+.userSettingsSecurity-2kODPN .lockIcon-3t6Ow0 {
+  margin-right: 4px;
+  width: 10px;
+  height: 14px;
+  position: relative;
+  top: 2px;
+  color: var(--Main-Color);
+}
 
-
+/*Remove 2FA, Delete Account buttons colors*/
+/*Stable*/
+.lookOutlined-3yKVGo.colorRed-rQXKgM {
+  color: var(--Main-Color);
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+/*Hover*/
+.lookOutlined-3yKVGo.colorRed-rQXKgM:hover {
+  color: var(--Red-Color);
+  border-color: rgb(var(--Red-Color)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Red-Color)), 0px 0px 15px 4px rgb(var(--Red-Color)) !important;
+}
 
 
 
 /*Name, Email, Phone Number Buttons Colors*/
 /*Stable*/
 .lookFilled-yCfaCM.colorPrimary-2AuQVo {
-  color: var(--Third-Color);
+  color: var(--Secondary-Color);
   background-color: transparent;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
 /*Hover*/
 .lookFilled-yCfaCM.colorPrimary-2AuQVo:hover {
-  color: var(--Secondary-Color);
-  background-color: var(--Secondary-Color);
+  color: var(--Main-Color);
+  background-color: transparent;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Username, Email, Phone Number (not the titles, the contents) text colors*/
+.text-md-medium-2avxhQ, .text-md-normal-304U3g {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--Third-Color);
+}
+
+/*Reveal buttons*/
+.lookLink-15mFoz.colorLink-1Md3RZ {
+  color: var(--Red-Color);
 }
 
 /* #################### User profile tab #################### */

@@ -8,6 +8,7 @@
   --Black: rgb(0,0,0); /*black color*/
   --White: rgb(255,255,255); /*white color*/
   --White-Second: rgb(175, 175, 175); /*white but gray color*/
+  --Red-color: rgb(255,0,0); /*red color*/
   --Neon-Line: 150,0,150; /*master neon color*/
   --Neon-Rgb: var(--Neon-Line); /*neon node*/
   --Cards-Background-Color: rgb(63, 0, 64);/*darker cards color*/

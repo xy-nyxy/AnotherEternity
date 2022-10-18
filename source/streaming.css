@@ -9,8 +9,7 @@
 
 /*Footer background color*/
 .footer-31IekZ {
-    border-radius: 0 0 5px 5px;
-    background-color: black !important;
+    display: none !important;
 }
 
 /*"Select something to stream and have your friends grab a seat!" text color*/

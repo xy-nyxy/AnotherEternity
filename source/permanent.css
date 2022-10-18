@@ -189,7 +189,40 @@ Titlebar top buttons colors. Close, rezise and hide*/
 /*CTRL+F Search & find messages popout*/
 .theme-dark .container-2McqkF {
   background: black!important;
+  border-radius: 15px; 
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
+/*Search Options header color*/
+.resultsGroup-cfY57t .header-1BR0Ro {
+  color: var(--Main-Color);
+}
+/*Subcategories (from, mentions, has, before, during, after, in, pinned) text color*/
+/*Stable*/
+.searchOption-3u1gRt .filter-2QaH9y {
+  color: var(--Third-Color);
+  font-weight: 600;
+}
+/*Hover*/
+.searchOption-3u1gRt .filter-2QaH9y:hover {
+  color: var(--Secondary-Color);
+  font-weight: 600;
+}
+/*Selected*/
+.searchOption-3u1gRt .filter-2QaH9y[aria-selected=true] {
+  color: var(--Main-Color);
+  font-weight: 600;
+}
+
+/*Search bar text color*/
+.DraftEditor-editorContainer {
+  background-color: hsla(0,0%,100%,0);
+  border-left: .1px solid transparent;
+  position: relative;
+  z-index: 1;
+  color: var(--Secondary-Color) !important;
+}
+
 /*Also in this popout, the last thing thing from a button*/
 .option-ayUoaq:after {
   display: none!important;
@@ -197,7 +230,8 @@ Titlebar top buttons colors. Close, rezise and hide*/
 /*CTRL+F After search popout*/
 .searchResultsWrap-5RVOkx {
   background-color: black;
-  border: var(--border2);
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
 .theme-dark .focused-2FU0YH {
   background-color: transparent;
@@ -242,11 +276,11 @@ Titlebar top buttons colors. Close, rezise and hide*/
 .button-f2h6uQ .contents-3ca1mk {
   --button--underline-color: transparent;
   background-image: linear-gradient(0deg,transparent,transparent 1px,var(--button--underline-color) 0,var(--button--underline-color) 2px,transparent 0);
-  color: var(--Main-Color) !important;
+  color: var(--Secondary-Color) !important;
 }
 /*Hover*/
 .button-f2h6uQ .contents-3ca1mk:hover {
   --button--underline-color: transparent;
   background-image: linear-gradient(0deg,transparent,transparent 1px,var(--button--underline-color) 0,var(--button--underline-color) 2px,transparent 0);
-  color: var(--Secondary-Color) !important;
+  color: var(--Main-Color) !important;
 }
