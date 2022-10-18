@@ -68,10 +68,55 @@
   color: var(--Main-Color) !important;
 }
 
-/*Online Text Color*/
+/*Online Tab Text Color*/
 .title-x4dI75 {
   margin: 16px 20px 8px 30px;
   color: var(--Main-Color) !important;
+}
+/*Online friends card*/
+/*Name and status color*/
+.text-3j8t_e {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  color: var(--Secondary-Color);
+}
+/*Card*/
+.listItemContents-2n2Uy9 {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 100%;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Add friend tab*/
+/*Stable*/
+.tabBar-ra-EuL .addFriend-emTWY1.addFriend-emTWY1.addFriend-emTWY1, .tabBar-ra-EuL .addFriend-emTWY1.addFriend-emTWY1.addFriend-emTWY1 {
+  background-color: transparent;
+  color: var(--Third-Color);
+}
+/*Hover*/
+.tabBar-ra-EuL .addFriend-emTWY1.addFriend-emTWY1.addFriend-emTWY1, .tabBar-ra-EuL .addFriend-emTWY1.addFriend-emTWY1.addFriend-emTWY1:hover {
+  background-color: transparent;
+  color: var(--Secondary-Color);
+}
+/*Selected*/
+.tabBar-ra-EuL .addFriend-emTWY1.addFriend-emTWY1.addFriend-emTWY1[aria-selected=true] {
+  background-color: transparent;
+  color: var(--Main-Color);
 }
 
 /*Direct Messages Text Color*/

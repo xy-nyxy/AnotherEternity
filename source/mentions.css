@@ -16,3 +16,24 @@
   background-color: black !important;
   width: 16px;
 }
+.base-3IDx3L {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 16px;
+  min-width: 16px;
+  min-height: 16px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: var(--Main-Color) !important;
+  background-color: var(--Color-4) !important;
+  text-align: center;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.mentionsBadge-3H1BKJ .iconBase-2RQsdz {
+  color: var(--Main-Color) !important;
+  background-color: var(--Color-4) !important;
+}

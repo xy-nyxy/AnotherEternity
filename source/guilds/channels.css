@@ -24,10 +24,25 @@
 }
 
 /*All in channel Icons, Threads, Notifications, Pinned messages, Hide member List, Notes*/
+/*Stable*/
 .clickable-ZD7xvu .icon-2xnN2Y {
-  color: var(--Main-Color);
+  color: var(--Third-Color);
 }
 .icon-2xnN2Y {
+  color: var(--Third-Color);
+}
+/*Hover*/
+.clickable-ZD7xvu .icon-2xnN2Y:hover {
+  color: var(--Secondary-Color);
+}
+.icon-2xnN2Y {
+  color: var(--Secondary-Color);
+}
+/*Selected*/
+.clickable-ZD7xvu .icon-2xnN2Y[aria-selected=true] {
+  color: var(--Main-Color);
+}
+.icon-2xnN2Y[aria-selected=true] {
   color: var(--Main-Color);
 }
 
@@ -66,7 +81,7 @@
 
 /*Channel name "Welcome to [channel_name]"*/
 .defaultColor-HXu-5n {
-  color: var(--Secondary-Color) !important;
+  color: var(--Main-Color) !important;
 }
 /*"This is the start of the [channel_name] channel." text color*/
 .description-22d6ux {

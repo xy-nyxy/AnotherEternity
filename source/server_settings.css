@@ -5,12 +5,12 @@
 /*Sidebar > Sub-category colors*/
 /*Default*/
 .brand-3g5E0C.item-3XjbnG, .themed-2-lozF.item-3XjbnG {
-  color: var(--White-Second);
+  color: var(--Third-Color);
 }
 /*Hover*/
 .side-2ur1Qk .themed-2-lozF.item-3XjbnG:hover:not(.disabled-1nofHP), .topPill-3DJJNV .themed-2-lozF.item-3XjbnG:hover:not(.disabled-1nofHP) {
   background-color: transparent;
-  color: var(--Main-Color);
+  color: var(--Secondary-Color);
 }
 /*When sub-category selected > border and color*/
 .brand-3g5E0C.item-3XjbnG, .themed-2-lozF.item-3XjbnG[aria-selected=true] {

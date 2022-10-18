@@ -187,7 +187,7 @@
   font-family: var(--font-primary);
   font-size: 14px;
   line-height: 18px;
-  color: var(--Main-Color) !important;
+  color: var(--Secondary-Color) !important;
 }
 
 /*"Read to boost?" card from below*/
