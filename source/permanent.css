@@ -263,6 +263,20 @@ Titlebar top buttons colors. Close, rezise and hide*/
   background-color: transparent;
 }
 
+/*User popout cards*/
+.focusLock-2tveLW, .root-g14mjS {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: black !important;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
 /*User popout cards, fix "User info, Activity border-bottom"*/
 .top-K_jibn .selected-g-kMVV.themed-2-lozF.item-3XjbnG, .top-K_jibn .themed-2-lozF.item-3XjbnG:active {
   border-bottom: none;
