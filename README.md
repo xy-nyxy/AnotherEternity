@@ -3,7 +3,7 @@
 # 🪐AnotherEternity🪐
 
 ### There is another world, another place that everyone can visit...
-![PreviewImage](https://media.discordapp.net/attachments/1031695417198530610/1031695490540122222/Screenshot_1.png?width=1662&height=701)
+![PreviewImage](https://github.com/xy-nyxy/AnotherEternity/blob/main/preview/Preview1.png)
 
 # ⚠️DISCLAIMER⚠️
 
