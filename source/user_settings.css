@@ -96,6 +96,11 @@
   border-bottom: none !important;
   text-decoration: none !important;
 }
+/*Buttons size*/
+.tabBarItem-MeqDhW {
+  padding: 10px !important;
+  margin-right: 0px;
+}
 
 /*Nitro tab profile view*/
 .improvedUpsellContainer-GX81ui {

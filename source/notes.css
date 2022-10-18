@@ -10,3 +10,8 @@ Stable = Third Color                -
 Hover = Secondary Color             :hover
 Selected = Main Color               [aria-selected=true]
 */
+
+/*
+Remove underline from text
+text-decoration: none;
+*/
