@@ -28,6 +28,7 @@
 
 ### Can I see a live preview?
 
+<a>href="https://gibbu.github.io/ThemePreview/?file=https://xy-nyxy.github.io/AnotherEternity/source.css" target="_blank" rel="noopener noreferrer">freeCodeCamp</a>
 ▸ Sure, [here](https://gibbu.github.io/ThemePreview/?file=https://xy-nyxy.github.io/AnotherEternity/source.css) is a link for the live preview (Thanks to @Gibbu).
 
 ### Who is the creator?
