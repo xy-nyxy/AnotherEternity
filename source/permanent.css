@@ -291,10 +291,12 @@ Titlebar top buttons colors. Close, rezise and hide*/
   --button--underline-color: transparent;
   background-image: linear-gradient(0deg,transparent,transparent 1px,var(--button--underline-color) 0,var(--button--underline-color) 2px,transparent 0);
   color: var(--Secondary-Color) !important;
+  text-decoration: none !important;
 }
 /*Hover*/
 .button-f2h6uQ .contents-3ca1mk:hover {
   --button--underline-color: transparent;
   background-image: linear-gradient(0deg,transparent,transparent 1px,var(--button--underline-color) 0,var(--button--underline-color) 2px,transparent 0);
   color: var(--Main-Color) !important;
+  text-decoration: none !important;
 }
