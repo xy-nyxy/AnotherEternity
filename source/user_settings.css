@@ -1,5 +1,5 @@
 /*#################### Page layouts ####################*/
-/*Sidebar (user settings, billing settings, app settings, etc)*/
+/*Sidebar layout*/
 .sidebarRegion-1VBisG {
   -ms-flex: 1 0 218px;
   flex: 0 0 0px;
@@ -18,32 +18,30 @@
   min-height: 100%;
 }
 
-/*Name, email, phone number colors*/
-.colorHeaderPrimary-jN_yGr {
+/*Headers Text Colors (Username, Email, Phone Number, Two Factor Authentification, Sms Backup Authentification, Account removal)*/
+.h5-2RwDNl {
   color: var(--Main-Color) !important;
 }
 
-/*Name, email, phone number buttons colors*/
-/*Normal*/
+/*All text descriptions (Two-Factor authentificator (2FA)... & Add your phone number... & Your current phone number... & Disabling your account...) Text Colors*/
+.description-30xx7u, .labelDescriptor-34wZ-z {
+  color: var(--Secondary-Color) !important;
+}
+
+
+
+
+
+/*Name, Email, Phone Number Buttons Colors*/
+/*Stable*/
 .lookFilled-yCfaCM.colorPrimary-2AuQVo {
-  color: var(--Main-Color);
+  color: var(--Third-Color);
   background-color: transparent;
-  border-color: rgb(var(--Neon-Rgb));
-  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
 /*Hover*/
 .lookFilled-yCfaCM.colorPrimary-2AuQVo:hover {
+  color: var(--Secondary-Color);
   background-color: var(--Secondary-Color);
-}
-
-/*Phone number "remove" & "Change Phone Number?" messages colors*/
-/*Normal*/
-.theme-dark .lookLink-15mFoz.colorPrimary-2AuQVo {
-  color: var(--Main-Color);
-}
-/*Hover*/
-.theme-dark .lookLink-15mFoz.colorPrimary-2AuQVo:hover .contents-3ca1mk {
-  background-image: linear-gradient(0deg,transparent,transparent 1px,var(--Main-Color) 0,var(--Main-Color) 2px,transparent 0);
 }
 
 /* #################### User profile tab #################### */
