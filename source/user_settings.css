@@ -51,8 +51,6 @@
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Red-Color)), 0px 0px 15px 4px rgb(var(--Red-Color)) !important;
 }
 
-
-
 /*Name, Email, Phone Number Buttons Colors*/
 /*Stable*/
 .lookFilled-yCfaCM.colorPrimary-2AuQVo {
@@ -80,7 +78,9 @@
 /*Reveal buttons*/
 .lookLink-15mFoz.colorLink-1Md3RZ {
   color: var(--Red-Color);
+  text-decoration: none !important;
 }
+
 
 /* #################### Profiles tab #################### */
 /*Page layout*/
@@ -94,6 +94,10 @@
   border-color: rgb(var(--Neon-Rgb)) !important;
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
   border-bottom: none !important;
+  text-decoration: none !important;
+}
+/*No underline*/
+.theme-dark .lookLink-15mFoz.colorPrimary-2AuQVo:hover {
   text-decoration: none !important;
 }
 /*Buttons size*/
