@@ -31,7 +31,7 @@ After downloading the theme, add it to our BetterDiscord themes folder, then hea
 ### Can I see a live preview?
 
 ▸ Sure, click the link below (Thanks to @Gibbu for the preview):
-> <div><a href="https://downgit.github.io/#/home?url=https:%2F%2Fgithub.com%2Fxy-nyxy%2FAnotherEternity%2Fblob%2Fmain%2FAnotherEternity.theme.css" target="_blank">AnotherEternity Live Preview</a></div>
+> <div><a href="https://gibbu.github.io/ThemePreview/?file=https://xy-nyxy.github.io/AnotherEternity/source.css" target="_blank">AnotherEternity Live Preview</a></div>
 
 ### Who is the creator?
 
