@@ -3,7 +3,7 @@
 # 🪐AnotherEternity🪐
 
 ### There is another world, another place that everyone can visit...
-![PreviewImage](https://media.discordapp.net/attachments/1031695417198530610/1031695490540122222/Screenshot_1.png?width=1662&height=701)
+![PreviewImage](https://github.com/xy-nyxy/AnotherEternity/blob/main/preview/Preview1.png)
 
 # ⚠️DISCLAIMER⚠️
 
@@ -20,7 +20,9 @@
 
 ### How do I install?
 
-▸ In order to install the theme, first we need to download it: [AnotherEternity.theme.css](https://downgit.github.io/#/home?url=https://github.com/xy-nyxy/AnotherEternity/blob/main/AnotherEternity.theme.css) then add it to our BetterDiscord themes folder. After that, head on discord, open Settings, open themes tab and enable it.
+▸ In order to install the theme, first we need to download it: 
+> <div><a href="https://downgit.github.io/#/home?url=https:%2F%2Fgithub.com%2Fxy-nyxy%2FAnotherEternity%2Fblob%2Fmain%2FAnotherEternity.theme.css" target="_blank">AnotherEternity.theme.css</a></div>
+After downloading the theme, add it to our BetterDiscord themes folder, then head on discord, open Settings, open themes tab and enable it.
 
 ### When it will be the next update?
 
@@ -28,7 +30,8 @@
 
 ### Can I see a live preview?
 
-▸ Sure, [here](https://gibbu.github.io/ThemePreview/?file=https://xy-nyxy.github.io/AnotherEternity/source.css) is a link for the live preview (Thanks to @Gibbu).
+▸ Sure, click the link below (Thanks to @Gibbu for the preview):
+> <div><a href="https://gibbu.github.io/ThemePreview/?file=https://xy-nyxy.github.io/AnotherEternity/source.css" target="_blank">AnotherEternity Live Preview</a></div>
 
 ### Who is the creator?
 
@@ -36,4 +39,6 @@
 
 ### What is the current status about the theme?
 
-> Current status: Working on bug fixes, adding new features and solving problems.
+> Current status: Working on fixes, adding new features, recreating the scripts and solving problems.
+
+> Current version: PRE-ALPHA V0.2
