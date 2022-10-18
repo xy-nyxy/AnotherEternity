@@ -22,13 +22,14 @@
   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)) , var(--loop-gif) 50% 50%/cover !important;
   opacity: .9;
   border: solid 2px var(--Secondary-Color);
+  border-radius: 15px; 
 }
 /*Metioned*/
 .mention-3XBnnZ {
   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)) , var(--loop-gif4) 50% 50%/cover !important;
   opacity: .9;
-  border-radius: 5px;
-  border-color:var(--Black);
+  border: solid 2px var(--Secondary-Color);
+  border-radius: 15px; 
 }
 
 /*Guild folders*/
