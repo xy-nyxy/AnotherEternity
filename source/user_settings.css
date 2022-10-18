@@ -93,6 +93,8 @@
 .top-K_jibn .item-3XjbnG {
   border-color: rgb(var(--Neon-Rgb)) !important;
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+  border-bottom: none !important;
+  text-decoration: none !important;
 }
 
 /*Nitro tab profile view*/

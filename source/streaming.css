@@ -7,8 +7,28 @@
     box-shadow: inset 0px 0px 2px 1px rgb(var(--Neon-Rgb)), 0px 0px 5px 1px rgb(var(--Neon-Rgb));
 }
 
-/*Footer background color*/
+/*Applications, Screens Text Color*/
+/*Stable*/
+.theme-dark .selected-2xa993 {
+    color: var(--Third-Color);
+    border-bottom: none !important;
+}
+/*Hover*/
+.theme-dark .selected-2xa993:hover {
+    color: var(--Secondary-Color);
+    border-bottom: none !important;
+}
+/*Selected*/
+.theme-dark .selected-2xa993[aria-selected=true] {
+    color: var(--Main-Color);
+    border-bottom: none !important;
+}
 
+/*Footer background color*/
+.footer-31IekZ {
+    border-radius: 0 0 0px 0px;
+    background-color: transparent;
+}
 
 /*"Select something to stream and have your friends grab a seat!" text color*/
 .headerDescription-yFPU-Q {
@@ -17,10 +37,42 @@
     color: var(--Main-Color) !important;
 }
 
+/*"Sound may not be available..." text color*/
+.text-xs-normal-3SiVjE {
+    font-weight: 400;
+    color: var(--Secondary-Color);
+}
+
 /*Stream Quality > Smoother Video Background*/
 .option-2eIyOn[aria-selected=true]:not(.option-2eIyOn.multi-1HXDiv) {
     color: var(--interactive-active);
     background-color: black !important;
+    border-color: rgb(var(--Neon-Rgb)) !important;
+    box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+.popout-1KHNAq {
+    background: black !important;
+}
+
+/*Stream in hd resoultion*/
+.gradientBackground-MytxDL {
+    background: transparent;
+    border-color: rgb(var(--Neon-Rgb)) !important;
+    box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Smooter Video, Better text reading, custom options text color*/
+/*Stable*/
+.option-2eIyOn {
+    color: var(--Third-Color) !important;
+}
+/*Hover*/
+.option-2eIyOn:hover {
+    color: var(--Secondary-Color) !important;
+}
+/*Selected*/
+.option-2eIyOn[aria-selected=true] {
+    color: var(--Main-Color) !important;
 }
 
 /*Screen 1 text color*/
