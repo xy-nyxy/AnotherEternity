@@ -1,21 +1,21 @@
 :root {
   /*Global variables that were made/edited by me*/
-  --Main-Color: rgb(225, 0, 158);               /*main master color*/
-  --Secondary-Color: rgb(113, 0, 158);          /*secondary color*/
-  --Third-Color: rgb(120,0,158);                /*third color*/
-  --Color-4: rgb(90,0,158);                     /*color number 4*/
-  --Grey-Color: rgb(31, 31, 31);                /*grey color*/
-  --Black: rgb(0,0,0);                          /*black color*/
-  --White: rgb(255,255,255);                    /*white color*/
-  --White-Second: rgb(175, 175, 175);           /*white but gray color*/
-  --Neon-Line: 150,0,150;                         /*master neon color*/
-  --Neon-Rgb: var(--Neon-Line);                   /*neon node*/
-  --Cards-Background-Color: rgb(63, 0, 64);     /*darker cards color*/
+  --Main-Color: rgb(225, 0, 158); /*main master color*/
+  --Secondary-Color: rgb(113, 0, 158); /*secondary color*/
+  --Third-Color: rgb(120,0,158); /*third color*/
+  --Color-4: rgb(90,0,158); /*color number 4*/
+  --Grey-Color: rgb(31, 31, 31); /*grey color*/
+  --Black: rgb(0,0,0); /*black color*/
+  --White: rgb(255,255,255); /*white color*/
+  --White-Second: rgb(175, 175, 175); /*white but gray color*/
+  --Neon-Line: 150,0,150; /*master neon color*/
+  --Neon-Rgb: var(--Neon-Line); /*neon node*/
+  --Cards-Background-Color: rgb(63, 0, 64);/*darker cards color*/
   /*Backgrounds*/
-  --master-background: url('https://wallpapercave.com/wp/uaJeudN.jpg');                                                                       /*master background*/
-  --background-floating: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)) , var(--master-background)50% 50%/cover !important;       /*background used in normal discord's code*/
-  --background-black-and-white1: url('https://inspirationfeed.com/wp-content/uploads/2018/12/lou-batier-365323-unsplash-768x512.jpg');        /*background 3*/
-  --background-black-and-white2: url('https://inspirationfeed.com/wp-content/uploads/2018/12/martin-sattler-160751-unsplash-768x575.jpg');    /*background 4*/
+  --master-background: url('https://media.discordapp.net/attachments/1031596095882674197/1031607463469912225/happy-halloween-pumpkin-img-3840x2160.jpg?width=1246&height=701'); /*master background*/
+  --background-floating: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)) , var(--master-background)50% 50%/cover !important; /*background used in normal discord's code*/
+  --background-black-and-white1: url('https://inspirationfeed.com/wp-content/uploads/2018/12/lou-batier-365323-unsplash-768x512.jpg'); /*background 3*/
+  --background-black-and-white2: url('https://inspirationfeed.com/wp-content/uploads/2018/12/martin-sattler-160751-unsplash-768x575.jpg'); /*background 4*/
   /*Gifs for popouts and stuff*/
   --loop-gif: url('https://c.tenor.com/2oQwi7vJz9wAAAAC/loop-space.gif');                                                                                       /*Used in files background*/
   --loop-gif2: url('https://64.media.tumblr.com/16314eedf67c43cc5cb711ffe8c0b08e/22caaa59656e483e-b3/s640x960/7f706f80fb11b3390532fea23ffca444a6f3ea32.gifv');  /*Used in guild popouts > User popout*/
