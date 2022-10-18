@@ -39,4 +39,5 @@ After downloading the theme, add it to our BetterDiscord themes folder, then hea
 
 ### What is the current status about the theme?
 
-> Current status: Working on bug fixes, adding new features and solving problems.
+> Current status: Working on fixes, adding new features, recreating the scripts and solving problems.
+> Current version: PRE-ALPHA V0.2
