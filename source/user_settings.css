@@ -142,17 +142,17 @@
 }
 
 /*#################### Privacy and safety ####################*/
-/*Request data button color*/
-/*Button border and background*/
+/*Request data button color, border and background*/
 /*Normal*/
 .lookOutlined-3yKVGo.colorBrand-I6CyqQ {
-  color: var(--Main-Color);
+  color: var(--Secondary-Color);
   border-color: rgb(var(--Neon-Rgb));
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
 /*Hover*/
 .lookOutlined-3yKVGo.colorBrand-I6CyqQ:hover {
-  background-color: var(--Secondary-Color);
+  background-color: transparent;
+  color: var(--Main-Color);
   border-color: rgb(var(--Neon-Rgb));
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
