@@ -80,6 +80,17 @@
   color: var(--Red-Color);
   text-decoration: none !important;
 }
+.removeButton-1xB_Ez {
+  margin-left: 4px;
+  text-decoration: none !important;
+}
+.lookFilled-yCfaCM .contents-3ca1mk, .lookInverted-2mDUMi .contents-3ca1mk, .lookLink-15mFoz .contents-3ca1mk, .lookOutlined-3yKVGo .contents-3ca1mk {
+  margin: 0 auto;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-decoration: none !important;
+}
 
 
 /* #################### Profiles tab #################### */
