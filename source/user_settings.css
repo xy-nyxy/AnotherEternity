@@ -76,28 +76,8 @@
 }
 
 /*Reveal buttons*/
-.lookLink-15mFoz.colorLink-1Md3RZ {
-  text-decoration: none !important;
-}
-.lookLink-15mFoz.colorLink-1Md3RZ:hover {
-  text-decoration: none !important;
-}
-.contents-3ca1mk {
-  text-decoration: none !important;
-}
-.contents-3ca1mk:hover {
-  text-decoration: none !important;
-}
-.removeButton-1xB_Ez {
-  text-decoration: none !important;
-}
-.removeButton-1xB_Ez:hover {
-  text-decoration: none !important;
-}
-.lookFilled-yCfaCM .contents-3ca1mk, .lookInverted-2mDUMi .contents-3ca1mk, .lookLink-15mFoz .contents-3ca1mk, .lookOutlined-3yKVGo .contents-3ca1mk {
-  text-decoration: none !important;
-}
-.lookFilled-yCfaCM:hover .contents-3ca1mk:hover, .lookInverted-2mDUMi:hover .contents-3ca1mk:hover, .lookLink-15mFoz:hover .contents-3ca1mk:hover, .lookOutlined-3yKVGo:hover .contents-3ca1mk:hover {
+.button-f2h6uQ .contents-3ca1mk{
+  background-image: none !important;
   text-decoration: none !important;
 }
 
