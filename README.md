@@ -9,7 +9,7 @@
 
 </div>
 
-<h3 align="center">The theme is still in pre-alpha developement state. Please be patient while I fix and add new features.</h3>
+<h3 align="center">The theme is still in alpha developement state. Please be patient while I fix and add new features.</h3>
 <h3 align="center">Thanks for understanding.</h3>
 
 <div align="center">
@@ -41,4 +41,4 @@ After downloading the theme, add it to our BetterDiscord themes folder, then hea
 
 > Current status: Working on fixes, adding new features, recreating the scripts and solving problems.
 
-> Current version: PRE-ALPHA V0.5
+> Current version: ALPHA V0.5
