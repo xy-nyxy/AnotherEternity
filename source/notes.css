@@ -15,3 +15,8 @@ Selected = Main Color               [aria-selected=true]
 Remove underline from text
 text-decoration: none;
 */
+
+/*
+Nice fade background color
+background-color: hsla(0,calc(var(--saturation-factor, 1)*0%),100%,.06);
+*/

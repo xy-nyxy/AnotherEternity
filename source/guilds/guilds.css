@@ -191,7 +191,7 @@
   color: var(--Secondary-Color) !important;
 }
 
-/*"Read to boost?" card from below*/
+/*"Ready to boost?" card from below*/
 .wrapper-3Zq_cJ {
   background: transparent;
   color: var(--Main-Color);
@@ -201,11 +201,15 @@
 /*"Learn more about discord nitro button" color and background*/
 /*normal*/
 .lookInverted-2mDUMi.colorBrand-I6CyqQ {
-  color: var(--Main-Color);
+  color: var(--Secondary-Color);
   background-color: transparent;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
 /*hover*/
 .lookInverted-2mDUMi.colorBrand-I6CyqQ:hover {
-  color: var(--Black);
-  background-color: var(--Secondary-Color);
+  color: var(--Main-Color);
+  background-color: transparent;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }

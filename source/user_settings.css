@@ -72,7 +72,7 @@
   font-family: var(--font-primary);
   font-size: 16px;
   line-height: 20px;
-  color: var(--Third-Color);
+  color: var(--Main-Color);
 }
 
 /*Reveal buttons*/
@@ -82,18 +82,26 @@
 }
 
 /* #################### Profiles tab #################### */
-/*Page layout*/
-.standardCustomizationSection-1cGbyD {
-  width: 636px; /*636*/
-  margin: 0px 0px;
-}
-
 /*User profile, Server profile text color*/
+/*Stable*/
 .top-K_jibn .item-3XjbnG {
+  border-bottom: none !important;
+  text-decoration: none !important;
+  color: var(--Third-Color);
+}
+/*Hover*/
+.tabBarItem-MeqDhW:hover {
+  padding: 10px !important;
+  margin-right: 0px;
+  color: var(--Secondary-Color) !important;
+}
+/*Selected*/
+.top-K_jibn .item-3XjbnG[aria-selected=true] {
   border-color: rgb(var(--Neon-Rgb)) !important;
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
   border-bottom: none !important;
   text-decoration: none !important;
+  color: var(--Main-Color);
 }
 /*No underline*/
 .theme-dark .lookLink-15mFoz.colorPrimary-2AuQVo:hover {
@@ -110,13 +118,14 @@
   width: 684px;
   margin-top: 48px;
   margin-left: -12px;
-  border: 2px solid transparent;
-  border-radius: 8px;
-  background: linear-gradient(var(--background-primary),var(--background-primary)) padding-box,linear-gradient(45deg,hsl(269,calc(var(--saturation-factor, 1)*52.7%),52.7%),hsl(325,calc(var(--saturation-factor, 1)*31.7%),51.8%)) border-box;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+  background: black;
 }
 
 /*"About me" text area background*/
 .bioTextArea-dDGOeC {
+  width: unset;
   background-color: transparent;
   --channel-text-area-placeholder: var(--input-placeholder-text);
   border-color: rgb(var(--Neon-Rgb));
@@ -161,19 +170,140 @@
   color: var(--Main-Color);
 }
 
+/*All blue and underlined text*/
+/*Stable*/
+.anchor-1MIwyf {
+  color: var(--Main-Color) !important;
+  text-decoration: none !important;
+}
+/*Hover*/
+.anchor-1MIwyf:hover {
+  color: var(--Secondary-Color) !important;
+  text-decoration: none !important;
+}
+/*Check out or Terms and... text color*/
+.colorStandard-1Xxp1s {
+  color: var(--Secondary-Color);
+}
+
+/*#################### Authorized Apps Tab ####################*/
+
+/*Cards borders*/
+.cardPrimaryOutline-1ofwVz {
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*#################### Connections tab ####################*/
+
+/*Cards borders*/
+.connection-YOVI9j {
+  background-color: transparent;
+  width: 100%;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Display on profile text color*/
+.text-sm-bold-1Dtt0R, .text-sm-semibold-3TWn25 {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--Secondary-Color);
+}
+
+/*Connected accounts name color*/
+.connectionAccountLabelContainer-1KuLS6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: var(--Main-Color);
+}
+
+/*Platform/Game name (under account name) text color*/
+.connectionAccountLabel-28GEPk {
+  margin-left: 16px;
+  color: var(--Secondary-Color) !important;
+}
+
+/*#################### Billing settings ####################*/
+/*#################### Nitro tab ####################*/
+
+/*Nitro card (Make discord yours)*/
+.hero-1aNo0v {
+  background-image: none;
+  color: var(--Main-Color);
+  background: black !important;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+  height: 300px;
+}
+
+/*Discord nitro header text color*/
+.hero-1aNo0v .heroHeader-1A0uOZ, .heroIcon-3kmupU {
+  color: var(--Main-Color);
+}
+
+/*Ready to upgrade to Nitro? text color*/
+.marketingRefreshTitle-UaHKpk {
+  color: var(--Main-Color);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+/*Pick the plan... text color*/
+.marketingRefreshSubtitle-17I8Dd {
+  color: var(--Secondary-Color);
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+}
+
+/*Nitro classic text color*/
+.marketingRefreshTier1Logo-38ksW_ {
+  color: var(--Main-Color);
+  display: block;
+  height: 20px;
+  margin-bottom: 8px;
+  width: 194px;
+}
+
+/*Want to keep... text color (under nitro classic)*/
+.marketingRefreshDescription-2_tCTt {
+  color: var(--Main-Color);
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 0 16px;
+}
+
 /*#################### Server boost tab ####################*/
-/*"Server boost" message*/
+/*"Server boost" text color*/
 .marketingLogoIcon-3HQY2K {
   color: var(--Main-Color);
+}
+
+/*Anyone can help... text color (under server boost header)*/
+.marketingHeader-CpUYrf {
+  margin: 8px 0 16px;
+  color: var(--Secondary-Color);
 }
 
 /*"Boost a server and get" & "Boosted servers can get" messages*/
 .base-21yXnu.muted-eZM05q {
   color: var(--Main-Color);
 }
-/*All descriptions*/
+/*All descriptions (A member.../A shiny.../An exclusive.../Room for.../Unlock more.../Better quality.../etc)*/
 .descriptionStandalone-3ChjDk {
-  color: var(--Main-Color);
+  color: var(--Secondary-Color);
 }
 
 /*#################### Subscriptions tab ####################*/
@@ -225,7 +355,105 @@
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
 
-/*#################### Activity status ####################*/
+/*#################### App Settings ####################*/
+/*#################### Apperance tab ####################*/
+/*Chat font scalling bars colors*/
+/*The bars*/ 
+/*The line thats above*/
+.barFill-2Bh7CX {
+  background: var(--Main-Color);
+  height: 100%;
+}
+/*The line that is under*/
+.theme-dark .bar-1Bhnl9, .theme-dark .markDash-yk2kJ- {
+  background-color: var(--Third-Color);
+}
+
+/*Values (12px, 14px, 15px, etc)*/
+.markValue-2U_-UG {
+  color: var(--Third-Color);
+}
+
+/*Grabbers*/
+.grabber-2GQyvM {
+  width: 10px;
+  height: 24px;
+  margin-left: -5px;
+  top: 50%;
+  margin-top: -13px;
+  border-radius: 3px;
+  background-color: var(--Third-Color);
+  border-color: var(--Main-Color);
+  box-shadow: none;
+  cursor: ew-resize;
+}
+
+/*#################### Accesibility ####################*/
+/*Text to speech button color*/
+.lookFilled-yCfaCM.colorBrandNew-2-gGsS {
+  color: var(--Main-Color);
+  background-color: transparent !important;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*#################### Voice and video ####################*/
+/**/
+
+/*#################### Text & Images ####################*/
+/**/
+
+/*#################### Notifications ####################*/
+/**/
+
+/*#################### Keybinds ####################*/
+/*Keybinds are disabled... text message*/
+.text-2iTkaw {
+  margin-left: 10px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -ms-flex-item-align: center;
+  align-self: center;
+  color: var(--Secondary-Color);
+}
+
+/*All keybinds text colors*/
+.key-N5VmHN {
+  background-color: var(--background-accent);
+  border: 1px solid var(--background-primary);
+  display: block;
+  padding: 3px 6px 4px;
+  border-radius: 4px;
+  cursor: default;
+  min-width: 14px;
+  min-height: 14px;
+  text-align: center;
+  color: var(--Main-Color) !important;
+}
+.key-N5VmHN .bindArrow-EmK4SC {
+  width: 10px;
+  height: 10px;
+  color: var(--Main-Color) !important;
+}
+.theme-dark .keybindShortcut-3zF1P9 .key-N5VmHN .bindArrow-EmK4SC g {
+  fill: var(--Main-Color) !important;
+}
+
+/*#################### Languages ####################*/
+/**/
+
+/*#################### Windows settings ####################*/
+/**/
+
+/*#################### Streamer Mode ####################*/
+/**/
+
+/*#################### Advanced ####################*/
+/**/
+
+/*#################### Activity settings ####################*/
+/*#################### Activity privacy ####################*/
 /*Add a new game popout*/
 .theme-dark .addGamePopout-2SKNIV {
   background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.6)) , var(--background-black-and-white1) 50% 50%/cover !important;
@@ -241,4 +469,186 @@
 /*Select background game popout*/
 .popout-1KHNAq {
   background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.6)) , var(--background-black-and-white1) 50% 50%/cover !important;
+}
+
+/*#################### Activity privacy ####################*/
+/*#################### Registred games ####################*/
+/*No game detected text color*/
+.gameName-zbZetm {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  color: var(--Main-Color) !important;
+}
+
+/*Now playing game text color (Not seeing your game)*/
+.theme-dark .nowPlayingAdd-3I4RbE {
+  color: var(--Main-Color);
+}
+
+/*Last played game text color*/
+.hoverRoll-2XwpoF {
+  display: inline-block;
+  vertical-align: top;
+  cursor: default;
+  text-align: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  contain: paint;
+  color: var(--Secondary-Color);
+}
+
+/*The bar between the games*/
+.theme-dark .game-2f2vPC {
+  color: var(--Main-Color) !important;
+  box-shadow: var(--Main-Color) !important;
+}
+
+/*#################### Game overlay ####################*/
+/*Overlay notifications, notification positions cards background and colors*/
+.wrapper-SdcMKg {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  background-color: hsla(0,calc(var(--saturation-factor, 1)*0%),0%,.1);
+  padding-bottom: 56.25%;
+  border-radius: 8px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+/*Selected overlay position*/
+.selected-18Wszc.option-1QI4c9 {
+  background-color: var(--Main-Color);
+  border-color: var(--brand-experiment);
+  -webkit-box-shadow: 0 2px 0 hsla(0,calc(var(--saturation-factor, 1)*0%),0%,.3);
+  box-shadow: 0 2px 0 hsla(0,calc(var(--saturation-factor, 1)*0%),0%,.3);
+  opacity: 1;
+}
+/*Overlay position*/
+/*Static*/
+.option-1QI4c9 {
+  position: absolute;
+  width: 24%;
+  height: 24%;
+  margin: 6px;
+  border-radius: 3px;
+  opacity: .6;
+  background-color: var(--Third-Color);
+  cursor: pointer;
+  overflow: hidden;
+  text-indent: -999em;
+  font-size: 0;
+  line-height: 0;
+}
+/*Hover*/
+.option-1QI4c9:hover {
+  position: absolute;
+  width: 24%;
+  height: 24%;
+  margin: 6px;
+  border-radius: 3px;
+  opacity: .6;
+  background-color: var(--Secondary-Color);
+  cursor: pointer;
+  overflow: hidden;
+  text-indent: -999em;
+  font-size: 0;
+  line-height: 0;
+}
+
+/*Disabled icon color*/
+.disabledIcon-1rpL82 {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: var(--Third-Color);
+}
+
+/*#################### BetterDiscord ####################*/
+/*#################### Settings ####################*/
+/*Settings titles colors*/
+.bd-settings-title {
+  color: var(--Main-Color) !important;
+  font-weight: 600;
+  cursor: default;
+  flex: 1;
+}
+
+/*All category titles colors*/
+.bd-setting-header label {
+  font-weight: 500;
+  cursor: pointer;
+  overflow: hidden;
+  word-wrap: break-word;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--Secondary-Color);
+}
+/*All descriptions for sub categoryes colors*/
+.bd-setting-note {
+  color: var(--Third-Color);
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+/*Sliders (turn on/off things) colors*/ 
+.bd-switch input {
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  cursor: pointer;
+  color: var(--Main-Color) !important;
+}
+.bd-switch {
+  position: relative;
+  transition: 250ms cubic-bezier(0,.3,.7,1) filter,250ms cubic-bezier(0,.3,.7,1) opacity;
+  color: var(--Main-Color) !important;
+}
+.bd-switch-body {
+  --switch-color: var(--Main-Color);
+  --symbol1path: path('M5.13231 6.72963L6.7233 5.13864L14.855 13.2704L13.264 14.8614L5.13231 6.72963Z');
+  --symbol2path: path('M13.2704 5.13864L14.8614 6.72963L6.72963 14.8614L5.13864 13.2704L13.2704 5.13864Z');
+  border-radius: 14px;
+  width: 40px;
+  height: 24px;
+  background-color: var(--Secondary-Color);
+  transition: 250ms cubic-bezier(0,.3,.7,1) background-color;
+  position: relative;
+}
+
+/*#################### Updates ####################*/
+/*Check for updates buttons*/
+/*Stable*/
+.bd-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: var(--Main-Color);
+  border-radius: 3px;
+  padding: 4px 8px;
+  transition: background-color .17s ease,color .17s ease,opacity 250ms ease;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+/*Hover*/
+.bd-button:hover {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: var(--Secondary-Color);
+  border-radius: 3px;
+  padding: 4px 8px;
+  transition: background-color .17s ease,color .17s ease,opacity 250ms ease;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }

@@ -68,6 +68,9 @@
 /*Photo description*/
 .description-30xx7u, .labelDescriptor-34wZ-z {
   color: var(--White-Second);
+  padding: 0px !important;
+  width: unset;
+  position: static;
 }
 
 /*Upload Image button*/

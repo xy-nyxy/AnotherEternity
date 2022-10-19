@@ -40,7 +40,7 @@
 /*"Sound may not be available..." text color*/
 .text-xs-normal-3SiVjE {
     font-weight: 400;
-    color: var(--Secondary-Color);
+    color: var(--Secondary-Color) !important;
 }
 
 /*Stream Quality > Smoother Video Background*/

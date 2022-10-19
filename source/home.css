@@ -86,21 +86,6 @@
   overflow: hidden;
   color: var(--Secondary-Color);
 }
-/*Card*/
-.listItemContents-2n2Uy9 {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  max-width: 100%;
-  border-color: rgb(var(--Neon-Rgb)) !important;
-  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
-}
 
 /*Add friend tab*/
 /*Stable*/
