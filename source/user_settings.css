@@ -77,21 +77,29 @@
 
 /*Reveal buttons*/
 .lookLink-15mFoz.colorLink-1Md3RZ {
-  color: var(--Red-Color);
+  text-decoration: none !important;
+}
+.lookLink-15mFoz.colorLink-1Md3RZ:hover {
+  text-decoration: none !important;
+}
+.contents-3ca1mk {
+  text-decoration: none !important;
+}
+.contents-3ca1mk:hover {
   text-decoration: none !important;
 }
 .removeButton-1xB_Ez {
-  margin-left: 4px;
+  text-decoration: none !important;
+}
+.removeButton-1xB_Ez:hover {
   text-decoration: none !important;
 }
 .lookFilled-yCfaCM .contents-3ca1mk, .lookInverted-2mDUMi .contents-3ca1mk, .lookLink-15mFoz .contents-3ca1mk, .lookOutlined-3yKVGo .contents-3ca1mk {
-  margin: 0 auto;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
   text-decoration: none !important;
 }
-
+.lookFilled-yCfaCM:hover .contents-3ca1mk:hover, .lookInverted-2mDUMi:hover .contents-3ca1mk:hover, .lookLink-15mFoz:hover .contents-3ca1mk:hover, .lookOutlined-3yKVGo:hover .contents-3ca1mk:hover {
+  text-decoration: none !important;
+}
 
 /* #################### Profiles tab #################### */
 /*Page layout*/
