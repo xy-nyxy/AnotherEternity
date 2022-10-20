@@ -1,10 +1,12 @@
 /*
- ██████╗ ██╗      ██████╗ ██████╗  █████╗ ██╗     ███████╗
-██╔════╝ ██║     ██╔═══██╗██╔══██╗██╔══██╗██║     ██╔════╝
-██║  ███╗██║     ██║   ██║██████╔╝███████║██║     ███████╗
-██║   ██║██║     ██║   ██║██╔══██╗██╔══██║██║     ╚════██║
-╚██████╔╝███████╗╚██████╔╝██████╔╝██║  ██║███████╗███████║
- ╚═════╝ ╚══════╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚══════╝
+ $$$$$$\  $$\        $$$$$$\  $$$$$$$\   $$$$$$\  $$\        $$$$$$\  
+$$  __$$\ $$ |      $$  __$$\ $$  __$$\ $$  __$$\ $$ |      $$  __$$\ 
+$$ /  \__|$$ |      $$ /  $$ |$$ |  $$ |$$ /  $$ |$$ |      $$ /  \__|
+$$ |$$$$\ $$ |      $$ |  $$ |$$$$$$$\ |$$$$$$$$ |$$ |      \$$$$$$\  
+$$ |\_$$ |$$ |      $$ |  $$ |$$  __$$\ $$  __$$ |$$ |       \____$$\ 
+$$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
+\$$$$$$  |$$$$$$$$\  $$$$$$  |$$$$$$$  |$$ |  $$ |$$$$$$$$\ \$$$$$$  |
+ \______/ \________| \______/ \_______/ \__|  \__|\________| \______/ 
 */
 :root {
   /*Global variables that were made/edited by me*/
@@ -12,6 +14,7 @@
   --Secondary-Color: rgb(190, 0, 158); /*secondary color*/
   --Third-Color: rgb(110,0,158); /*third color*/
   --Color-4: rgb(90,0,158); /*color number 4*/
+  --Color-5: hsla(320, 40%, 40%, 0.366); /*color number 5*/
   --Grey-Color: rgb(31, 31, 31); /*grey color*/
   --Black: rgb(0,0,0); /*black color*/
   --White: rgb(255,255,255); /*white color*/
@@ -144,13 +147,64 @@
   --button--underline-color: transparent !important;
 }
 
+/*Brand experminet things (idk what i did here but works)*/
+:root {
+	--brand-experiment: hsl(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%);
+	--brand-experiment-100: hsl(305, calc(var(--saturation-factor, 1)*59.9%), 98%);
+	--brand-experiment-130: hsl(305, calc(var(--saturation-factor, 1)*59.9%), 93.5%);
+	--brand-experiment-160: hsl(305, calc(var(--saturation-factor, 1)*59.9%), 89%);
+	--brand-experiment-200: hsl(305, calc(var(--saturation-factor, 1)*59.9%), 84.6%);
+	--brand-experiment-230: hsl(305, calc(var(--saturation-factor, 1)*59.9%), 80.1%);
+	--brand-experiment-260: hsl(305, calc(var(--saturation-factor, 1)*59.9%), 75.6%);
+	--brand-experiment-300: hsl(305, calc(var(--saturation-factor, 1)*59.9%), 71.1%);
+	--brand-experiment-330: hsl(305, calc(var(--saturation-factor, 1)*59.9%), 66.6%);
+	--brand-experiment-360: hsl(305, calc(var(--saturation-factor, 1)*59.9%), 62.1%);
+	--brand-experiment-400: hsl(305, calc(var(--saturation-factor, 1)*59.9%), 57.7%);
+	--brand-experiment-430: hsl(305, calc(var(--saturation-factor, 1)*59.9%), 53.2%);
+	--brand-experiment-460: hsl(305, calc(var(--saturation-factor, 1)*59.9%), 48.7%);
+	--brand-experiment-500: hsl(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%);
+	--brand-experiment-530: hsl(305, calc(var(--saturation-factor, 1)*44.9%), 40.8%);
+	--brand-experiment-560: hsl(305, calc(var(--saturation-factor, 1)*35.9%), 37.3%);
+	--brand-experiment-600: hsl(305, calc(var(--saturation-factor, 1)*32.8%), 33.9%);
+	--brand-experiment-630: hsl(305, calc(var(--saturation-factor, 1)*32.8%), 30.5%);
+	--brand-experiment-660: hsl(305, calc(var(--saturation-factor, 1)*32.8%), 27%);
+	--brand-experiment-700: hsl(305, calc(var(--saturation-factor, 1)*32.8%), 23.6%);
+	--brand-experiment-730: hsl(305, calc(var(--saturation-factor, 1)*32.8%), 20.2%);
+	--brand-experiment-760: hsl(305, calc(var(--saturation-factor, 1)*32.8%), 16.7%);
+	--brand-experiment-800: hsl(305, calc(var(--saturation-factor, 1)*32.8%), 13.3%);
+	--brand-experiment-830: hsl(305, calc(var(--saturation-factor, 1)*32.8%), 9.9%);
+	--brand-experiment-860: hsl(305, calc(var(--saturation-factor, 1)*32.8%), 6.4%);
+	--brand-experiment-900: hsl(305, calc(var(--saturation-factor, 1)*32.8%), 3%);
+	--brand-experiment-05a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.05);
+	--brand-experiment-10a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.1);
+	--brand-experiment-15a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.15);
+	--brand-experiment-20a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.2);
+	--brand-experiment-25a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.25);
+	--brand-experiment-30a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.3);
+	--brand-experiment-35a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.35);
+	--brand-experiment-40a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.4);
+	--brand-experiment-45a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.45);
+	--brand-experiment-50a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.5);
+	--brand-experiment-55a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.55);
+	--brand-experiment-60a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.6);
+	--brand-experiment-65a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.65);
+	--brand-experiment-70a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.7);
+	--brand-experiment-75a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.75);
+	--brand-experiment-80a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.8);
+	--brand-experiment-85a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.85);
+	--brand-experiment-90a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.9);
+	--brand-experiment-95a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.95);
+}
+
 /*
-██████╗  █████╗ ██████╗ ██╗ █████╗ ██╗         ███████╗████████╗ █████╗ ████████╗██╗   ██╗███████╗
-██╔══██╗██╔══██╗██╔══██╗██║██╔══██╗██║         ██╔════╝╚══██╔══╝██╔══██╗╚══██╔══╝██║   ██║██╔════╝
-██████╔╝███████║██║  ██║██║███████║██║         ███████╗   ██║   ███████║   ██║   ██║   ██║███████╗
-██╔══██╗██╔══██║██║  ██║██║██╔══██║██║         ╚════██║   ██║   ██╔══██║   ██║   ██║   ██║╚════██║
-██║  ██║██║  ██║██████╔╝██║██║  ██║███████╗    ███████║   ██║   ██║  ██║   ██║   ╚██████╔╝███████║
-╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═╝╚══════╝    ╚══════╝   ╚═╝   ╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚══════╝
+$$$$$$$\   $$$$$$\  $$$$$$$\  $$$$$$\  $$$$$$\  $$\              $$$$$$\  $$$$$$$$\  $$$$$$\  $$$$$$$$\ $$\   $$\  $$$$$$\  
+$$  __$$\ $$  __$$\ $$  __$$\ \_$$  _|$$  __$$\ $$ |            $$  __$$\ \__$$  __|$$  __$$\ \__$$  __|$$ |  $$ |$$  __$$\ 
+$$ |  $$ |$$ /  $$ |$$ |  $$ |  $$ |  $$ /  $$ |$$ |            $$ /  \__|   $$ |   $$ /  $$ |   $$ |   $$ |  $$ |$$ /  \__|
+$$$$$$$  |$$$$$$$$ |$$ |  $$ |  $$ |  $$$$$$$$ |$$ |            \$$$$$$\     $$ |   $$$$$$$$ |   $$ |   $$ |  $$ |\$$$$$$\  
+$$  __$$< $$  __$$ |$$ |  $$ |  $$ |  $$  __$$ |$$ |             \____$$\    $$ |   $$  __$$ |   $$ |   $$ |  $$ | \____$$\ 
+$$ |  $$ |$$ |  $$ |$$ |  $$ |  $$ |  $$ |  $$ |$$ |            $$\   $$ |   $$ |   $$ |  $$ |   $$ |   $$ |  $$ |$$\   $$ |
+$$ |  $$ |$$ |  $$ |$$$$$$$  |$$$$$$\ $$ |  $$ |$$$$$$$$\       \$$$$$$  |   $$ |   $$ |  $$ |   $$ |   \$$$$$$  |\$$$$$$  |
+\__|  \__|\__|  \__|\_______/ \______|\__|  \__|\________|       \______/    \__|   \__|  \__|   \__|    \______/  \______/ 
 */
 /*Idle status color to white status color*/
 .status-2DiCMd {
@@ -166,15 +220,17 @@
 
 
 /*
-██╗    ██╗ █████╗ ████████╗███████╗██████╗ ███╗   ███╗ █████╗ ██████╗ ██╗  ██╗
-██║    ██║██╔══██╗╚══██╔══╝██╔════╝██╔══██╗████╗ ████║██╔══██╗██╔══██╗██║ ██╔╝
-██║ █╗ ██║███████║   ██║   █████╗  ██████╔╝██╔████╔██║███████║██████╔╝█████╔╝ 
-██║███╗██║██╔══██║   ██║   ██╔══╝  ██╔══██╗██║╚██╔╝██║██╔══██║██╔══██╗██╔═██╗ 
-╚███╔███╔╝██║  ██║   ██║   ███████╗██║  ██║██║ ╚═╝ ██║██║  ██║██║  ██║██║  ██╗
- ╚══╝╚══╝ ╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝
+$$\      $$\  $$$$$$\  $$$$$$$$\ $$$$$$$$\ $$$$$$$\  $$\      $$\  $$$$$$\  $$$$$$$\  $$\   $$\ 
+$$ | $\  $$ |$$  __$$\ \__$$  __|$$  _____|$$  __$$\ $$$\    $$$ |$$  __$$\ $$  __$$\ $$ | $$  |
+$$ |$$$\ $$ |$$ /  $$ |   $$ |   $$ |      $$ |  $$ |$$$$\  $$$$ |$$ /  $$ |$$ |  $$ |$$ |$$  / 
+$$ $$ $$\$$ |$$$$$$$$ |   $$ |   $$$$$\    $$$$$$$  |$$\$$\$$ $$ |$$$$$$$$ |$$$$$$$  |$$$$$  /  
+$$$$  _$$$$ |$$  __$$ |   $$ |   $$  __|   $$  __$$< $$ \$$$  $$ |$$  __$$ |$$  __$$< $$  $$<   
+$$$  / \$$$ |$$ |  $$ |   $$ |   $$ |      $$ |  $$ |$$ |\$  /$$ |$$ |  $$ |$$ |  $$ |$$ |\$$\  
+$$  /   \$$ |$$ |  $$ |   $$ |   $$$$$$$$\ $$ |  $$ |$$ | \_/ $$ |$$ |  $$ |$$ |  $$ |$$ | \$$\ 
+\__/     \__|\__|  \__|   \__|   \________|\__|  \__|\__|     \__|\__|  \__|\__|  \__|\__|  \__|
 */
 div[class*="typeWindows-"]::after {
-  content: '🔮ANOTHER ETERNITY🔮 @PRE-ALPHA V0.5';
+  content: '🔮ANOTHER ETERNITY🔮 v1.0.3';
   font-weight: bold;
   font-style: italic;
   font-size: 14px;
@@ -191,12 +247,14 @@ div[class*="typeWindows-"]::after {
 }
 
 /*
-██████╗  █████╗  ██████╗██╗  ██╗ ██████╗ ██████╗  ██████╗ ██╗   ██╗███╗   ██╗██████╗ ███████╗
-██╔══██╗██╔══██╗██╔════╝██║ ██╔╝██╔════╝ ██╔══██╗██╔═══██╗██║   ██║████╗  ██║██╔══██╗██╔════╝
-██████╔╝███████║██║     █████╔╝ ██║  ███╗██████╔╝██║   ██║██║   ██║██╔██╗ ██║██║  ██║███████╗
-██╔══██╗██╔══██║██║     ██╔═██╗ ██║   ██║██╔══██╗██║   ██║██║   ██║██║╚██╗██║██║  ██║╚════██║
-██████╔╝██║  ██║╚██████╗██║  ██╗╚██████╔╝██║  ██║╚██████╔╝╚██████╔╝██║ ╚████║██████╔╝███████║
-╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝╚═════╝ ╚══════╝
+$$$$$$$\   $$$$$$\   $$$$$$\  $$\   $$\  $$$$$$\  $$$$$$$\   $$$$$$\  $$\   $$\ $$\   $$\ $$$$$$$\   $$$$$$\  
+$$  __$$\ $$  __$$\ $$  __$$\ $$ | $$  |$$  __$$\ $$  __$$\ $$  __$$\ $$ |  $$ |$$$\  $$ |$$  __$$\ $$  __$$\ 
+$$ |  $$ |$$ /  $$ |$$ /  \__|$$ |$$  / $$ /  \__|$$ |  $$ |$$ /  $$ |$$ |  $$ |$$$$\ $$ |$$ |  $$ |$$ /  \__|
+$$$$$$$\ |$$$$$$$$ |$$ |      $$$$$  /  $$ |$$$$\ $$$$$$$  |$$ |  $$ |$$ |  $$ |$$ $$\$$ |$$ |  $$ |\$$$$$$\  
+$$  __$$\ $$  __$$ |$$ |      $$  $$<   $$ |\_$$ |$$  __$$< $$ |  $$ |$$ |  $$ |$$ \$$$$ |$$ |  $$ | \____$$\ 
+$$ |  $$ |$$ |  $$ |$$ |  $$\ $$ |\$$\  $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |\$$$ |$$ |  $$ |$$\   $$ |
+$$$$$$$  |$$ |  $$ |\$$$$$$  |$$ | \$$\ \$$$$$$  |$$ |  $$ | $$$$$$  |\$$$$$$  |$$ | \$$ |$$$$$$$  |\$$$$$$  |
+\_______/ \__|  \__| \______/ \__|  \__| \______/ \__|  \__| \______/  \______/ \__|  \__|\_______/  \______/ 
 */
 .appMount-3lHmkl, body {
   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)) , var(--master-background) 50% 50%/cover !important;
@@ -210,12 +268,14 @@ div[class*="typeWindows-"]::after {
 }
 
 /*
-██████╗ ███████╗██████╗ ███╗   ███╗ █████╗ ███╗   ██╗███████╗███╗   ██╗████████╗
-██╔══██╗██╔════╝██╔══██╗████╗ ████║██╔══██╗████╗  ██║██╔════╝████╗  ██║╚══██╔══╝
-██████╔╝█████╗  ██████╔╝██╔████╔██║███████║██╔██╗ ██║█████╗  ██╔██╗ ██║   ██║   
-██╔═══╝ ██╔══╝  ██╔══██╗██║╚██╔╝██║██╔══██║██║╚██╗██║██╔══╝  ██║╚██╗██║   ██║   
-██║     ███████╗██║  ██║██║ ╚═╝ ██║██║  ██║██║ ╚████║███████╗██║ ╚████║   ██║   
-╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═══╝   ╚═╝   
+$$$$$$$\  $$$$$$$$\ $$$$$$$\  $$\      $$\  $$$$$$\  $$\   $$\ $$$$$$$$\ $$\   $$\ $$$$$$$$\ 
+$$  __$$\ $$  _____|$$  __$$\ $$$\    $$$ |$$  __$$\ $$$\  $$ |$$  _____|$$$\  $$ |\__$$  __|
+$$ |  $$ |$$ |      $$ |  $$ |$$$$\  $$$$ |$$ /  $$ |$$$$\ $$ |$$ |      $$$$\ $$ |   $$ |   
+$$$$$$$  |$$$$$\    $$$$$$$  |$$\$$\$$ $$ |$$$$$$$$ |$$ $$\$$ |$$$$$\    $$ $$\$$ |   $$ |   
+$$  ____/ $$  __|   $$  __$$< $$ \$$$  $$ |$$  __$$ |$$ \$$$$ |$$  __|   $$ \$$$$ |   $$ |   
+$$ |      $$ |      $$ |  $$ |$$ |\$  /$$ |$$ |  $$ |$$ |\$$$ |$$ |      $$ |\$$$ |   $$ |   
+$$ |      $$$$$$$$\ $$ |  $$ |$$ | \_/ $$ |$$ |  $$ |$$ | \$$ |$$$$$$$$\ $$ | \$$ |   $$ |   
+\__|      \________|\__|  \__|\__|     \__|\__|  \__|\__|  \__|\________|\__|  \__|   \__|   
 */
 /*Permanent things that you always see.
 Titlebar top buttons colors. Close, rezise and hide*/
@@ -245,6 +305,20 @@ Titlebar top buttons colors. Close, rezise and hide*/
   background: black !important;
   border: var(--Main-Color);
 }
+.channelTextArea-1VQBuV {
+  background-color: black !important;
+}
+
+/*Upload files button color*/
+/*Stable*/
+.attachButtonPlus-3IYelE {
+  fill: var(--Secondary-Color);
+}
+/*Hover*/
+.attachButtonPlus-3IYelE:hover {
+  fill: var(--Main-Color);
+  color: var(--Main-Color);
+}
 
 /*Atachements*/
 /*Files*/
@@ -268,32 +342,52 @@ Titlebar top buttons colors. Close, rezise and hide*/
   color: var(--Main-Color);
 }
 
-/*Emoji button*/
-.emojiButton-3FRTuj {
-  max-height: 50px;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  color: var(--Main-Color) !important;
-}
 /*Emoji popout*/
 .emojiPickerInExpressionPicker-2nOwH8 .emojiPicker-6YCk8a {
-  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)) , var(--loop-gif5) 50% 100%/cover !important;
+  background: black;
 }
+.contentWrapper-3vHNP2 {
+  padding: 6px;
+  background-color: black;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+/*Header*/
+.emojiPickerInExpressionPicker-2nOwH8 .header-11eigE {
+  padding: 0px 0px 15px;
+  background-color: transparent;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+/*Emoji Category Header*/
+.wrapper-1NNaWG {
+  background-color: black;
+}
+/*Default emoji icons colors*/
+.categoryIcon-2cYeku {
+  color: var(--Third-Color);
+}
+/*Hover/selected default emoji icons colors*/
+/*Hover*/
+.categoryItemDefaultCategorySelected-2YeRUu:hover, .categoryItemDefaultCategorySelected-2YeRUu:hover {
+  color: var(--Main-Color);
+}
+.categoryItemDefaultCategory-3haEDq:hover .categoryIcon-2cYeku {
+  color: var(--Main-Color);
+}
+/*Selected*/
+.categoryItemDefaultCategorySelected-2YeRUu .categoryIcon-2cYeku, .categoryItemDefaultCategorySelected-2YeRUu:hover .categoryIcon-2cYeku {
+  color: var(--Main-Color);
+}
+
 /*Emoji popout FROM message (icon click)*/
 .emojiPicker-6YCk8a {
-  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)) , var(--loop-gif5) 50% 100%/cover !important;
+  background: black;
 }
 /*Sticker & gif popouts*/
 .emojiPickerInExpressionPicker-2nOwH8, .wrapper-1NB3WY, .container-3u7RcY {
-  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)) , var(--loop-gif5) 50% 100%/cover !important;
+  background: transparent;
 }
 /*Gif popout, favorite fade*/
 .theme-dark .categoryFadeBlurple-1l49_Q, .theme-light .categoryFadeBlurple-1l49_Q {
@@ -380,6 +474,8 @@ Titlebar top buttons colors. Close, rezise and hide*/
 .markup-eYLPri code.inline {
   border: none!important;
   box-shadow: none;
+  background-color: var(--Color-5) !important;
+  background: var(--Color-5) !important;
 }
 
 /*Timestamps everywhere*/
@@ -508,30 +604,223 @@ Titlebar top buttons colors. Close, rezise and hide*/
 /*Stable*/
 .button-f2h6uQ .contents-3ca1mk {
   --button--underline-color: transparent;
-  background-image: linear-gradient(0deg,transparent,transparent 1px,var(--button--underline-color) 0,var(--button--underline-color) 2px,transparent 0);
   color: var(--Secondary-Color) !important;
-  text-decoration: none !important;
 }
 /*Hover*/
 .button-f2h6uQ .contents-3ca1mk:hover {
   --button--underline-color: transparent;
-  background-image: linear-gradient(0deg,transparent,transparent 1px,var(--button--underline-color) 0,var(--button--underline-color) 2px,transparent 0);
   color: var(--Main-Color) !important;
-  text-decoration: none !important;
+}
+
+/*#################### Threads ####################*/
+/*Backgrounds*/
+.container-3wLKDe {
+  background-color: transparent !important;
+}
+
+/*Post guidelines button color*/
+/*Stable*/
+.guidelinesButton-3Vrz0u {
+  color: var(--Secondary-Color);
+}
+/*Hover*/
+.guidelinesButton-3Vrz0u:hover {
+  color: var(--Main-Color);
+}
+
+/*Search icon color*/
+.pencilIcon-1d4fcw, .searchIcon-2Nw0OL {
+  color: var(--Secondary-Color);
+}
+
+/*Threads containers*/
+.container-2qVG6q {
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Nitro gifts in dms/channels*/
+/*backgrounds*/
+.scroller-2M3eAB {
+  background: black;
+}
+.breadcrumbsWrapper--2LhnQ {
+  background: black;
+}
+.content-2eQb8J {
+  background: black;
+}
+.wrapper-38Ds8r svg {
+  background: black;
+}
+
+/*Nitro text color*/
+.theme-dark .headerIcon-1ACCh0, .theme-light .closeIcon-3tKOgJ, .theme-light .headerIcon-1ACCh0 {
+  color: var(--Main-Color);
+}
+
+/*You are purchasing a gift text color*/
+.colorSecondary-3_y5BS {
+  color: var(--Main-Color);
+  font-weight: 1000;
+  font-size: medium;
+}
+/*Select plan > Payment > Review text color*/
+.breadcrumb-17S_pr {
+  color: var(--Secondary-Color);
+}
+/*Arrows colors*/
+.breadcrumbArrow-1LY2zF {
+  color: var(--Secondary-Color);
+}
+
+/*Choose one text color*/
+.selectPlanChooseSubtitle-1MPOZK, .selectPlanChooseTitle-2d61LF {
+  color: var(--Main-Color);
+}
+
+/*1 year, 1 month, prices text color*/
+.optionSelected-2AMHHJ {
+  color: var(--Main-Color);
+}
+.planOptionInterval-3QyrC0 {
+  color: var(--Secondary-Color);
+}
+.planOption-187LtR {
+  color: var(--Secondary-Color);
+}
+
+/*Total text color*/
+.totalLabel-2RGUEh {
+  color: var(--Main-Color);
+}
+
+/*Auto complete menu ( /command )*/
+/*Header*/
+.categoryHeader-OpJ1Ly { 
+  background-color: black; 
+}
+/*Build in text color*/
+.header-1XpmZs {
+  color: var(--Main-Color);
+}
+/*small icon color*/
+.icon-1kx1ir {
+  color: var(--Secondary-Color);
+}
+/*big icon color (left one)*/
+.selected-3B2w1z .icon-1kx1ir, .selected-3B2w1z:hover .icon-1kx1ir {
+  color: var(--Main-Color);
+}
+
+/*Keyboard shortcuts modals (ctrl + /)*/
+/*backgrounds*/
+.theme-dark .root-g14mjS, .keyboardShortcutsModal-2CRmCm, .keyboardShortcutList-3VFAYS {
+  background-color: black;
+}
+.auto-2K3UW5.scrollerBase-_bVAAt.fade-1R6FHN {
+  background-color: black;
+}
+.modalTitle-2skSKy {
+  background-color: black;
+  margin: 0 0 0 0;
+}
+
+/*Keyboard combos text color*/
+.modalTitle-2skSKy .content-1i_k8f {
+  color: var(--Main-Color);
+  font-weight: 600;
+}
+/*subtitle text color*/
+.modalSubtitle-2lx7qk {
+  background-color: black;
+  color: var(--Secondary-Color) !important;
+  font-weight: 600;
+}
+
+/*All descriptions*/
+.keyboardShortcutList-3VFAYS .keybindGroup-39HP2U .keybindDescription-oXh6w_ {
+  color: var(--Secondary-Color) !important;
+}
+
+/*CTRL + T popout*/
+/*content color, border, background*/
+.quickswitcher-pKcM9U {
+  width: unset;
+  border: none;
+  border-radius: 0px;
+  padding: 20px 20px 0;
+  box-shadow: none;
+  background-color: none;
+  color: none;
+}
+/*"Where would you like to go?" text color*/
+.input-3r5zZY {
+  border: none;
+  color: var(--Main-Color);
+  background-color: var(--Color-5);
+}
+/*Previous channels headers*/
+.header-1ZpMzy {
+  color: var(--Main-Color);
+}
+/*Previous channels descriptions*/
+/*Icon color*/
+.icon-12xJtb {
+  color: var(--Secondary-Color);
+}
+/*Channel color*/
+.badge-3k1jbq, .match-20K5f5 {
+  color: var(--Secondary-Color);
+}
+/*Category color*/
+.note-OhIxFa {
+  color: var(--Third-Color);
+}
+/*Server name*/
+.misc-XwBATi {
+  color: var(--Secondary-Color);
+}
+
+/*ProTip Padding*/
+.protip-1jXzAl {
+  padding: 1px;
+}
+
+/*#################### Invite modal ####################*/
+.theme-dark .contentWrapper-3oy4Xo {
+  background-color: transparent;
+  border-radius: 15px;
 }
 
 /*
-██╗  ██╗ ██████╗ ███╗   ███╗███████╗
-██║  ██║██╔═══██╗████╗ ████║██╔════╝
-███████║██║   ██║██╔████╔██║█████╗  
-██╔══██║██║   ██║██║╚██╔╝██║██╔══╝  
-██║  ██║╚██████╔╝██║ ╚═╝ ██║███████╗
-╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝
+$$\   $$\  $$$$$$\  $$\      $$\ $$$$$$$$\ 
+$$ |  $$ |$$  __$$\ $$$\    $$$ |$$  _____|
+$$ |  $$ |$$ /  $$ |$$$$\  $$$$ |$$ |      
+$$$$$$$$ |$$ |  $$ |$$\$$\$$ $$ |$$$$$\    
+$$  __$$ |$$ |  $$ |$$ \$$$  $$ |$$  __|   
+$$ |  $$ |$$ |  $$ |$$ |\$  /$$ |$$ |      
+$$ |  $$ | $$$$$$  |$$ | \_/ $$ |$$$$$$$$\ 
+\__|  \__| \______/ \__|     \__|\________|
 */
 /*Friends tab*/
 /*Main container background*/
 .theme-dark .container-2cd8Mz {
   background-color: transparent !important;
+}
+
+/*Friends, nitro tabs and dms colors*/
+/*Stable*/
+.content-66wMin, .name-2m3Cms {
+  color: var(--Third-Color);
+}
+/*Hover*/
+.content-66wMin, .name-2m3Cms:hover {
+  color: var(--Secondary-Color);
+}
+/*Selected*/
+.content-66wMin, .name-2m3Cms[aria-selected=true] {
+  color: var(--Main-Color);
 }
 
 /*Activity cards background "In a voice channel"*/
@@ -645,7 +934,7 @@ Titlebar top buttons colors. Close, rezise and hide*/
 }
 
 /*Friends & Nitro Text Color*/
-.name-2m3Cms {
+/*.name-2m3Cms {
   font-size: 16px;
   line-height: 20px;
   font-weight: 500;
@@ -653,7 +942,7 @@ Titlebar top buttons colors. Close, rezise and hide*/
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
   color: var(--Main-Color) !important;
-}
+}*/
 
 /*Friends Text Color*/
 .title-17SveM {
@@ -684,12 +973,14 @@ Titlebar top buttons colors. Close, rezise and hide*/
 }
 
 /*
-███████╗████████╗██████╗ ███████╗ █████╗ ███╗   ███╗██╗███╗   ██╗ ██████╗ 
-██╔════╝╚══██╔══╝██╔══██╗██╔════╝██╔══██╗████╗ ████║██║████╗  ██║██╔════╝ 
-███████╗   ██║   ██████╔╝█████╗  ███████║██╔████╔██║██║██╔██╗ ██║██║  ███╗
-╚════██║   ██║   ██╔══██╗██╔══╝  ██╔══██║██║╚██╔╝██║██║██║╚██╗██║██║   ██║
-███████║   ██║   ██║  ██║███████╗██║  ██║██║ ╚═╝ ██║██║██║ ╚████║╚██████╔╝
-╚══════╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ 
+ $$$$$$\  $$$$$$$$\ $$$$$$$\  $$$$$$$$\  $$$$$$\  $$\      $$\ $$$$$$\ $$\   $$\  $$$$$$\  
+$$  __$$\ \__$$  __|$$  __$$\ $$  _____|$$  __$$\ $$$\    $$$ |\_$$  _|$$$\  $$ |$$  __$$\ 
+$$ /  \__|   $$ |   $$ |  $$ |$$ |      $$ /  $$ |$$$$\  $$$$ |  $$ |  $$$$\ $$ |$$ /  \__|
+\$$$$$$\     $$ |   $$$$$$$  |$$$$$\    $$$$$$$$ |$$\$$\$$ $$ |  $$ |  $$ $$\$$ |$$ |$$$$\ 
+ \____$$\    $$ |   $$  __$$< $$  __|   $$  __$$ |$$ \$$$  $$ |  $$ |  $$ \$$$$ |$$ |\_$$ |
+$$\   $$ |   $$ |   $$ |  $$ |$$ |      $$ |  $$ |$$ |\$  /$$ |  $$ |  $$ |\$$$ |$$ |  $$ |
+\$$$$$$  |   $$ |   $$ |  $$ |$$$$$$$$\ $$ |  $$ |$$ | \_/ $$ |$$$$$$\ $$ | \$$ |\$$$$$$  |
+ \______/    \__|   \__|  \__|\________|\__|  \__|\__|     \__|\______|\__|  \__| \______/ 
 */
 /*Screen Share Popout*/
 .theme-dark .root-g14mjS {
@@ -702,19 +993,36 @@ Titlebar top buttons colors. Close, rezise and hide*/
 
 /*Applications, Screens Text Color*/
 /*Stable*/
-.theme-dark .selected-2xa993 {
-    color: var(--Third-Color);
-    border-bottom: none !important;
+.item-LN5zvA {
+  cursor: pointer;
+  font-size: 13px;
+  margin-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: var(--Third-Color);
 }
 /*Hover*/
-.theme-dark .selected-2xa993:hover {
-    color: var(--Secondary-Color);
-    border-bottom: none !important;
+.item-LN5zvA:hover {
+  cursor: pointer;
+  font-size: 13px;
+  margin-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: var(--Secondary-Color);
 }
 /*Selected*/
-.theme-dark .selected-2xa993[aria-selected=true] {
-    color: var(--Main-Color);
-    border-bottom: none !important;
+.item-LN5zvA[aria-selected=true] {
+  cursor: pointer;
+  font-size: 13px;
+  margin-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: var(--Main-Color);
+}
+/*Remove border and change box color*/
+.theme-dark .selected-2xa993 {
+  color: var(--Main-Color);
+  border-bottom: none !important;
 }
 
 /*Footer background color*/
@@ -732,26 +1040,50 @@ Titlebar top buttons colors. Close, rezise and hide*/
 
 /*"Sound may not be available..." text color*/
 .text-xs-normal-3SiVjE {
-    font-weight: 400;
+    font-weight: 1000;
     color: var(--Secondary-Color) !important;
+}
+/*Icon Color*/
+.warningIcon-3vNf04 {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  color: var(--Secondary-Color);
 }
 
 /*Stream Quality > Smoother Video Background*/
 .option-2eIyOn[aria-selected=true]:not(.option-2eIyOn.multi-1HXDiv) {
-    color: var(--interactive-active);
-    background-color: black !important;
-    border-color: rgb(var(--Neon-Rgb)) !important;
-    box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+  color: var(--Main-Color);
+  background-color: black !important;
 }
-.popout-1KHNAq {
-    background: black !important;
+/*The icon after selected option color*/
+.selectedIcon-19TbzU {
+  color: var(--Main-Color);
 }
 
 /*Stream in hd resoultion*/
+/*Stable*/
 .gradientBackground-MytxDL {
     background: transparent;
-    border-color: rgb(var(--Neon-Rgb)) !important;
-    box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+    color: var(--Secondary-Color);
+}
+/*Hover*/
+.gradientBackground-MytxDL:hover {
+  background-color: var(--Color-5);
+  color: var(--Secondary-Color);
+}
+
+/*Resolution, Frame Rate text color*/
+/*Stable*/
+.selectorButtonSelected-3cQUnj {
+  background-color: var(--Color-5);
+}
+.selectorButton-3fWZ0_:not(.selectorButtonPremiumRequired-IZXhgV):hover {
+  background-color: var(--Color-4);
+}
+.selectorText-LxivBc {
+  font-weight: 1000;
+  color: var(--Main-Color) !important;
 }
 
 /*Smooter Video, Better text reading, custom options text color*/
@@ -806,28 +1138,10 @@ Titlebar top buttons colors. Close, rezise and hide*/
 }
 
 /*"Notify my friends in this server that I'm streaming" Checkbox color*/
-inputDefault-2F39XG, .inputDisabled-sYasHz {
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    color: var(--Third-Color) !important;
+.theme-dark .checkbox-f1HnKB {
+  border-color: var(--Main-Color);
 }
-.checkboxWrapper-2fDzaA {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    font-size: 16px;
-    max-width: 100%;
-    color: var(--Third-Color) !important;
-}
+
 
 /*Streaming popout preview controls icons colors*/
 .bottomControls-34xgN7 {
@@ -849,12 +1163,14 @@ inputDefault-2F39XG, .inputDisabled-sYasHz {
 }
 
 /*
-███╗   ███╗███████╗███╗   ██╗████████╗██╗ ██████╗ ███╗   ██╗███████╗
-████╗ ████║██╔════╝████╗  ██║╚══██╔══╝██║██╔═══██╗████╗  ██║██╔════╝
-██╔████╔██║█████╗  ██╔██╗ ██║   ██║   ██║██║   ██║██╔██╗ ██║███████╗
-██║╚██╔╝██║██╔══╝  ██║╚██╗██║   ██║   ██║██║   ██║██║╚██╗██║╚════██║
-██║ ╚═╝ ██║███████╗██║ ╚████║   ██║   ██║╚██████╔╝██║ ╚████║███████║
-╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+$$\      $$\ $$$$$$$$\ $$\   $$\ $$$$$$$$\ $$$$$$\  $$$$$$\  $$\   $$\  $$$$$$\  
+$$$\    $$$ |$$  _____|$$$\  $$ |\__$$  __|\_$$  _|$$  __$$\ $$$\  $$ |$$  __$$\ 
+$$$$\  $$$$ |$$ |      $$$$\ $$ |   $$ |     $$ |  $$ /  $$ |$$$$\ $$ |$$ /  \__|
+$$\$$\$$ $$ |$$$$$\    $$ $$\$$ |   $$ |     $$ |  $$ |  $$ |$$ $$\$$ |\$$$$$$\  
+$$ \$$$  $$ |$$  __|   $$ \$$$$ |   $$ |     $$ |  $$ |  $$ |$$ \$$$$ | \____$$\ 
+$$ |\$  /$$ |$$ |      $$ |\$$$ |   $$ |     $$ |  $$ |  $$ |$$ |\$$$ |$$\   $$ |
+$$ | \_/ $$ |$$$$$$$$\ $$ | \$$ |   $$ |   $$$$$$\  $$$$$$  |$$ | \$$ |\$$$$$$  |
+\__|     \__|\________|\__|  \__|   \__|   \______| \______/ \__|  \__| \______/ 
 */
 /*In guild channels*/
 /*Mentioned background (the yellow name)*/
@@ -869,10 +1185,6 @@ inputDefault-2F39XG, .inputDisabled-sYasHz {
 /*Unread mentioned badge after channel in guild*/
 .mentionsBadge-3H1BKJ {
   pointer-events: none;
-}
-.numberBadge-37OJ3S base-3IDx3L baseShapeRound-3epLEv children-1MGS9G {
-  background-color: black !important;
-  width: 16px;
 }
 .base-3IDx3L {
   -webkit-box-sizing: border-box;
@@ -897,12 +1209,14 @@ inputDefault-2F39XG, .inputDisabled-sYasHz {
 }
 
 /*
-██╗   ██╗███████╗███████╗██████╗     ███████╗███████╗████████╗████████╗██╗███╗   ██╗ ██████╗ ███████╗
-██║   ██║██╔════╝██╔════╝██╔══██╗    ██╔════╝██╔════╝╚══██╔══╝╚══██╔══╝██║████╗  ██║██╔════╝ ██╔════╝
-██║   ██║███████╗█████╗  ██████╔╝    ███████╗█████╗     ██║      ██║   ██║██╔██╗ ██║██║  ███╗███████╗
-██║   ██║╚════██║██╔══╝  ██╔══██╗    ╚════██║██╔══╝     ██║      ██║   ██║██║╚██╗██║██║   ██║╚════██║
-╚██████╔╝███████║███████╗██║  ██║    ███████║███████╗   ██║      ██║   ██║██║ ╚████║╚██████╔╝███████║
- ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝    ╚══════╝╚══════╝   ╚═╝      ╚═╝   ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝
+$$\   $$\  $$$$$$\  $$$$$$$$\ $$$$$$$\         $$$$$$\  $$$$$$$$\ $$$$$$$$\ $$$$$$$$\ $$$$$$\ $$\   $$\  $$$$$$\   $$$$$$\  
+$$ |  $$ |$$  __$$\ $$  _____|$$  __$$\       $$  __$$\ $$  _____|\__$$  __|\__$$  __|\_$$  _|$$$\  $$ |$$  __$$\ $$  __$$\ 
+$$ |  $$ |$$ /  \__|$$ |      $$ |  $$ |      $$ /  \__|$$ |         $$ |      $$ |     $$ |  $$$$\ $$ |$$ /  \__|$$ /  \__|
+$$ |  $$ |\$$$$$$\  $$$$$\    $$$$$$$  |      \$$$$$$\  $$$$$\       $$ |      $$ |     $$ |  $$ $$\$$ |$$ |$$$$\ \$$$$$$\  
+$$ |  $$ | \____$$\ $$  __|   $$  __$$<        \____$$\ $$  __|      $$ |      $$ |     $$ |  $$ \$$$$ |$$ |\_$$ | \____$$\ 
+$$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $$ |     $$ |  $$ |\$$$ |$$ |  $$ |$$\   $$ |
+\$$$$$$  |\$$$$$$  |$$$$$$$$\ $$ |  $$ |      \$$$$$$  |$$$$$$$$\    $$ |      $$ |   $$$$$$\ $$ | \$$ |\$$$$$$  |\$$$$$$  |
+ \______/  \______/ \________|\__|  \__|       \______/ \________|   \__|      \__|   \______|\__|  \__| \______/  \______/ 
 */
 /*#################### Page layouts ####################*/
 /*Sidebar layout*/
@@ -978,7 +1292,7 @@ inputDefault-2F39XG, .inputDisabled-sYasHz {
   font-family: var(--font-primary);
   font-size: 16px;
   line-height: 20px;
-  color: var(--Main-Color);
+  color: var(--Main-Color) !important;
 }
 
 /*Reveal buttons*/
@@ -1028,6 +1342,15 @@ inputDefault-2F39XG, .inputDisabled-sYasHz {
   border-color: rgb(var(--Neon-Rgb)) !important;
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
   background: black;
+}
+
+/*Banner color, Color picker popout*/
+.theme-dark .colorPickerCustom-1swUKF {
+  background-color: black;
+  border-radius: 15px;
+  padding: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
 
 /*"About me" text area background*/
@@ -1116,7 +1439,7 @@ inputDefault-2F39XG, .inputDisabled-sYasHz {
   font-family: var(--font-primary);
   font-size: 14px;
   line-height: 18px;
-  color: var(--Secondary-Color);
+  color: var(--Main-Color) !important;
 }
 
 /*Connected accounts name color*/
@@ -1236,7 +1559,6 @@ inputDefault-2F39XG, .inputDisabled-sYasHz {
 .input-2g-os5 {
   color: var(--Main-Color);
   background-color: transparent;
-  border-color: none;
 }
 
 /*#################### Biling ####################*/
@@ -1363,7 +1685,7 @@ inputDefault-2F39XG, .inputDisabled-sYasHz {
 /*#################### Activity privacy ####################*/
 /*Add a new game popout*/
 .theme-dark .addGamePopout-2SKNIV {
-  background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.6)) , var(--background-black-and-white1) 50% 50%/cover !important;
+  background: black !important;
   border-color: rgb(var(--Neon-Rgb));
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
@@ -1375,7 +1697,7 @@ inputDefault-2F39XG, .inputDisabled-sYasHz {
 }
 /*Select background game popout*/
 .popout-1KHNAq {
-  background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.6)) , var(--background-black-and-white1) 50% 50%/cover !important;
+  background: black !important;
 }
 
 /*#################### Activity privacy ####################*/
@@ -1560,12 +1882,14 @@ inputDefault-2F39XG, .inputDisabled-sYasHz {
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
 /*
-███████╗███████╗██████╗ ██╗   ██╗███████╗██████╗     ███████╗███████╗████████╗████████╗██╗███╗   ██╗ ██████╗ ███████╗
-██╔════╝██╔════╝██╔══██╗██║   ██║██╔════╝██╔══██╗    ██╔════╝██╔════╝╚══██╔══╝╚══██╔══╝██║████╗  ██║██╔════╝ ██╔════╝
-███████╗█████╗  ██████╔╝██║   ██║█████╗  ██████╔╝    ███████╗█████╗     ██║      ██║   ██║██╔██╗ ██║██║  ███╗███████╗
-╚════██║██╔══╝  ██╔══██╗╚██╗ ██╔╝██╔══╝  ██╔══██╗    ╚════██║██╔══╝     ██║      ██║   ██║██║╚██╗██║██║   ██║╚════██║
-███████║███████╗██║  ██║ ╚████╔╝ ███████╗██║  ██║    ███████║███████╗   ██║      ██║   ██║██║ ╚████║╚██████╔╝███████║
-╚══════╝╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝╚═╝  ╚═╝    ╚══════╝╚══════╝   ╚═╝      ╚═╝   ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝
+ $$$$$$\  $$$$$$$$\ $$$$$$$\  $$\    $$\ $$$$$$$$\ $$$$$$$\         $$$$$$\  $$$$$$$$\ $$$$$$$$\ $$$$$$$$\ $$$$$$\ $$\   $$\  $$$$$$\   $$$$$$\  
+$$  __$$\ $$  _____|$$  __$$\ $$ |   $$ |$$  _____|$$  __$$\       $$  __$$\ $$  _____|\__$$  __|\__$$  __|\_$$  _|$$$\  $$ |$$  __$$\ $$  __$$\ 
+$$ /  \__|$$ |      $$ |  $$ |$$ |   $$ |$$ |      $$ |  $$ |      $$ /  \__|$$ |         $$ |      $$ |     $$ |  $$$$\ $$ |$$ /  \__|$$ /  \__|
+\$$$$$$\  $$$$$\    $$$$$$$  |\$$\  $$  |$$$$$\    $$$$$$$  |      \$$$$$$\  $$$$$\       $$ |      $$ |     $$ |  $$ $$\$$ |$$ |$$$$\ \$$$$$$\  
+ \____$$\ $$  __|   $$  __$$<  \$$\$$  / $$  __|   $$  __$$<        \____$$\ $$  __|      $$ |      $$ |     $$ |  $$ \$$$$ |$$ |\_$$ | \____$$\ 
+$$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $$ |     $$ |  $$ |\$$$ |$$ |  $$ |$$\   $$ |
+\$$$$$$  |$$$$$$$$\ $$ |  $$ |   \$  /   $$$$$$$$\ $$ |  $$ |      \$$$$$$  |$$$$$$$$\    $$ |      $$ |   $$$$$$\ $$ | \$$ |\$$$$$$  |\$$$$$$  |
+ \______/ \________|\__|  \__|    \_/    \________|\__|  \__|       \______/ \________|   \__|      \__|   \______|\__|  \__| \______/  \______/ 
 */
 /*Sidebar > Category headers ("Guild name", "Community", "User Management") colors*/
 .header-2Kx1US {
@@ -1643,15 +1967,18 @@ inputDefault-2F39XG, .inputDisabled-sYasHz {
 }
 
 /*Upload Image button*/
-.theme-dark .lookOutlined-3yKVGo.colorPrimary-2AuQVo {
-  color: var(--Main-Color);
-  border-color: var(--border2);
-  background-color: transparent !important;
+/*Spotify on*/
+.attachButton-1ijpt9:hover path:not(:last-child){
+  fill: var(--Main-Color);
 }
-.theme-dark .lookOutlined-3yKVGo.colorPrimary-2AuQVo:hover {
-  color: var(--Secondary-Color);
-  border-color: var(--border3);
-  background-color: transparent !important;
+/*Spotify off*/
+.attachButton-1ijpt9:hover path:not(path+path, #a#B){
+  fill: var(--Main-Color);
+}
+
+/*Emoji button color*/
+.emojiButton-3FRTuj:not(:hover)>div>.sprite-2lxwfc{
+  filter: invert(22%) sepia(91%) saturate(3877%) hue-rotate(310deg) brightness(107%) contrast(100%) !important;
 }
 
 /*System messages channel disabled messages*/
@@ -1878,16 +2205,20 @@ inputDefault-2F39XG, .inputDisabled-sYasHz {
 }
 
 /*
- ██████╗ ██╗   ██╗██╗██╗     ██████╗ ███████╗
-██╔════╝ ██║   ██║██║██║     ██╔══██╗██╔════╝
-██║  ███╗██║   ██║██║██║     ██║  ██║███████╗
-██║   ██║██║   ██║██║██║     ██║  ██║╚════██║
-╚██████╔╝╚██████╔╝██║███████╗██████╔╝███████║
- ╚═════╝  ╚═════╝ ╚═╝╚══════╝╚═════╝ ╚══════╝
+ $$$$$$\  $$\   $$\ $$$$$$\ $$\       $$$$$$$\   $$$$$$\  
+$$  __$$\ $$ |  $$ |\_$$  _|$$ |      $$  __$$\ $$  __$$\ 
+$$ /  \__|$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$ /  \__|
+$$ |$$$$\ $$ |  $$ |  $$ |  $$ |      $$ |  $$ |\$$$$$$\  
+$$ |\_$$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ | \____$$\ 
+$$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
+\$$$$$$  |\$$$$$$  |$$$$$$\ $$$$$$$$\ $$$$$$$  |\$$$$$$  |
+ \______/  \______/ \______|\________|\_______/  \______/ 
 */
 /*User popout*/
 .userPopout-2j1gM4 {
   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.6)) , var(--loop-gif2) 50% 50%/cover !important;
+  border-radius: 15px;
+  padding: 5px;
   border-color: rgb(var(--Neon-Rgb)) !important;
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
@@ -1896,6 +2227,10 @@ inputDefault-2F39XG, .inputDisabled-sYasHz {
   background: black !important;
   border-color: rgb(var(--Neon-Rgb));
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+}
+/*User Banner*/
+.popoutBanner-3cqRD9 {
+  border-radius: 5px;
 }
 
 /*Server name color*/
@@ -1939,6 +2274,11 @@ inputDefault-2F39XG, .inputDisabled-sYasHz {
   background: var(--Black) !important;
   border: var(--border1) !important;
   border-radius: 15px;
+}
+
+/*Selected guild pill color*/
+.item-2LIpTv {
+  background-color: var(--Main-Color);
 }
 
 /*Guild Roles*/
@@ -2073,6 +2413,7 @@ inputDefault-2F39XG, .inputDisabled-sYasHz {
 /*Text Color*/
 .text-sm-medium-3Pz3rB, .text-sm-normal-3Zj3Iv {
   font-family: var(--font-primary);
+  font-weight: 1000;
   font-size: 14px;
   line-height: 18px;
   color: var(--Secondary-Color) !important;
@@ -2101,13 +2442,39 @@ inputDefault-2F39XG, .inputDisabled-sYasHz {
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
 
+/*#################### Stream preview ####################*/
+.theme-dark .streamPreview-I7itZ6 {
+  background-color: transparent;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+/*Body and info*/
+.body-2WIpo7 {
+  padding: 10px;
+  background-color: black;
+}
+/*"You are streaming" button background color*/
+.lookFilled-yCfaCM.colorPrimary-2AuQVo {
+  background-color: transparent;
+}
+.lookFilled-yCfaCM.colorPrimary-2AuQVo:disabled {
+  background-color: transparent;
+}
+/*Stream Details*/
+.theme-dark .activityStreamPreview-uBr6hk .activityName-3YXl6e, .theme-dark .activityStreamPreview-uBr6hk .content-tXPNDw, .theme-dark .activityStreamPreview-uBr6hk .details-2-ciHo, .theme-dark .activityStreamPreview-uBr6hk .name-1-Q7l2, .theme-dark .activityStreamPreview-uBr6hk .nameNormal-2fPMD2 {
+  color: var(--Main-Color);
+}
+
 /*
- ██████╗██╗  ██╗ █████╗ ███╗   ██╗███╗   ██╗███████╗██╗     ███████╗
-██╔════╝██║  ██║██╔══██╗████╗  ██║████╗  ██║██╔════╝██║     ██╔════╝
-██║     ███████║███████║██╔██╗ ██║██╔██╗ ██║█████╗  ██║     ███████╗
-██║     ██╔══██║██╔══██║██║╚██╗██║██║╚██╗██║██╔══╝  ██║     ╚════██║
-╚██████╗██║  ██║██║  ██║██║ ╚████║██║ ╚████║███████╗███████╗███████║
- ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═══╝╚══════╝╚══════╝╚══════╝
+ $$$$$$\  $$\   $$\  $$$$$$\  $$\   $$\ $$\   $$\ $$$$$$$$\ $$\        $$$$$$\  
+$$  __$$\ $$ |  $$ |$$  __$$\ $$$\  $$ |$$$\  $$ |$$  _____|$$ |      $$  __$$\ 
+$$ /  \__|$$ |  $$ |$$ /  $$ |$$$$\ $$ |$$$$\ $$ |$$ |      $$ |      $$ /  \__|
+$$ |      $$$$$$$$ |$$$$$$$$ |$$ $$\$$ |$$ $$\$$ |$$$$$\    $$ |      \$$$$$$\  
+$$ |      $$  __$$ |$$  __$$ |$$ \$$$$ |$$ \$$$$ |$$  __|   $$ |       \____$$\ 
+$$ |  $$\ $$ |  $$ |$$ |  $$ |$$ |\$$$ |$$ |\$$$ |$$ |      $$ |      $$\   $$ |
+\$$$$$$  |$$ |  $$ |$$ |  $$ |$$ | \$$ |$$ | \$$ |$$$$$$$$\ $$$$$$$$\ \$$$$$$  |
+ \______/ \__|  \__|\__|  \__|\__|  \__|\__|  \__|\________|\________| \______/ 
 */
 /*Selected channels in guild*/
 /*Text color*/
@@ -2164,9 +2531,29 @@ inputDefault-2F39XG, .inputDisabled-sYasHz {
 
 /*In guild hover on voice channel popout (playing, listening to spotify)*/
 .container-8Futzw {
-  background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.4)) , var(--background-black-and-white1) 50% 50%/cover !important;
+  background: black !important;
   border-color: rgb(var(--Neon-Rgb));
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+}
+/*Channel name color*/
+.text-md-bold-22PzaZ, .text-md-semibold-3xVVGu {
+  color: var(--Main-Color);
+}
+/*Channel icon color*/
+.channelIcon-3Oew8h {
+  color: var(--Main-Color);
+}
+/*People icon color*/
+.peopleIcon-1zv5D6 {
+  color: var(--Main-Color);
+}
+/*Game/software they are streaming*/
+.activityVoiceChannel-2vojOH .activityName-3YXl6e, .activityVoiceChannel-2vojOH .name-1-Q7l2, .activityVoiceChannel-2vojOH .nameNormal-2fPMD2, .activityVoiceChannel-2vojOH .nameWrap-3TyM52 {
+  color: var(--Main-Color);
+}
+/*Details*/
+.activityVoiceChannel-2vojOH .content-tXPNDw, .activityVoiceChannel-2vojOH .details-2-ciHo, .activityVoiceChannel-2vojOH .playTime-3fSgOm, .activityVoiceChannel-2vojOH .state-2NT76I, .activityVoiceChannel-2vojOH .timestamp-2f1NmH {
+  color: var(--Secondary-Color);
 }
 
 /*In guild channel, Roles acces*/
@@ -2230,31 +2617,19 @@ inputDefault-2F39XG, .inputDisabled-sYasHz {
 }
 
 /*
- ██████╗ ██╗   ██╗ █████╗ ██╗     ██╗████████╗██╗   ██╗     ██████╗ ███████╗    ██╗     ██╗███████╗███████╗
-██╔═══██╗██║   ██║██╔══██╗██║     ██║╚══██╔══╝╚██╗ ██╔╝    ██╔═══██╗██╔════╝    ██║     ██║██╔════╝██╔════╝
-██║   ██║██║   ██║███████║██║     ██║   ██║    ╚████╔╝     ██║   ██║█████╗      ██║     ██║█████╗  █████╗  
-██║▄▄ ██║██║   ██║██╔══██║██║     ██║   ██║     ╚██╔╝      ██║   ██║██╔══╝      ██║     ██║██╔══╝  ██╔══╝  
-╚██████╔╝╚██████╔╝██║  ██║███████╗██║   ██║      ██║       ╚██████╔╝██║         ███████╗██║██║     ███████╗
- ╚══▀▀═╝  ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝   ╚═╝      ╚═╝        ╚═════╝ ╚═╝         ╚══════╝╚═╝╚═╝     ╚══════╝
+ $$$$$$\   $$$$$$\  $$\             $$$$$$$$\ $$\   $$\ $$$$$$\ $$\   $$\  $$$$$$\   $$$$$$\  
+$$  __$$\ $$  __$$\ $$ |            \__$$  __|$$ |  $$ |\_$$  _|$$$\  $$ |$$  __$$\ $$  __$$\ 
+$$ /  $$ |$$ /  $$ |$$ |               $$ |   $$ |  $$ |  $$ |  $$$$\ $$ |$$ /  \__|$$ /  \__|
+$$ |  $$ |$$ |  $$ |$$ |               $$ |   $$$$$$$$ |  $$ |  $$ $$\$$ |$$ |$$$$\ \$$$$$$\  
+$$ |  $$ |$$ |  $$ |$$ |               $$ |   $$  __$$ |  $$ |  $$ \$$$$ |$$ |\_$$ | \____$$\ 
+$$ $$\$$ |$$ |  $$ |$$ |               $$ |   $$ |  $$ |  $$ |  $$ |\$$$ |$$ |  $$ |$$\   $$ |
+\$$$$$$ /  $$$$$$  |$$$$$$$$\          $$ |   $$ |  $$ |$$$$$$\ $$ | \$$ |\$$$$$$  |\$$$$$$  |
+ \___$$$\  \______/ \________|         \__|   \__|  \__|\______|\__|  \__| \______/  \______/ 
+     \___|
 */
 /*Rounded Context Popouts (by Lonk#6942)*/
 .menu-1QACrS, .colorDefault-CDqZdO { 
   border-radius: 15px; 
-}
-
-/*Messages Slide In Chat (by Lonk#6942)*/
-@keyframes slide-up {
-  0% {
-      opacity: 0;
-      transform: translateX(20px);
-  }
-  100% {
-      opacity: 1;
-      transform: translateX(0px);
-  }
-}
-.message-2CShn3 {
-animation: slide-up 0.5s ease;
 }
 
 /*Blur spolier text instead of hiding it (by rye.#3861)*/
@@ -2268,33 +2643,7 @@ animation: slide-up 0.5s ease;
   pointer-events: unset;
 }
 
-/*
-███╗   ██╗ ██████╗ ████████╗███████╗███████╗
-████╗  ██║██╔═══██╗╚══██╔══╝██╔════╝██╔════╝
-██╔██╗ ██║██║   ██║   ██║   █████╗  ███████╗
-██║╚██╗██║██║   ██║   ██║   ██╔══╝  ╚════██║
-██║ ╚████║╚██████╔╝   ██║   ███████╗███████║
-╚═╝  ╚═══╝ ╚═════╝    ╚═╝   ╚══════╝╚══════╝
-*/
-/*
-Border color full script
-  border-color: rgb(var(--Neon-Rgb)) !important;
-  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
-*/
-
-/*
-Color corrections
-Stable = Third Color                -
-Hover = Secondary Color             :hover
-Selected = Main Color               [aria-selected=true]
-*/
-
-/*
-Remove underline from text
-text-decoration: none;
-*/
-
-/*
-Nice fade background color
-background-color: hsla(0,calc(var(--saturation-factor, 1)*0%),100%,.06);
-*/
+/*Fix for nonsense text flickering*/
+html, span:not(.spinner-item) {
+  backface-visibility: hidden;
+}
