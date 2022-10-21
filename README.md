@@ -5,15 +5,6 @@
 ### There is another world, another place that everyone can visit...
 ![PreviewImage](https://github.com/xy-nyxy/AnotherEternity/blob/main/preview/Preview1.png)
 
-# ⚠️DISCLAIMER⚠️
-
-</div>
-
-<h3 align="center">The theme is still in alpha developement state. Please be patient while I fix and add new features.</h3>
-<h3 align="center">Thanks for understanding.</h3>
-
-<div align="center">
-
 # 🌠Informations🌠
 
 </div>
@@ -40,5 +31,3 @@ After downloading the theme, add it to our BetterDiscord themes folder, then hea
 ### What is the current status about the theme?
 
 > Current status: Working on fixes, adding new features, recreating the scripts and solving problems.
-
-> Current version: ALPHA V0.5
