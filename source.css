@@ -21,10 +21,12 @@ $$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
   --White-Second: rgb(175, 175, 175); /*white but gray color*/
   --Red-color: rgb(255,0,0); /*red color*/
   --Neon-Line: 150,0,150; /*master neon color*/
-  --Neon-Rgb: var(--Neon-Line); /*neon node*/
+  --Neon-Line2: 255,0,0; /*red neon line*/
+  --Neon-Rgb: var(--Neon-Line); /*neon node #1*/
+  --Neon-Rgb2: var(--Neon-Line2); /*red noen node #2*/
   --Cards-Background-Color: rgb(63, 0, 64);/*darker cards color*/
   /*Backgrounds*/
-  --master-background: url('https://media.discordapp.net/attachments/1031596095882674197/1031607463469912225/happy-halloween-pumpkin-img-3840x2160.jpg?width=1246&height=701'); /*master background*/
+  --master-background: url('https://github.com/xy-nyxy/AnotherEternity/blob/main/background/Master%20Background.png?raw=true'); /*master background*/
   --background-floating: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)) , var(--master-background)50% 50%/cover !important; /*background used in normal discord's code*/
   --background-black-and-white1: url('https://inspirationfeed.com/wp-content/uploads/2018/12/lou-batier-365323-unsplash-768x512.jpg'); /*background 3*/
   --background-black-and-white2: url('https://inspirationfeed.com/wp-content/uploads/2018/12/martin-sattler-160751-unsplash-768x575.jpg'); /*background 4*/
@@ -230,7 +232,7 @@ $$  /   \$$ |$$ |  $$ |   $$ |   $$$$$$$$\ $$ |  $$ |$$ | \_/ $$ |$$ |  $$ |$$ |
 \__/     \__|\__|  \__|   \__|   \________|\__|  \__|\__|     \__|\__|  \__|\__|  \__|\__|  \__|
 */
 div[class*="typeWindows-"]::after {
-  content: '🔮ANOTHER ETERNITY🔮 v1.0.3';
+  content: '🔮ANOTHER ETERNITY🔮 v1.0.4';
   font-weight: bold;
   font-style: italic;
   font-size: 14px;
@@ -578,6 +580,16 @@ Titlebar top buttons colors. Close, rezise and hide*/
   background-color: transparent;
 }
 
+/*Message buttons*/
+/*Stable*/
+.button-3bklZh {
+  color: var(--Third-Color);
+}
+/*Hover*/
+.button-3bklZh:hover {
+  color: var(--Main-Color);
+}
+
 /*User popout cards*/
 .focusLock-2tveLW, .root-g14mjS {
   display: -webkit-box;
@@ -592,6 +604,44 @@ Titlebar top buttons colors. Close, rezise and hide*/
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
 
+/*Member since icon color*/
+.discordIcon-32mgeP {
+  color: var(--Secondary-Color);
+}
+
+/*Spotify activity (by & on) text color*/
+/*by*/
+.detailsWrap-omKn0b, .nameWrap-3TyM52 {
+  color: var(--Main-Color);
+  font-weight: 900;
+}
+/*on*/
+.details-2-ciHo, .nameNormal-2fPMD2, .playTime-3fSgOm, .state-2NT76I, .timestamp-2f1NmH {
+  color: var(--Main-Color);
+  font-weight: 900;
+}
+/*Song lenght bar*/
+.bar-1GpknY {
+  border-color: var(--Main-Color);
+  color: var(--Main-Color);
+  background-color: var(--Third-Color);
+}
+.themed-1LCNAV .barInner-3dHef4 {
+  background-color: var(--Main-Color);
+}
+/*Song lenght*/
+.themed-1LCNAV .textLeft-1Noen0, .themed-1LCNAV .textRight-2IW704 {
+  color: var(--Main-Color);
+  font-weight: 900;
+}
+.activityName-3YXl6e, .nameNormal-2fPMD2, .nameWrap-3TyM52 {
+  color: var(--Main-Color) !important;
+}
+.details-2-ciHo, .nameNormal-2fPMD2, .playTime-3fSgOm, .state-2NT76I, .timestamp-2f1NmH {
+  color: var(--Main-Color) !important;
+}
+
+
 /*User popout cards, fix "User info, Activity border-bottom"*/
 .top-K_jibn .selected-g-kMVV.themed-2-lozF.item-3XjbnG, .top-K_jibn .themed-2-lozF.item-3XjbnG:active {
   border-bottom: none;
@@ -605,11 +655,28 @@ Titlebar top buttons colors. Close, rezise and hide*/
 .button-f2h6uQ .contents-3ca1mk {
   --button--underline-color: transparent;
   color: var(--Secondary-Color) !important;
+  border-radius: 15px;
 }
 /*Hover*/
 .button-f2h6uQ .contents-3ca1mk:hover {
   --button--underline-color: transparent;
   color: var(--Main-Color) !important;
+  border-radius: 15px;
+}
+/*Change phone number? and Remove email button*/
+/*Stable*/
+.theme-dark .lookLink-15mFoz.colorPrimary-2AuQVo {
+  border: 1px var(--button-outline-danger-border) solid;
+  border-radius: 15px;
+  margin-left: 10px;
+}
+/*Hover*/
+.theme-dark .lookLink-15mFoz.colorPrimary-2AuQVo:hover {
+  text-decoration: none !important;
+  background-color: transparent !important;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb2)) !important;
+  box-shadow: inset 0px 0px 1px 1px rgb(var(--Neon-Rgb2)), 0px 0px 15px 1px rgb(var(--Neon-Rgb2)) !important;
 }
 
 /*#################### Threads ####################*/
@@ -637,6 +704,29 @@ Titlebar top buttons colors. Close, rezise and hide*/
 .container-2qVG6q {
   border-color: rgb(var(--Neon-Rgb)) !important;
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Create new thread from message*/
+/*Icon color when container opened*/
+.icon-382itv {
+  color: var(--Main-Color);
+}
+
+/*Thread background*/
+.scrollerInner-22scD4 {
+  background-color: transparent;
+}
+.container-3XgAHv {
+  background-color: black;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Thread input name container area*/
+.inputWrapper-1YNMmM {
+  border-radius: 15px;
+  background-color: var(--Color-5);
 }
 
 /*Nitro gifts in dms/channels*/
@@ -824,11 +914,37 @@ $$ |  $$ | $$$$$$  |$$ | \_/ $$ |$$$$$$$$\
 }
 
 /*Activity cards background "In a voice channel"*/
-.theme-dark .inset-SbsSFp {
-  background-color: var(--Cards-Background-Color) !important;
+/*Stable*/
+.wrapper-2RrXDg {
+  background-color: transparent;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
+/*Hover*/
+.wrapper-2RrXDg:hover {
+  background: none !important;
+}
+/*Selected*/
 .theme-dark .outer-2JOHae.active-1W_Gl9, .theme-dark .outer-2JOHae.interactive-2zD88a:hover {
-  background-color: var(--Cards-Background-Color) !important;
+  background: none !important;
+}
+
+/*Server name, channel name, friend icon card background*/
+.section-3G9aLW {
+  background-color: var(--Color-5);
+}
+
+/*Add friend border card*/
+.addFriendInputWrapper-kkoSV9 {
+  background-color: var(--Color-5);
+  border: none;
+  border-radius: 15px;
+}
+.addFriendInput-1Ta-rO {
+  background-color: transparent;
+  border: none;
+  color: var(--Main-Color);
+  margin-right: 16px;
 }
 
 /*It's quiet from now message*/
@@ -933,17 +1049,6 @@ $$ |  $$ | $$$$$$  |$$ | \_/ $$ |$$$$$$$$\
   color: var(--Main-Color) !important;
 }
 
-/*Friends & Nitro Text Color*/
-/*.name-2m3Cms {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  color: var(--Main-Color) !important;
-}*/
-
 /*Friends Text Color*/
 .title-17SveM {
   -webkit-box-pack: start;
@@ -971,6 +1076,40 @@ $$ |  $$ | $$$$$$  |$$ | \_/ $$ |$$$$$$$$\
   white-space: nowrap;
   color: var(--Main-Color) !important;
 }
+
+/*#################### Invite modal ####################*/
+.modal-atz_3z {
+  border-radius: 15px !important;
+}
+/*Header*/
+.theme-dark .separator-2lLxgC {
+  border-radius: 15px;
+}
+/*Middle*/
+.scroller-3nFW5p {
+  border-radius: 15px;
+}
+/*Footer*/
+.theme-dark .footer-1hTRRZ {
+  background: transparent;
+  border-radius: 15px;
+}
+
+/*Channel icon (before channel name)*/
+.channelIcon-2x-GOw {
+  color: var(--Main-Color);
+}
+/*Copy button size*/
+.copyButton-2k4drX {
+  margin-right: 2px;
+  margin-left: 8px;
+}
+
+/*Learn more text*/
+.anchor-1MIwyf {
+  font-weight: 800;
+}
+
 
 /*
  $$$$$$\  $$$$$$$$\ $$$$$$$\  $$$$$$$$\  $$$$$$\  $$\      $$\ $$$$$$\ $$\   $$\  $$$$$$\  
@@ -1260,15 +1399,15 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 /*Remove 2FA, Delete Account buttons colors*/
 /*Stable*/
 .lookOutlined-3yKVGo.colorRed-rQXKgM {
-  color: var(--Main-Color);
-  border-color: rgb(var(--Neon-Rgb)) !important;
-  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+  background-color: transparent !important;
+  border-radius: 15px;
 }
 /*Hover*/
 .lookOutlined-3yKVGo.colorRed-rQXKgM:hover {
-  color: var(--Red-Color);
-  border-color: rgb(var(--Red-Color)) !important;
-  box-shadow: inset 0px 0px 5px 1px rgb(var(--Red-Color)), 0px 0px 15px 4px rgb(var(--Red-Color)) !important;
+  background-color: transparent !important;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb2)) !important;
+  box-shadow: inset 0px 0px 1px 1px rgb(var(--Neon-Rgb2)), 0px 0px 15px 1px rgb(var(--Neon-Rgb2)) !important;
 }
 
 /*Name, Email, Phone Number Buttons Colors*/
@@ -1276,21 +1415,27 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 .lookFilled-yCfaCM.colorPrimary-2AuQVo {
   color: var(--Secondary-Color);
   background-color: transparent;
-  border-color: rgb(var(--Neon-Rgb)) !important;
-  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+  border-radius: 15px;
+  border: 1px var(--Main-Color) solid;
 }
 /*Hover*/
 .lookFilled-yCfaCM.colorPrimary-2AuQVo:hover {
   color: var(--Main-Color);
   background-color: transparent;
+  border-radius: 15px;
   border-color: rgb(var(--Neon-Rgb)) !important;
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+.lookFilled-yCfaCM.colorPrimary-2AuQVo:disabled {
+  background-color: transparent;
+  border-radius: 15px;
 }
 
 /*Username, Email, Phone Number (not the titles, the contents) text colors*/
 .text-md-medium-2avxhQ, .text-md-normal-304U3g {
   font-family: var(--font-primary);
   font-size: 16px;
+  font-weight: 900;
   line-height: 20px;
   color: var(--Main-Color) !important;
 }
@@ -1318,20 +1463,27 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 }
 /*Selected*/
 .top-K_jibn .item-3XjbnG[aria-selected=true] {
-  border-color: rgb(var(--Neon-Rgb)) !important;
+  border-radius: 15px;
+  border: rgb(var(--Neon-Rgb)) !important;
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
-  border-bottom: none !important;
   text-decoration: none !important;
   color: var(--Main-Color);
+  padding: 5px 10px 5px 10px;
 }
-/*No underline*/
-.theme-dark .lookLink-15mFoz.colorPrimary-2AuQVo:hover {
-  text-decoration: none !important;
+.tabBar-2hXqzU, .tabBarItem-30Te4- {
+  padding: 10px;
 }
 /*Buttons size*/
 .tabBarItem-MeqDhW {
   padding: 10px !important;
   margin-right: 0px;
+}
+
+/*Preview banners*/
+.profileBannerPreview-3mLIdO {
+  background-color: black;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
 
 /*Nitro tab profile view*/
@@ -1385,13 +1537,14 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 /*Normal*/
 .lookOutlined-3yKVGo.colorBrand-I6CyqQ {
   color: var(--Secondary-Color);
-  border-color: rgb(var(--Neon-Rgb));
-  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+  border: none !important;
+  border-radius: 15px;
 }
 /*Hover*/
 .lookOutlined-3yKVGo.colorBrand-I6CyqQ:hover {
   background-color: transparent;
   color: var(--Main-Color);
+  border-radius: 15px;
   border-color: rgb(var(--Neon-Rgb));
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
@@ -1857,29 +2010,32 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 /*Check for updates buttons*/
 /*Stable*/
 .bd-button {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
   background-color: transparent;
   color: var(--Main-Color);
-  border-radius: 3px;
+  border-radius: 15px;
   padding: 4px 8px;
   transition: background-color .17s ease,color .17s ease,opacity 250ms ease;
-  border-color: rgb(var(--Neon-Rgb)) !important;
-  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+  border: 1px var(--Main-Color) solid;
 }
 /*Hover*/
 .bd-button:hover {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
   background-color: transparent;
   color: var(--Secondary-Color);
-  border-radius: 3px;
-  padding: 4px 8px;
-  transition: background-color .17s ease,color .17s ease,opacity 250ms ease;
+  border-radius: 15px;
+  transition: none;
   border-color: rgb(var(--Neon-Rgb)) !important;
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*BD-addon list, disease theme script fix transparent background*/
+.bd-addon-card:hover .bd-description-wrap, .bd-addon-card:hover {
+  background-color: black;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+/*Description color*/
+.bd-addon-list .bd-description {
+  color: var(--Secondary-Color);
 }
 /*
  $$$$$$\  $$$$$$$$\ $$$$$$$\  $$\    $$\ $$$$$$$$\ $$$$$$$\         $$$$$$\  $$$$$$$$\ $$$$$$$$\ $$$$$$$$\ $$$$$$\ $$\   $$\  $$$$$$\   $$$$$$\  
@@ -1933,11 +2089,13 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 /*Server overview*/
 .defaultColor-2cKwKo {
   color: var(--Main-Color);
+  font-weight: 800;
 }
 
 /*All titles ("Server name", "Inactive channel", "Inactive timeout", "System message channel", "Default notification settings", "Server banned background lvl2", "Server invite background lvl1")*/
 .h5-2RwDNl {
   color: var(--Main-Color);
+  font-weight: 900;
 }
 
 /*All disabled dropdowns*/
@@ -1974,6 +2132,11 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 /*Spotify off*/
 .attachButton-1ijpt9:hover path:not(path+path, #a#B){
   fill: var(--Main-Color);
+}
+
+/*Nitro, gif, Stickers icons*/
+.active-z80xEj .buttonWrapper-3YFQGJ, .buttonWrapper-3YFQGJ:hover {
+  color: var(--Main-Color);
 }
 
 /*Emoji button color*/
@@ -2044,14 +2207,15 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 /*Normal*/
 .lookFilled-yCfaCM.colorBrand-I6CyqQ {
   color: var(--Main-Color);
+  border: 1px var(--Main-Color) solid;
   background-color: transparent !important;
-  border-color: rgb(var(--Neon-Rgb));
-  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+  border-radius: 15px;
 }
 /*Hover*/
 .lookFilled-yCfaCM.colorBrand-I6CyqQ:hover {
   color: var(--Secondary-Color);
   background-color: transparent !important;
+  border-radius: 15px;
   border-color: rgb(var(--Neon-Rgb));
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
@@ -2176,17 +2340,21 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 /*background*/
 /*normal*/
 .lookFilled-yCfaCM.colorRed-rQXKgM {
-  background-color: transparent;
-  border-color: rgb(var(--Neon-Rgb));
-  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+  background-color: transparent !important;
+  border: 1px solid red;
+  border-radius: 15px;
+  border-color:  var(--button-outline-danger-border);
 }
+.lookFilled-yCfaCM.colorRed-rQXKgM:hover {
+  background-color: transparent;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb2)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb2)), 0px 0px 15px 4px rgb(var(--Neon-Rgb2)) !important;
+}
+/*hover*/
 /*text normal*/
 .contents-3ca1mk {
   color: var(--Main-Color) !important;
-}
-/*background hover*/
-.lookFilled-yCfaCM.colorRed-rQXKgM:hover {
-  background-color: var(--Main-Color);
 }
 /*text hover*/
 .contents-3ca1mk:hover {
@@ -2245,6 +2413,15 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
   opacity: .9;
   border: solid 2px var(--Secondary-Color);
   border-radius: 15px; 
+}
+/*Unread pill in chat*/
+.unreadPill-3nEWYM {
+  color: var(--Main-Color);
+  background-color: var(--Color-4);
+}
+.unreadPillCapStroke-1nE1Q8 {
+  color: var(--Color-4) !important;
+  fill: var(--Color-4) !important;
 }
 /*Metioned*/
 .mention-3XBnnZ {
@@ -2454,13 +2631,6 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
   padding: 10px;
   background-color: black;
 }
-/*"You are streaming" button background color*/
-.lookFilled-yCfaCM.colorPrimary-2AuQVo {
-  background-color: transparent;
-}
-.lookFilled-yCfaCM.colorPrimary-2AuQVo:disabled {
-  background-color: transparent;
-}
 /*Stream Details*/
 .theme-dark .activityStreamPreview-uBr6hk .activityName-3YXl6e, .theme-dark .activityStreamPreview-uBr6hk .content-tXPNDw, .theme-dark .activityStreamPreview-uBr6hk .details-2-ciHo, .theme-dark .activityStreamPreview-uBr6hk .name-1-Q7l2, .theme-dark .activityStreamPreview-uBr6hk .nameNormal-2fPMD2 {
   color: var(--Main-Color);
@@ -2588,31 +2758,10 @@ $$ |  $$\ $$ |  $$ |$$ |  $$ |$$ |\$$$ |$$ |\$$$ |$$ |      $$ |      $$\   $$ |
 
 /*In guilds channel, message options icons colors*/
 .wrapper-2vIMkT {
-  background-color: transparent !important;
-  -webkit-box-shadow: var(--elevation-stroke);
-  box-shadow: var(--elevation-stroke);
-  display: grid;
-  grid-auto-flow: column;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  height: 32px;
-  border-radius: 4px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-transition: -webkit-box-shadow .1s ease-out;
-  transition: -webkit-box-shadow .1s ease-out;
-  transition: box-shadow .1s ease-out;
-  transition: box-shadow .1s ease-out,-webkit-box-shadow .1s ease-out;
-  position: relative;
-  overflow: hidden;
+  background-color: transparent;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
   color: var(--Secondary-Color) !important;
 }
 
