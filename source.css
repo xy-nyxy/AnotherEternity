@@ -235,7 +235,7 @@ $$  /   \$$ |$$ |  $$ |   $$ |   $$$$$$$$\ $$ |  $$ |$$ | \_/ $$ |$$ |  $$ |$$ |
 \__/     \__|\__|  \__|   \__|   \________|\__|  \__|\__|     \__|\__|  \__|\__|  \__|\__|  \__|
 */
 div[class*="typeWindows-"]::after {
-  content: '🔮ANOTHER ETERNITY🔮 v1.0.4';
+  content: '🔮ANOTHER ETERNITY🔮 v1.0.5';
   font-weight: bold;
   font-style: italic;
   font-size: 14px;
@@ -348,8 +348,11 @@ Titlebar top buttons colors. Close, rezise and hide*/
 }
 
 /*Emoji popout*/
-.emojiPickerInExpressionPicker-2nOwH8 .emojiPicker-6YCk8a {
+.emojiPickerInExpressionPicker-2nOwH8 .emojiPicker-6YCk8a, .wrapper-3u51GQ {
   background: black;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
 .contentWrapper-3vHNP2 {
   padding: 6px;
@@ -357,6 +360,10 @@ Titlebar top buttons colors. Close, rezise and hide*/
   border-radius: 15px;
   border-color: rgb(var(--Neon-Rgb)) !important;
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+/*Little fix for background*/
+.list-obNEuP, .emojiPicker-6YCk8a {
+  background-color: transparent !important;
 }
 /*Header*/
 .emojiPickerInExpressionPicker-2nOwH8 .header-11eigE {
@@ -727,14 +734,6 @@ Titlebar top buttons colors. Close, rezise and hide*/
   color: var(--Secondary-Color);
 }
 
-.body-hCVwsC {
-  background-color: white;
-}
-
-.body-hCVwsC.hasUnreads-3kKLnS {
-  background-color: red;
-}
-
 /*Create new thread from message*/
 /*Icon color when container opened*/
 .icon-382itv {
@@ -904,6 +903,38 @@ Titlebar top buttons colors. Close, rezise and hide*/
 /*ProTip Padding*/
 .protip-1jXzAl {
   padding: 1px;
+}
+
+/*"Careful -- You have unsaved changes!" popout*/
+.container-20TyK0 {
+  background-color: black !important;
+  width: 2000px;
+  position: static !important;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+/*Message color*/
+.theme-dark .message-3C6JQ1 {
+  color: var(--Main-Color) !important;
+}
+
+/*RTC status popout*/
+.container-1ILvLB {
+  background-color: black;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+/*Text color*/
+.popoutText-3NRmTw {
+  color: var(--Main-Color);
+}
+.popoutText-3NRmTw.popoutTextDetails-zNomhC {
+  color: var(--Third-Color);
+}
+/*Secure connection color*/
+.secured-2wavXv {
+  color: var(--Main-Color);
 }
 
 /*#################### Invite modal ####################*/
@@ -1139,6 +1170,45 @@ $$ |  $$ | $$$$$$  |$$ | \_/ $$ |$$$$$$$$\
   font-weight: 800;
 }
 
+/*Public servers icon*/
+.avatar-1HDIsL {
+  color: var(--Main-Color);
+}
+
+/*Search input color*/
+.bd-search {
+  color: var(--Main-Color);
+}
+
+/*Pagination color*/
+.bd-pagination span {
+  color: var(--Main-Color);
+}
+
+/*Server cards*/
+/*Stable*/
+.bd-server-card {
+  border: 1px var(--Main-Color) solid;
+  background-color: black !important;
+}
+/*Hover*/
+.bd-server-card:hover {
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Server name, description colors*/
+.bd-server-name {
+  color: var(--Main-Color);
+}
+.bd-server-description {
+  color: var(--Secondary-Color);
+}
+
+/*Members, added date colors*/
+.bd-server-count-text {
+  color: var(--Secondary-Color);
+}
 
 /*
  $$$$$$\  $$$$$$$$\ $$$$$$$\  $$$$$$$$\  $$$$$$\  $$\      $$\ $$$$$$\ $$\   $$\  $$$$$$\  
@@ -1427,6 +1497,7 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 /*All text descriptions (Two-Factor authentificator (2FA)... & Add your phone number... & Your current phone number... & Disabling your account...) Text Colors*/
 .description-30xx7u, .labelDescriptor-34wZ-z {
   color: var(--Secondary-Color) !important;
+  padding-left: 15px;
 }
 /*Two factor authentificator icon color*/
 .userSettingsSecurity-2kODPN .lockIcon-3t6Ow0 {
@@ -2185,10 +2256,6 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
 
-/*Photo description*/
-.description-30xx7u, .labelDescriptor-34wZ-z {
-  color: var(--Main-Color);
-}
 /*Change icon text color*/
 .imageUploaderInner-IIRaFr:focus-within .imageUploaderHint-33zkjZ, .imageUploaderInner-IIRaFr:hover .imageUploaderHint-33zkjZ {
   color: var(--Main-Color);
@@ -2214,17 +2281,6 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
   border-color: rgb(var(--Neon-Rgb)) !important;
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
-
-/*
-$$\      $$\  $$$$$$\  $$\    $$\ $$$$$$$$\ 
-$$$\    $$$ |$$  __$$\ $$ |   $$ |$$  _____|
-$$$$\  $$$$ |$$ /  $$ |$$ |   $$ |$$ |      
-$$\$$\$$ $$ |$$ |  $$ |\$$\  $$  |$$$$$\    
-$$ \$$$  $$ |$$ |  $$ | \$$\$$  / $$  __|   
-$$ |\$  /$$ |$$ |  $$ |  \$$$  /  $$ |      
-$$ | \_/ $$ | $$$$$$  |   \$  /   $$$$$$$$\ 
-\__|     \__| \______/     \_/    \________|
-*/
 
 /*Display*/
 /*Show boost progress bar*/
@@ -3184,6 +3240,76 @@ $$ |  $$\ $$ |  $$ |$$ |  $$ |$$ |\$$$ |$$ |\$$$ |$$ |      $$ |      $$\   $$ |
   border-color: rgb(var(--Neon-Rgb)) !important;
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
   color: var(--Secondary-Color) !important;
+}
+
+/*#################### Channel Permissions #########################*/
+/*Header category color*/
+.lineClamp1-1iDPU7 {
+  color: var(--Secondary-Color) !important;
+}
+
+/*########## Permissions ##########*/
+/*Private Channel icon color*/
+.cardIcon-2nTUq4 {
+  color: var(--Main-Color);
+}
+
+/*Advanced permissions*/
+/*Page layout*/
+.sidebarScrollable-2mW9Ls+.content-2ssVKB {
+  margin-left: 232px;
+  max-width: 2000px;
+}
+
+/*Permission name header*/
+.horizontal-112GEH>.flex-2S1XBF:first-child, .horizontal-112GEH>.flexChild-3PzYmX:first-child {
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+/*Buttons colors*/
+.passthrough--fbdFR.selected-3jieYB {
+  background-color: var(--Third-Color);
+  border-radius: 5px;
+}
+/*Buttons padding*/
+.group-LWHoGI {
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+/*After clicking the + icon, popout*/
+.theme-dark .autocompleteArrow-jJE9TQ, .theme-dark .autocompleteShadow-2nfsSy {
+  background-color: black; 
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+/*Header*/
+.container-1S70rv .header-3i_Csh {
+  background-color: transparent;
+}
+/*"Add" text color*/
+.container-1S70rv .headerText-27z-EV {
+  color: var(--Main-Color);
+}
+/*input text color*/
+.theme-dark .container-1S70rv .input-2lpFVz {
+  color: var(--Secondary-Color);
+}
+
+/*"Roles, Members" headers, sections colors*/
+.empty-3J6aBo, .section-3PvCGN {
+  color: var(--Main-Color);
+}
+
+/*No results text color*/
+.empty-3J6aBo p {
+  color: var(--Main-Color) !important;
+}
+
+/*Rest container*/
+.container-1S70rv .sectionTag-28mLyE {
+  background-color: transparent;
 }
 
 /*
