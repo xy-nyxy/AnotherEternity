@@ -38,9 +38,9 @@ $$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
   --loop-gif5: url('https://64.media.tumblr.com/998b664cb9fd89a155b3b105dbdc9a09/808262fefad64e38-9c/s500x750/5f09d008c448b11092d119bf69d0751e08d79631.gifv');  /*Used in emoji, sticker, gif, nitro, pinned messages and left click on dm in friends tab*/
   --loop-gif-diamond: url('https://giffiles.alphacoders.com/143/14390.gif');                                                                                    /*Used on home icon*/
   /*Borders*/
-  --border1: 2px solid var(--Secondary-Color);                          /*master border*/
-  --border2: 2px solid var(--Third-Color);                              /*border 2*/
-  --border3: 2px solid rgb(90,0,150);                                 /*border 3*/
+  --border1: 2px solid var(--Secondary-Color); /*master border*/
+  --border2: 2px solid var(--Third-Color); /*border 2*/
+  --border3: 2px solid rgb(90,0,150); /*border 3*/
   
   /*Others variables*/
   /*Radial status*/
@@ -197,6 +197,9 @@ $$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
 	--brand-experiment-90a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.9);
 	--brand-experiment-95a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.95);
 }
+
+/*Bold font EVERYWHERE*/
+*{font-weight: 900 !important}
 
 /*
 $$$$$$$\   $$$$$$\  $$$$$$$\  $$$$$$\  $$$$$$\  $$\              $$$$$$\  $$$$$$$$\  $$$$$$\  $$$$$$$$\ $$\   $$\  $$$$$$\  
@@ -396,7 +399,11 @@ Titlebar top buttons colors. Close, rezise and hide*/
   background-color: transparent;
 }
 
-/*Nitro gift popout*/ /*Still need to work for the buttons and other things*/
+/*Nitro gift popout*/
+.spinner-3QeLKO {
+  border-radius: 15px;
+  background-color: var(--Black);
+}
 
 /*Pinned messages popout*/
 .messagesPopoutWrap-3zryHW {
@@ -482,9 +489,9 @@ Titlebar top buttons colors. Close, rezise and hide*/
 
 /*Timestamps everywhere*/
 .content-3spvdd {
-  color: var(--text-muted);
+  color: var(--Main-Color) !important;
   background: black;
-  border: var(--border2);
+  border: var(--border2) !important;
   padding: 3px;
 }
 .divider-2rZFJK {
@@ -701,9 +708,31 @@ Titlebar top buttons colors. Close, rezise and hide*/
 }
 
 /*Threads containers*/
+/*Stable*/
 .container-2qVG6q {
+  border: 1px var(--Main-Color) solid;
+  transition: none !important;
+  transform: none !important;
+}
+/*Hover*/
+.container-2qVG6q:hover {
+  transition: none !important;
+  transform: none !important;
   border-color: rgb(var(--Neon-Rgb)) !important;
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Threads tags text colors*/
+.text-xs-bold-1NF1lz, .text-xs-semibold-3E_l31 {
+  color: var(--Secondary-Color);
+}
+
+.body-hCVwsC {
+  background-color: white;
+}
+
+.body-hCVwsC.hasUnreads-3kKLnS {
+  background-color: red;
 }
 
 /*Create new thread from message*/
@@ -1130,6 +1159,17 @@ $$\   $$ |   $$ |   $$ |  $$ |$$ |      $$ |  $$ |$$ |\$  /$$ |  $$ |  $$ |\$$$ 
     box-shadow: inset 0px 0px 2px 1px rgb(var(--Neon-Rgb)), 0px 0px 5px 1px rgb(var(--Neon-Rgb));
 }
 
+/*Screen share popout border*/
+/*Stable*/
+.theme-dark .elevationHigh-3KUiqj, .pictureInPictureVideo-2puO2Q {
+  border: 1px var(--Main-Color) solid;
+  border-radius: 15px;
+}
+.theme-dark .elevationHigh-3KUiqj:hover, .pictureInPictureVideo-2puO2Q:hover {
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 2px 1px rgb(var(--Neon-Rgb)), 0px 0px 5px 1px rgb(var(--Neon-Rgb));
+}
+
 /*Applications, Screens Text Color*/
 /*Stable*/
 .item-LN5zvA {
@@ -1232,22 +1272,24 @@ $$\   $$ |   $$ |   $$ |  $$ |$$ |      $$ |  $$ |$$ |\$  /$$ |  $$ |  $$ |\$$$ 
 }
 /*Hover*/
 .option-2eIyOn:hover {
-    color: var(--Secondary-Color) !important;
+  color: var(--Secondary-Color) !important;
+  background-color: var(--Color-5);
+  border-radius: 15px !important;
 }
 /*Selected*/
 .option-2eIyOn[aria-selected=true] {
-    color: var(--Main-Color) !important;
+  color: var(--Main-Color) !important;
 }
 
 /*Screen 1 text color*/
 .ellipsisText-1-5iVA {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    max-width: 100%;
-    font-weight: 500;
-    margin-right: 8px;
-    color: var(--Third-Color) !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+  font-weight: 500;
+  margin-right: 8px;
+  color: var(--Third-Color) !important;
 }
 /*Icon Color*/
 .selectedIcon-277z4I {
@@ -1592,7 +1634,7 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
   font-family: var(--font-primary);
   font-size: 14px;
   line-height: 18px;
-  color: var(--Main-Color) !important;
+  color: var(--Secondary-Color) !important;
 }
 
 /*Connected accounts name color*/
@@ -1844,13 +1886,15 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 }
 /*"Select" background card*/
 .lookFilled-1GseHa.select-1Ia3hD {
-  background-color: transparent;
-  border-color: rgb(var(--Neon-Rgb));
-  box-shadow: inset 0px 0px 2px 1px rgb(var(--Neon-Rgb)), 0px 0px 5px 1px rgb(var(--Neon-Rgb));
+  background-color: var(--Color-5);
+  border-radius: 15px;
 }
 /*Select background game popout*/
 .popout-1KHNAq {
   background: black !important;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
 
 /*#################### Activity privacy ####################*/
@@ -2064,7 +2108,6 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 /*When sub-category selected > border and color*/
 .brand-3g5E0C.item-3XjbnG, .themed-2-lozF.item-3XjbnG[aria-selected=true] {
   color: var(--Main-Color);
-  border-left: 0px;
 }
 
 /*Server boost status color text and background*/
@@ -2101,96 +2144,192 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 /*All disabled dropdowns*/
 .select-1Ia3hD, .wrapper-1b33hy {
   color: var(--Secondary-Color);
+  border: none;
 }
 
 /*All sub dropdowns*/
 .colorStandard-21JIj7 {
   color: var(--Secondary-Color);
+  border: none;
+}
+
+/*Icons sub dropdowns*/
+/*Stable*/
+.icon-poPImO {
+  color: var(--Secondary-Color) !important;
+}
+
+/*Category name color*/
+/*Stable*/
+.subtitle-2SfoOV {
+  color: var(--Third-Color);
 }
 
 /*Remove button under the photo*/
+/*Stable*/
 .removeButton-2apMfV {
-  color: var(--Main-Color);
+  color: var(--Secondary-Color) !important;
+  background-color: transparent !important;
+  border-radius: 15px !important;
+  border: 1px var(--Main-Color) solid;
+  padding: 10px 10px 10px 10px;
+  margin-left: 210px;
+  margin-right: 210px;
 }
+/*Hover*/
 .removeButton-2apMfV:hover {
-  color: var(--Secondary-Color);
+  color: var(--Main-Color) !important;
+  background-color: transparent !important;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
 
 /*Photo description*/
 .description-30xx7u, .labelDescriptor-34wZ-z {
-  color: var(--White-Second);
-  padding: 0px !important;
-  width: unset;
-  position: static;
+  color: var(--Main-Color);
+}
+/*Change icon text color*/
+.imageUploaderInner-IIRaFr:focus-within .imageUploaderHint-33zkjZ, .imageUploaderInner-IIRaFr:hover .imageUploaderHint-33zkjZ {
+  color: var(--Main-Color);
+}
+/*Image uploader icon color*/
+.theme-dark .imageUploaderIcon-2OHmFu {
+  background-color: var(--Secondary-Color);
 }
 
 /*Upload Image button*/
-/*Spotify on*/
-.attachButton-1ijpt9:hover path:not(:last-child){
-  fill: var(--Main-Color);
+/*Stable*/
+.lookOutlined-3yKVGo.colorPrimary-2AuQVo {
+  color: var(--Secondary-Color) !important;
+  background-color: transparent !important;
+  border-radius: 15px !important;
+  border: 1px var(--Main-Color) solid;
 }
-/*Spotify off*/
-.attachButton-1ijpt9:hover path:not(path+path, #a#B){
-  fill: var(--Main-Color);
-}
-
-/*Nitro, gif, Stickers icons*/
-.active-z80xEj .buttonWrapper-3YFQGJ, .buttonWrapper-3YFQGJ:hover {
-  color: var(--Main-Color);
-}
-
-/*Emoji button color*/
-.emojiButton-3FRTuj:not(:hover)>div>.sprite-2lxwfc{
-  filter: invert(22%) sepia(91%) saturate(3877%) hue-rotate(310deg) brightness(107%) contrast(100%) !important;
+/*Hover*/
+.lookOutlined-3yKVGo.colorPrimary-2AuQVo:hover {
+  color: var(--Main-Color) !important;
+  background-color: transparent !important;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
 
-/*System messages channel disabled messages*/
-.title-2dsDLn {
-  color: var(--Secondary-Color);
-}
+/*
+$$\      $$\  $$$$$$\  $$\    $$\ $$$$$$$$\ 
+$$$\    $$$ |$$  __$$\ $$ |   $$ |$$  _____|
+$$$$\  $$$$ |$$ /  $$ |$$ |   $$ |$$ |      
+$$\$$\$$ $$ |$$ |  $$ |\$$\  $$  |$$$$$\    
+$$ \$$$  $$ |$$ |  $$ | \$$\$$  / $$  __|   
+$$ |\$  /$$ |$$ |  $$ |  \$$$  /  $$ |      
+$$ | \_/ $$ | $$$$$$  |   \$  /   $$$$$$$$\ 
+\__|     \__| \______/     \_/    \________|
+*/
 
-/*Default notification settings, circle buttons*/
-.radioIconForeground-2BMavi {
-  color: var(--Secondary-Color);
-}
-/*"All messages", "Only @mentions" text color*/
-.title-1yyp9V {
-  color: var(--Secondary-Color);
-}
-
-/*Display > Show boost progress bar*/
+/*Display*/
+/*Show boost progress bar*/
 .colorInteractiveActive-30E9n8 {
   color: var(--Secondary-Color);
 }
 
-/*"Server banner background", "Server invite background", "Unlock with boosting" buttons color*/
-/*Normal*/
-.lookFilled-yCfaCM.colorGreen-3y-Z79 {
-  color: var(--Main-Color);
-  background-color: var(--Third-Color);
+/*Server Banner backgrounds*/
+.avatarUploaderInnerSquareDisabled-3M9eJS {
+  background-color: black;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
-/*Hover*/
-.lookFilled-yCfaCM.colorGreen-3y-Z79:hover {
-  color: var(--Secondary-Color);
-  background-color: var(--Color-4);
+
+/*"Unlock with boosting" buttons colors*/
+/*Stable*/
+.shinyButton-2Q9MDB {
+  background-color: transparent !important;
+  color: transparent !important;
+  border-radius: 15px;
+  border: 1px var(--Main-Color) solid;
+}
+.shinyButton-2Q9MDB:hover {
+  background-color: transparent !important;
+  color: transparent !important;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
 
 /* #################### Roles #################### */
-/*The descriptions under "Roles", "Search Roles"*/
-.colorHeaderSecondary-g5teka {
-  color: var(--Secondary-Color);
+/*Page layout*/
+.customScroller-m1-jZn>div {
+  margin-right: 40px;
+  max-width: 2000px;
 }
-/*Default Permissions, icon and description*/
+
+/*Default Permissions*/ 
+/*Icon color*/
 .icon-2DGsye {
   color: var(--Secondary-Color);
 }
-/*"Default permissions" text*/
-.label-2Pe5f1 {
+/*Card background*/
+/*Stable*/
+.container-3EtAkD {
+  background-color: var(--Black);
+  border-radius: 15px;
+  border: 1px var(--Main-Color) solid;
+}
+/*Hover*/
+.container-3EtAkD:hover {
+  background-color: var(--Black);
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Roles & Members margins*/
+.rolesTable-11lOYY {
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 0px;
+}
+
+/*Roles cards*/
+/*Stable*/
+.roleRow-230vCm {
+  border-radius: 15px;
+  margin: 5px;
+  border: 1px var(--Main-Color) solid;
+}
+/*Hover*/
+.roleRow-230vCm:hover {
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Roles cards > members count > icon color*/
+/*Stable*/
+.person-2z4Mcy {
   color: var(--Secondary-Color);
 }
-/*"@everyone * applies to all server members" text*/
-.size12-oc4dx4 {
+/*Hover*/
+.person-2z4Mcy:hover {
   color: var(--Secondary-Color);
+}
+
+/*Roles cards > "Edit and More" icons colors*/
+.roleRow-230vCm:hover:not(.roleRowDisableHover-3En0vy) .circleButton-2Yr5A1 {
+  color: var(--Main-Color);
+}
+
+/*Drag icon color*/
+.dragIcon-2L691r {
+  color: var(--Secondary-Color);
+}
+.dragIcon-2L691r:hover {
+  color: var(--Main-Color);
+}
+
+/*Search roles container background*/
+.container-2oNtJn, .inner-2pOSmK {
+  background-color: var(--Color-5);
+  border-radius: 15px;
 }
 
 /*The arrow icon*/
@@ -2221,32 +2360,97 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 }
 
 /* ########## Roles > Default permissions tab ########## */
-/*Back button*/
+/*Page layout*/
+/*Edit role container*/
+.contentWidth-3aWel5 {
+  max-width: 1500px;
+}
+/*Scrollers overflow*/
+.scroller-39BnzZ {
+  overflow: hidden;
+}
+
+/*Back button and arrow color*/
 /*Normal*/
 .title-JU0E7C {
-  color: var(--Main-Color);
+  color: var(--Secondary-Color);
 }
 /*Hover*/
 .title-JU0E7C:hover {
-  color: var(--Secondary-Color);
+  color: var(--Main-Color);
 }
 
 /*Create new role "+" icon*/
 .addRole-viKZpC {
+  color: var(--Secondary-Color);
+}
+.addRole-viKZpC:hover {
   color: var(--Main-Color);
 }
 
-/*The container for edit role, display, permissions, manager members, edit role and the 3 dots*/
+/*Roles list*/
+/*Stable*/
+.row-LoqnA5 {
+  color: var(--Secondary-Color);
+  margin-bottom: 10px !important;
+}
+/*Hover*/
+.row-LoqnA5:hover {
+  color: var(--Main-Color);
+  border: 1px var(--Main-Color) solid;
+  border-radius: 15px;
+}
+/*Selected*/
+.row-LoqnA5[aria-selected=true] {
+  color: var(--Main-Color);
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Edit role container*/
 .header-JUTO-g {
-  background-color: var(--Black);
+  background-color: black;
+  height: 240px;
+  margin-top: 60px;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
 
-/*Edit role <role-name>*/
+/*"Edit Role" text color*/
 .titleText-35PD5k {
-  color: var(--Main-Color);
+  color: var(--Main-Color) !important;
+  margin-left: 10px;
 }
 
-/*The 3 dots, the menu*/
+/*Display, permissions, manage members tab tar margin fix*/
+.tabBar-3DfKkN {
+  height: 60px;
+  margin: 5px !important;
+  margin-left: 15px;
+}
+/*Display, permissions, manage members colors and margins fix*/
+/*Stable*/
+.tabBarItem-3nPo4Z {
+  color: var(--Secondary-Color) !important;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 19px;
+  padding-bottom: 0px;
+  margin: 0px 20px 0px 20px !important;
+}
+/*Hover*/
+.tabBarItem-3nPo4Z:hover {
+  color: var(--Main-Color) !important;
+}
+/*Selected*/
+.tabBarItem-3nPo4Z[aria-selected=true] {
+  padding: 19px 10px 10px 10px !important;
+  margin: 0px 20px 0px 20px !important;
+}
+
+/*Edit role > Options menu (The 3 dots) color*/
 .menu-2p630X {
   color: var(--Main-Color);
 }
@@ -2255,11 +2459,23 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 /*Normal*/
 .lookOutlined-3yKVGo.colorWhite-1H92hK {
   color: var(--Main-Color);
-  border: var(--border2);
+  border: 1px var(--Main-Color) solid;
+  border-radius: 15px;
 }
 .lookOutlined-3yKVGo.colorWhite-1H92hK:hover {
   color: var(--Secondary-Color);
-  border: var(--border3);
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Image preview icon color*/
+.preview-3SR4Rd {
+  color: var(--Main-Color);
+}
+/*Image preview border*/
+.previewContainer-1GxmBJ {
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
 
 /*View server as role button*/
@@ -2276,18 +2492,50 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
   border: var(--border3);
 }
 
+/*Manage members list*/
+/*Stable*/
+.memberRow-1FhJgR {
+  background-color: black;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px var(--Main-Color) solid;
+}
+/*Hover*/
+.memberRow-1FhJgR:hover {
+  background-color: black;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Remove member icon color*/
+/*Stable*/
+.removeButton-JGNeoQ {
+  color: var(--Secondary-Color);
+}
+/*Hover*/
+.removeButton-JGNeoQ:hover {
+  color: var(--Main-Color);
+}
+
 /* #################### Stickers tab #################### */
+
 /*Get boosted card background*/
+/*Stable*/
 .upsellContainer-22N_CL {
-  background-color: transparent !important;
-  background: transparent !important;
+  background: black !important;
+  border-radius: 15px;
+  border: 1px var(--Main-Color) solid;
+}
+/*Hover*/
+.upsellContainer-22N_CL:hover {
+  background: black !important;
+  border-radius: 15px;
   border-color: rgb(var(--Neon-Rgb));
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
-/*Get boosted card description under "Get boosted"*/
-.upsellDescription-2O_p3B {
- color: var(--White-Second);
-}
+
 /*Both buttons backgrounds*/
 /*normal*/
 .lookFilled-yCfaCM.colorWhite-1H92hK {
@@ -2304,61 +2552,146 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 
 /*Level cards (1,2,3)*/
 /*border*/
+/*Stable*/
 .tier-3CS7-p {
+  border-radius: 15px;
+  border: 1px var(--Main-Color) solid;
+}
+/*Hover*/
+.tier-3CS7-p:hover {
+  border-radius: 15px;
   border-color: rgb(var(--Neon-Rgb));
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
-/*top tier header*/
+
+/*All tiers headers*/
+.theme-dark .tierHeaderLocked-30MLlO, .theme-dark .tierHeaderUnlocked-1OpOLf {
+  background-color: black !important;
+  border-radius: 15px;
+}
+
+/*Buy level buttons*/
+/*Stable*/
+.lookFilled-yCfaCM.colorGreen-3y-Z79 {
+  background-color: transparent !important;
+  border-radius: 15px;
+  border: 1px var(--Main-Color) solid;
+}
+/*Hover*/
+.lookFilled-yCfaCM.colorGreen-3y-Z79:hover {
+  background-color: transparent !important;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+}
+
+/*Top tier header*/
 .theme-dark .tierHeaderLocked-30MLlO {
   background-color: transparent;
 }
-/*second tier body (middle)*/
+
+/*Second tier body (middle)*/
 .theme-dark .tierBody-1d3UiS {
   background-color: transparent;
 }
 
-/* #################### Widgets tab #################### */
-.theme-dark .copyInputDefault-3jiMHw {
+/*"Boost server & Learn more" buttons colors*/
+/*Stable*/
+.lookFilled-yCfaCM.colorWhite-1H92hK {
   background-color: transparent;
+  border-radius: 15px;
+  border: 1px var(--Main-Color) solid;
+}
+/*Hover*/
+.lookFilled-yCfaCM.colorWhite-1H92hK:hover {
+  background-color: transparent;
+  border-radius: 15px;
   border-color: rgb(var(--Neon-Rgb));
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
 
-/* #################### Community tab #################### */
-/*"Are you building a community?" text colors*/
-.wrapper-1HSdhi {
-  margin: 0;
+/*Boosts required to level up text and icon color*/
+.tierRequirement-7q3_7-, .tierLock-1eabw6 {
   color: var(--Main-Color);
 }
-/*"Grow your community", "Keep members engaged", "Stay informed" text colors*/
-.base-21yXnu {
-  font-weight: 600;
-  font-family: var(--font-display);
-  color: var(--Main-Color);
-}
-/*"Disable community" button*/
-/*background*/
-/*normal*/
-.lookFilled-yCfaCM.colorRed-rQXKgM {
-  background-color: transparent !important;
-  border: 1px solid red;
-  border-radius: 15px;
-  border-color:  var(--button-outline-danger-border);
-}
-.lookFilled-yCfaCM.colorRed-rQXKgM:hover {
+
+/* #################### Widgets tab #################### */
+/*Server id, json api, premade widget borders colors*/
+.theme-dark .copyInputDefault-3jiMHw {
   background-color: transparent;
   border-radius: 15px;
-  border-color: rgb(var(--Neon-Rgb2)) !important;
-  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb2)), 0px 0px 15px 4px rgb(var(--Neon-Rgb2)) !important;
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
-/*hover*/
-/*text normal*/
-.contents-3ca1mk {
-  color: var(--Main-Color) !important;
+
+/*#################### Server Template tab ####################*/
+/*Templates descriptions and what u get, text color*/
+.descriptionRow-1UPN0d {
+  color: var(--Main-Color);
 }
-/*text hover*/
-.contents-3ca1mk:hover {
-  color: var(--White) !important;
+
+/*#################### Custom invite link tab ####################*/
+
+/*#################### Integrations tab ####################*/
+/*Webhooks, channel followed, bots and apps headers colors */
+.secondaryHeader-1sJsuH {
+  color: var(--Main-Color);
+}
+/*Icons colors*/
+.icon-3TvnqF, .detailsIcon-2NtTO9 {
+  color: var(--Main-Color);
+}
+
+/*#################### Safety setup tab ####################*/
+
+/*#################### Audit log tab ####################*/
+/*Filter by user, filter by action padding fix*/
+.quickSelect-i8mQq1 {
+  padding-right: 50px;
+}
+/*Exit button padding*/
+.container-O54IuJ {
+  padding-left: 60px;
+}
+
+/*Audit log containers*/
+/*Stable*/
+.theme-dark .headerClickable-zGQJz3, .theme-dark .headerDefault-1e6yjj, .header-2pgFQm, .headerClickable-zGQJz3, .headerExpanded-1-zwDr, .auditLog-1NVAY0 {
+  background-color: black;
+  border-radius: 15px !important;
+  border: 1px var(--Main-Color) solid;
+}
+/*Hover*/
+.theme-dark .headerClickable-zGQJz3:hover, .theme-dark .headerDefault-1e6yjj:hover, .header-2pgFQm:hover, .headerClickable-zGQJz3:hover, .headerExpanded-1-zwDr:hover, .auditLog-1NVAY0:hover {
+  border-radius: 15px !important;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+/*Audit log action color (header)*/
+.overflowEllipsis-BfHznL {
+  color: var(--Main-Color);
+}
+/*What user did, action color*/
+.theme-dark .auditLog-1NVAY0 strong {
+  color: var(--Third-Color);
+}
+.changeStr--UjBBu, .overflowEllipsis-BfHznL, .subListItem-3B43Tg {
+  color: var(--Main-Color);
+}
+
+/*#################### Bans tab ####################*/
+
+/* #################### Community tab #################### */
+
+/* #################### Server boost status tab #################### */
+/*Nitro card below*/
+.tier2-qNjKTW {
+  background-image: none !important;
+  background-color: black !important;
+}
+/*Nitro title, icons colors*/
+.tier2Title-8gwAVr, .icon-2iprHa {
+  color: var(--Main-Color);
 }
 
 /* #################### Members tab #################### */
@@ -2370,6 +2703,61 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 .quickSelectValue-rmtkbe {
   margin-left: 4px;
   color: var(--Main-Color);
+}
+
+/*Members cards*/
+/*Stable*/
+.member-2cj2PI {
+  background-color: black;
+  border-radius: 15px;
+  border: 1px var(--Main-Color) solid;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+/*Hover*/
+.member-2cj2PI:hover {
+  background-color: black;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/* #################### Invites tab #################### */
+/*Invites card*/
+/*Stable*/
+.inviteSettingsInviteRow-FAjfDN {
+  color: var(--Main-Color);
+  background-color: black;
+  border-radius: 15px;
+  border: 1px var(--Main-Color) solid;
+}
+/*Hover*/
+.inviteSettingsInviteRow-FAjfDN:hover {
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Content, margin for user photo*/
+.horizontal-112GEH>.flex-2S1XBF:first-child, .horizontal-112GEH>.flexChild-3PzYmX:first-child {
+  margin-left: 5px;
+}
+
+/* #################### Delete Server #################### */
+/*Delete server button color*/
+/*Stable*/
+.lookFilled-yCfaCM.colorRed-rQXKgM {
+  background-color: transparent !important;
+  border-radius: 15px;
+  border: 1px var(--button-outline-danger-border) solid;
+  margin-left: 10px;
+}
+/*Hover*/
+.lookFilled-yCfaCM.colorRed-rQXKgM:hover {
+  background-color: transparent !important;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb2)) !important;
+  box-shadow: inset 0px 0px 1px 1px rgb(var(--Neon-Rgb2)), 0px 0px 15px 1px rgb(var(--Neon-Rgb2)) !important;
 }
 
 /*
@@ -2393,6 +2781,7 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
 /*Add more roles popout after clicking the +*/
 .container-2O1UgZ {
   background: black !important;
+  border-radius: 15px !important;
   border-color: rgb(var(--Neon-Rgb));
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
@@ -2636,6 +3025,30 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
   color: var(--Main-Color);
 }
 
+/*Nitro, gif, Stickers icons*/
+.active-z80xEj .buttonWrapper-3YFQGJ, .buttonWrapper-3YFQGJ:hover {
+  color: var(--Main-Color);
+}
+
+/*Emoji button color*/
+.emojiButton-3FRTuj:not(:hover)>div>.sprite-2lxwfc{
+  filter: invert(22%) sepia(91%) saturate(3877%) hue-rotate(310deg) brightness(107%) contrast(100%) !important;
+}
+
+/*System messages channel disabled messages*/
+.title-2dsDLn {
+  color: var(--Secondary-Color);
+}
+
+/*Default notification settings, circle buttons*/
+.radioIconForeground-2BMavi {
+  color: var(--Secondary-Color);
+}
+/*"All messages", "Only @mentions" text color*/
+.title-1yyp9V {
+  color: var(--Secondary-Color);
+}
+
 /*
  $$$$$$\  $$\   $$\  $$$$$$\  $$\   $$\ $$\   $$\ $$$$$$$$\ $$\        $$$$$$\  
 $$  __$$\ $$ |  $$ |$$  __$$\ $$$\  $$ |$$$\  $$ |$$  _____|$$ |      $$  __$$\ 
@@ -2705,6 +3118,14 @@ $$ |  $$\ $$ |  $$ |$$ |  $$ |$$ |\$$$ |$$ |\$$$ |$$ |      $$ |      $$\   $$ |
   border-color: rgb(var(--Neon-Rgb));
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
+/*Spotify on*/
+.attachButton-1ijpt9:hover path:not(:last-child){
+  fill: var(--Main-Color);
+}
+/*Spotify off*/
+.attachButton-1ijpt9:hover path:not(path+path, #a#B){
+  fill: var(--Main-Color);
+}
 /*Channel name color*/
 .text-md-bold-22PzaZ, .text-md-semibold-3xVVGu {
   color: var(--Main-Color);
@@ -2749,7 +3170,7 @@ $$ |  $$\ $$ |  $$ |$$ |  $$ |$$ |\$$$ |$$ |\$$$ |$$ |      $$ |      $$\   $$ |
 
 /*Channel name "Welcome to [channel_name]"*/
 .defaultColor-HXu-5n {
-  color: var(--Main-Color) !important;
+  color: var(--Secondary-Color) !important;
 }
 /*"This is the start of the [channel_name] channel." text color*/
 .description-22d6ux {
