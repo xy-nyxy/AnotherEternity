@@ -28,15 +28,11 @@ $$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
   /*Backgrounds*/
   --master-background: url('https://github.com/xy-nyxy/AnotherEternity/blob/main/background/Master%20Background.png?raw=true'); /*master background*/
   --background-floating: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)) , var(--master-background)50% 50%/cover !important; /*background used in normal discord's code*/
-  --background-black-and-white1: url('https://inspirationfeed.com/wp-content/uploads/2018/12/lou-batier-365323-unsplash-768x512.jpg'); /*background 3*/
-  --background-black-and-white2: url('https://inspirationfeed.com/wp-content/uploads/2018/12/martin-sattler-160751-unsplash-768x575.jpg'); /*background 4*/
   /*Gifs for popouts and stuff*/
-  --loop-gif: url('https://c.tenor.com/2oQwi7vJz9wAAAAC/loop-space.gif');                                                                                       /*Used in files background*/
-  --loop-gif2: url('https://64.media.tumblr.com/16314eedf67c43cc5cb711ffe8c0b08e/22caaa59656e483e-b3/s640x960/7f706f80fb11b3390532fea23ffca444a6f3ea32.gifv');  /*Used in guild popouts > User popout*/
-  --loop-gif3: url('https://i.pinimg.com/originals/d5/a7/cb/d5a7cb46e2f15a8fed10aaf1dd00965c.gif');                                                             /*Used in message area input*/
-  --loop-gif4: url('https://64.media.tumblr.com/8da032603a2ff3343c32833d7959e7bc/tumblr_p61tzgchCN1qeyvpto1_500.gifv');                                         /*Used in guild popouts > Mentioned card*/
-  --loop-gif5: url('https://64.media.tumblr.com/998b664cb9fd89a155b3b105dbdc9a09/808262fefad64e38-9c/s500x750/5f09d008c448b11092d119bf69d0751e08d79631.gifv');  /*Used in emoji, sticker, gif, nitro, pinned messages and left click on dm in friends tab*/
-  --loop-gif-diamond: url('https://giffiles.alphacoders.com/143/14390.gif');                                                                                    /*Used on home icon*/
+  --loop-gif: url('https://github.com/xy-nyxy/AnotherEternity/blob/main/background/loop-gif.gif?raw=true'); /*Used in files background*/
+  --loop-gif2: url('https://github.com/xy-nyxy/AnotherEternity/blob/main/background/loop-gif2.gif?raw=true'); /*Used in guild popouts > User popout*/
+  --loop-gif3: url('https://github.com/xy-nyxy/AnotherEternity/blob/main/background/loop-gif3.gif?raw=true'); /*Used in guild popouts > Mentioned card*/
+  --loop-gif-diamond: url('https://github.com/xy-nyxy/AnotherEternity/blob/main/background/loop-gif-diamond.gif?raw=true'); /*Used on home icon*/
   /*Borders*/
   --border1: 2px solid var(--Secondary-Color); /*master border*/
   --border2: 2px solid var(--Third-Color); /*border 2*/
@@ -44,22 +40,21 @@ $$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
   
   /*Others variables*/
   /*Radial status*/
-  --rs-small-spacing: 0px; /* Gap between avatar and status for members list/dms | MUST end in px */
-  --rs-medium-spacing: 0.1px; /* Gap between avatar and status for User popout | MUST end in px */
-  --rs-large-spacing: 0px; /* Gap between avatar and status for User profiles | MUST end in px */
-  --rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
-  --rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
-  --rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
-  --rs-avatar-shape: 50%; /* 50% for round - 0% for square */
-  --rs-online-color: #21df00; /* Colour for online status */
-  --rs-idle-color: #ffffff; /* Colour for idle status */
-  --rs-dnd-color: #ee0000; /* Colour for dnd status */
-  --rs-offline-color: #636b75; /* Colour for offline status */
-  --rs-streaming-color: #b300fa; /* Colour for streaming status */
-  --rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
-  --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
-  /*edited only this one below*/
-  --rs-phone-visible: none; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+  --rs-small-spacing: 0px;
+  --rs-medium-spacing: 0.1px;
+  --rs-large-spacing: 0px;
+  --rs-small-width: 2px;
+  --rs-medium-width: 3px;
+  --rs-large-width: 4px;
+  --rs-avatar-shape: 50%;
+  --rs-online-color: #21df00;
+  --rs-idle-color: #ffffff;
+  --rs-dnd-color: #ee0000;
+  --rs-offline-color: #636b75;
+  --rs-streaming-color: #b300fa;
+  --rs-invisible-color: #747f8d;
+  --rs-phone-color: var(--rs-online-color);
+  --rs-phone-visible: none;
 }
 /*Discord's global variables copy-paste and edited*/
 .theme-dark, .theme-light {
@@ -235,7 +230,7 @@ $$  /   \$$ |$$ |  $$ |   $$ |   $$$$$$$$\ $$ |  $$ |$$ | \_/ $$ |$$ |  $$ |$$ |
 \__/     \__|\__|  \__|   \__|   \________|\__|  \__|\__|     \__|\__|  \__|\__|  \__|\__|  \__|
 */
 div[class*="typeWindows-"]::after {
-  content: '🔮ANOTHER ETERNITY🔮 v1.0.5';
+  content: '🔮ANOTHER ETERNITY🔮 v1.0.6';
   font-weight: bold;
   font-style: italic;
   font-size: 14px;
@@ -348,11 +343,9 @@ Titlebar top buttons colors. Close, rezise and hide*/
 }
 
 /*Emoji popout*/
-.emojiPickerInExpressionPicker-2nOwH8 .emojiPicker-6YCk8a, .wrapper-3u51GQ {
+.wrapper-3u51GQ {
   background: black;
   border-radius: 15px;
-  border-color: rgb(var(--Neon-Rgb)) !important;
-  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
 .contentWrapper-3vHNP2 {
   padding: 6px;
@@ -362,11 +355,11 @@ Titlebar top buttons colors. Close, rezise and hide*/
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
 /*Little fix for background*/
-.list-obNEuP, .emojiPicker-6YCk8a {
+.list-obNEuP {
   background-color: transparent !important;
 }
 /*Header*/
-.emojiPickerInExpressionPicker-2nOwH8 .header-11eigE {
+.header-11eigE {
   padding: 0px 0px 15px;
   background-color: transparent;
   border-bottom-right-radius: 0;
@@ -393,12 +386,8 @@ Titlebar top buttons colors. Close, rezise and hide*/
   color: var(--Main-Color);
 }
 
-/*Emoji popout FROM message (icon click)*/
-.emojiPicker-6YCk8a {
-  background: black;
-}
 /*Sticker & gif popouts*/
-.emojiPickerInExpressionPicker-2nOwH8, .wrapper-1NB3WY, .container-3u7RcY {
+.emojiPickerInExpressionPicker-2nOwH8, .container-3u7RcY {
   background: transparent;
 }
 /*Gif popout, favorite fade*/
@@ -431,10 +420,6 @@ Titlebar top buttons colors. Close, rezise and hide*/
 }
 /*Mentioned*/
 .recentMentionsPopout-2bI1ZN {
-  width: 35vw;
-  max-width: 600px;
-  min-width: 480px;
-  max-height: 80vh;
   background-color: black;
   border-color: rgb(var(--Neon-Rgb));
   box-shadow: inset 0px 0px 5px 2.5px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
@@ -577,21 +562,13 @@ Titlebar top buttons colors. Close, rezise and hide*/
 
 /*Custom background for home icon and for guilds with no photos*/
 .childWrapper-1j_1ub {
-  -webkit-transition: background-color .15s ease-out,color .15s ease-out;
-  transition: background-color .15s ease-out,color .15s ease-out;
   background: linear-gradient(rgba(255, 0, 0, 0.4),rgba(255, 0, 0, 0.3)) , var(--loop-gif-diamond) 50% 100%/cover !important;
   color: var(--text-normal);
 }
 
 /*Reactions popout from "See reactions" background*/
-.theme-dark .container-KM8BU6 {
-  background-color: transparent;
-}
-.theme-dark .reactors-1VXca7 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)) , var(--loop-gif5) 50% 100%/cover !important;
-}
-.theme-dark .scroller-2GkvCq { 
-  background-color: transparent;
+.theme-dark .container-KM8BU6, .theme-dark .reactors-1VXca7, .scroller-2GkvCq {
+  background-color: black !important;
 }
 
 /*Message buttons*/
@@ -604,18 +581,42 @@ Titlebar top buttons colors. Close, rezise and hide*/
   color: var(--Main-Color);
 }
 
-/*User popout cards*/
-.focusLock-2tveLW, .root-g14mjS {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  background-color: black !important;
+/*Camera preview popout*/
+.modalRoot-1bgrci {
+  background-color: black;
+  border-radius: 15px;
   border-color: rgb(var(--Neon-Rgb)) !important;
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Data picker*/
+.react-datepicker {
+  background-color: transparent !important;
+}
+.react-datepicker__month-container, .theme-dark .calendarPicker-sDhzdi .react-datepicker__day {
+  color: var(--Main-Color);
+}
+.calendarPicker-sDhzdi .react-datepicker__header, .react-datepicker__month, .react-datepicker__day-names, .react-datepicker__week {
+  background-color: transparent !important
+}
+
+/*Back button*/
+.calendarPicker-sDhzdi .react-datepicker__navigation.react-datepicker__navigation--next, .calendarPicker-sDhzdi .react-datepicker__navigation.react-datepicker__navigation--previous {
+  margin-top: 1px;
+  margin-left: 1px;
+  border: 1px var(--Main-Color) solid !important;
+}
+
+/*Disabled days*/
+.theme-dark .calendarPicker-sDhzdi .react-datepicker__day--disabled, .theme-dark .calendarPicker-sDhzdi .react-datepicker__day--outside-month, .theme-dark .calendarPicker-sDhzdi .react-datepicker__day.react-datepicker__day--disabled, .theme-dark .calendarPicker-sDhzdi .react-datepicker__day.react-datepicker__day--disabled:hover {
+  color: var(--Main-Color);
+  background-color: var(--Color-5);
+}
+
+/*Borders*/
+.calendarPicker-sDhzdi .react-datepicker__day {
+  border-top: 1px solid var(--Color-5);
+  border-left: 1px solid var(--Color-5);
 }
 
 /*Member since icon color*/
@@ -759,17 +760,46 @@ Titlebar top buttons colors. Close, rezise and hide*/
 
 /*Nitro gifts in dms/channels*/
 /*backgrounds*/
-.scroller-2M3eAB {
+.scroller-2M3eAB, .content-2eQb8J {
+  background: transparent !important;
+}
+.modalHeader-gQTY3L {
   background: black;
 }
-.breadcrumbsWrapper--2LhnQ {
-  background: black;
+.headerBackground-131uxy {
+  background: transparent;
 }
-.content-2eQb8J {
-  background: black;
+.tier2Foreground-2DWr4f, .wrapper-38Ds8r svg {
+  background-color: transparent !important;
+  background: transparent !important;
+  background-image: none !important;
 }
-.wrapper-38Ds8r svg {
-  background: black;
+
+/*Nitro gifts by discord.gift, whole card*/
+/*Stable*/
+.tile-2mmK5T {
+  background-color: black;
+  border-radius: 15px;
+  border: 1px var(--Main-Color) solid;
+}
+/*Hover*/
+.tile-2mmK5T:hover {
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Both cards background*/
+.description-X8_53U, .mediaHorizontal-1eDgDq {
+  background-color: black;
+}
+
+/*Title color*/
+.title-oJa_A6 {
+  color: var(--Main-Color);
+}
+/*Description color*/
+.theme-dark .tagline-3DhQWg {
+  color: var(--Secondary-Color);
 }
 
 /*Nitro text color*/
@@ -790,6 +820,11 @@ Titlebar top buttons colors. Close, rezise and hide*/
 /*Arrows colors*/
 .breadcrumbArrow-1LY2zF {
   color: var(--Secondary-Color);
+}
+
+/*Toal to pay color*/
+.pricePerInterval-3PUiOj strong {
+  color: var(--Main-Color);
 }
 
 /*Choose one text color*/
@@ -833,7 +868,7 @@ Titlebar top buttons colors. Close, rezise and hide*/
 
 /*Keyboard shortcuts modals (ctrl + /)*/
 /*backgrounds*/
-.theme-dark .root-g14mjS, .keyboardShortcutsModal-2CRmCm, .keyboardShortcutList-3VFAYS {
+.keyboardShortcutsModal-2CRmCm, .keyboardShortcutList-3VFAYS {
   background-color: black;
 }
 .auto-2K3UW5.scrollerBase-_bVAAt.fade-1R6FHN {
@@ -937,6 +972,49 @@ Titlebar top buttons colors. Close, rezise and hide*/
   color: var(--Main-Color);
 }
 
+/*Guild Boost modal*/
+/*text color*/
+.perkDescription-3e1T_w {
+  color: var(--Main-Color);
+}
+
+/*After clicking boost this server*/
+/*Photo removal*/
+.tier2Foreground-2DWr4f, .wrapper-38Ds8r svg {
+  display: none;
+}
+/*background*/
+.guildBackground-3BSNJY, .animation-3szaot, .header-kxb7f7 {
+  background-image: none !important;
+}
+
+/*"Help a server unlock..." text color*/
+.bodyText-1qcdxO {
+  color: var(--Main-Color);
+}
+
+/*Add, remove (+ -) - Buttons colors*/
+/*Stable*/
+.icon-2TbMdT, .icon-2TbMdT.disabled-2gUzwG {
+  color: var(--Secondary-Color);
+  background-color: var(--Color-5);
+}
+/*Hover*/
+.icon-2TbMdT:hover, .icon-2TbMdT.disabled-2gUzwG:hover {
+  color: var(--Main-Color);
+  background-color: var(--Color-4);
+}
+
+/*"Server boosts", subtotal, "You could be paying 30%..." text color*/
+.planSelectorLabel-2T9D_0, .planSelectorSubtotal-1A7sWH, .upsellFooter-1H_OCF, .bodyText-3Op3yx {
+  color: var(--Main-Color);
+}
+
+/*Price, price per interval text color*/
+.planSelectorPreviewPrice-3is8Gl, .pricePerInterval-3PUiOj {
+  color: var(--Secondary-Color);
+}
+
 /*#################### Invite modal ####################*/
 .theme-dark .contentWrapper-3oy4Xo {
   background-color: transparent;
@@ -1010,20 +1088,6 @@ $$ |  $$ | $$$$$$  |$$ | \_/ $$ |$$$$$$$$\
 /*It's quiet from now message*/
 .emptyCard-KDifrB {
   background: transparent !important;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
   border-radius: 8px;
   padding: 16px;
   color: var(--Main-Color) !important;
@@ -1071,14 +1135,6 @@ $$ |  $$ | $$$$$$  |$$ | \_/ $$ |$$$$$$$$\
 /*Online friends card*/
 /*Name and status color*/
 .text-3j8t_e {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  overflow: hidden;
   color: var(--Secondary-Color);
 }
 
@@ -1101,40 +1157,22 @@ $$ |  $$ | $$$$$$  |$$ | \_/ $$ |$$$$$$$$\
 
 /*Direct Messages Text Color*/
 .headerText-1qIDDT {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
   color: var(--Main-Color) !important;
 }
 
 /*Friends Text Color*/
 .title-17SveM {
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  overflow: hidden;
-  white-space: nowrap;
   color: var(--Main-Color) !important;
 }
 
 /*Find or start a conversation Text Color*/
+/*Stable*/
 .searchBar-3TnChZ .searchBarComponent-3N7dCG {
-  width: 100%;
-  height: 28px;
-  overflow: hidden;
-  border-radius: 4px;
-  background-color: var(--background-tertiary);
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  text-align: left;
-  text-overflow: ellipsis;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 24px;
-  white-space: nowrap;
-  color: var(--Main-Color) !important;
+  color: var(--Secondary-Color);
+}
+/*Hover*/
+.searchBar-3TnChZ .searchBarComponent-3N7dCG:hover {
+  color: var(--Main-Color);
 }
 
 /*#################### Invite modal ####################*/
@@ -1210,6 +1248,40 @@ $$ |  $$ | $$$$$$  |$$ | \_/ $$ |$$$$$$$$\
   color: var(--Secondary-Color);
 }
 
+/*#################### Discovery tab ####################*/
+/*Main background*/
+.scroller-3j5xK2 {
+  background-color: black;
+}
+
+/*Search thing*/
+.search-25t1e9 .searchBox-31Zv9h {
+  background-color: black !important;
+  color: var(--Main-Color);
+}
+/*input color*/
+.searchBoxInputWrapper-3XLwVB {
+  color: var(--Main-Color);
+}
+/*Border color*/
+.search-25t1e9 .searchBox-31Zv9h:focus, .search-25t1e9 .searchBox-31Zv9h:focus-within, .theme-dark .searchBox-pyIJJj {
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Server Cards*/
+.card-2TuZPZ {
+  border-radius: 15px;
+  border: 1px var(--Main-Color) solid;
+}
+.card-2TuZPZ:hover {
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+
 /*
  $$$$$$\  $$$$$$$$\ $$$$$$$\  $$$$$$$$\  $$$$$$\  $$\      $$\ $$$$$$\ $$\   $$\  $$$$$$\  
 $$  __$$\ \__$$  __|$$  __$$\ $$  _____|$$  __$$\ $$$\    $$$ |\_$$  _|$$$\  $$ |$$  __$$\ 
@@ -1220,15 +1292,6 @@ $$\   $$ |   $$ |   $$ |  $$ |$$ |      $$ |  $$ |$$ |\$  /$$ |  $$ |  $$ |\$$$ 
 \$$$$$$  |   $$ |   $$ |  $$ |$$$$$$$$\ $$ |  $$ |$$ | \_/ $$ |$$$$$$\ $$ | \$$ |\$$$$$$  |
  \______/    \__|   \__|  \__|\________|\__|  \__|\__|     \__|\______|\__|  \__| \______/ 
 */
-/*Screen Share Popout*/
-.theme-dark .root-g14mjS {
-    -webkit-box-shadow: 0 0 0 1px hsla(216,calc(var(--saturation-factor, 1)*7.2%),13.5%,.6),0 2px 10px 0 hsla(0,calc(var(--saturation-factor, 1)*0%),0%,.2);
-    background-color: black !important;
-    border-radius: 15px; 
-    border-color: rgb(var(--Neon-Rgb));
-    box-shadow: inset 0px 0px 2px 1px rgb(var(--Neon-Rgb)), 0px 0px 5px 1px rgb(var(--Neon-Rgb));
-}
-
 /*Screen share popout border*/
 /*Stable*/
 .theme-dark .elevationHigh-3KUiqj, .pictureInPictureVideo-2puO2Q {
@@ -1357,33 +1420,21 @@ $$\   $$ |   $$ |   $$ |  $$ |$$ |      $$ |  $$ |$$ |\$  /$$ |  $$ |  $$ |\$$$ 
   text-overflow: ellipsis;
   overflow: hidden;
   max-width: 100%;
-  font-weight: 500;
   margin-right: 8px;
   color: var(--Third-Color) !important;
 }
 /*Icon Color*/
 .selectedIcon-277z4I {
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
     margin-right: 8px;
     color: var(--Third-Color) !important;
 }
 
 /*Streaming channel text color*/
 .channelName-3Ezu2W {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
     color: var(--Third-Color);
 }
 /*Icon color*/
 .channelIcon-1BydE- {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
     margin-right: 5px;
     color: var(--Third-Color) !important;
 }
@@ -1396,15 +1447,6 @@ $$\   $$ |   $$ |   $$ |  $$ |$$ |      $$ |  $$ |$$ |\$  /$$ |  $$ |  $$ |\$$$ 
 
 /*Streaming popout preview controls icons colors*/
 .bottomControls-34xgN7 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     color: var(--Main-Color) !important;
 }
 /*Streaming popout preview background*/
@@ -1438,20 +1480,8 @@ $$ | \_/ $$ |$$$$$$$$\ $$ | \$$ |   $$ |   $$$$$$\  $$$$$$  |$$ | \$$ |\$$$$$$  
   pointer-events: none;
 }
 .base-3IDx3L {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  height: 16px;
-  min-width: 16px;
-  min-height: 16px;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 600;
   color: var(--Main-Color) !important;
   background-color: var(--Color-4) !important;
-  text-align: center;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
 }
 
 .mentionsBadge-3H1BKJ .iconBase-2RQsdz {
@@ -1474,14 +1504,11 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 .sidebarRegion-1VBisG {
   -ms-flex: 1 0 218px;
   flex: 0 0 0px;
-  z-index: 1;
-  -ms-flex-pack: end;
 }
 
 /*#################### My account tab ####################*/
 /*Page layout*/
 .contentColumn-1C7as6, .customColumn-2n-oKU {
-  -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   max-width: 2000px;
@@ -1502,10 +1529,7 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 /*Two factor authentificator icon color*/
 .userSettingsSecurity-2kODPN .lockIcon-3t6Ow0 {
   margin-right: 4px;
-  width: 10px;
-  height: 14px;
   position: relative;
-  top: 2px;
   color: var(--Main-Color);
 }
 
@@ -1546,9 +1570,6 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 
 /*Username, Email, Phone Number (not the titles, the contents) text colors*/
 .text-md-medium-2avxhQ, .text-md-normal-304U3g {
-  font-family: var(--font-primary);
-  font-size: 16px;
-  font-weight: 900;
   line-height: 20px;
   color: var(--Main-Color) !important;
 }
@@ -1622,7 +1643,6 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 .bioTextArea-dDGOeC {
   width: unset;
   background-color: transparent;
-  --channel-text-area-placeholder: var(--input-placeholder-text);
   border-color: rgb(var(--Neon-Rgb));
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
@@ -1702,24 +1722,11 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 
 /*Display on profile text color*/
 .text-sm-bold-1Dtt0R, .text-sm-semibold-3TWn25 {
-  font-family: var(--font-primary);
-  font-size: 14px;
-  line-height: 18px;
   color: var(--Secondary-Color) !important;
 }
 
 /*Connected accounts name color*/
 .connectionAccountLabelContainer-1KuLS6 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   color: var(--Main-Color);
 }
 
@@ -1751,7 +1758,6 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 .marketingRefreshTitle-UaHKpk {
   color: var(--Main-Color);
   font-size: 24px;
-  font-weight: 600;
   line-height: 30px;
   margin-bottom: 8px;
   margin-top: 0;
@@ -1823,7 +1829,7 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 /*#################### Gift inventory ####################*/
 /*"Reedem codes" text area input*/
 .input-2g-os5 {
-  color: var(--Main-Color);
+  color: var(--Main-Color) !important;
   background-color: transparent;
 }
 
@@ -1871,16 +1877,9 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 
 /*Grabbers*/
 .grabber-2GQyvM {
-  width: 10px;
-  height: 24px;
-  margin-left: -5px;
-  top: 50%;
-  margin-top: -13px;
   border-radius: 3px;
   background-color: var(--Third-Color);
   border-color: var(--Main-Color);
-  box-shadow: none;
-  cursor: ew-resize;
 }
 
 /*#################### Accesibility ####################*/
@@ -1905,11 +1904,6 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 /*Keybinds are disabled... text message*/
 .text-2iTkaw {
   margin-left: 10px;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -ms-flex-item-align: center;
-  align-self: center;
   color: var(--Secondary-Color);
 }
 
@@ -1917,13 +1911,6 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 .key-N5VmHN {
   background-color: var(--background-accent);
   border: 1px solid var(--background-primary);
-  display: block;
-  padding: 3px 6px 4px;
-  border-radius: 4px;
-  cursor: default;
-  min-width: 14px;
-  min-height: 14px;
-  text-align: center;
   color: var(--Main-Color) !important;
 }
 .key-N5VmHN .bindArrow-EmK4SC {
@@ -1985,15 +1972,6 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 
 /*Last played game text color*/
 .hoverRoll-2XwpoF {
-  display: inline-block;
-  vertical-align: top;
-  cursor: default;
-  text-align: left;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  position: relative;
-  width: 100%;
-  contain: paint;
   color: var(--Secondary-Color);
 }
 
@@ -2006,60 +1984,26 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 /*#################### Game overlay ####################*/
 /*Overlay notifications, notification positions cards background and colors*/
 .wrapper-SdcMKg {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  position: relative;
-  background-color: hsla(0,calc(var(--saturation-factor, 1)*0%),0%,.1);
-  padding-bottom: 56.25%;
-  border-radius: 8px;
+  border-radius: 9px;
   border-color: rgb(var(--Neon-Rgb)) !important;
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
 /*Selected overlay position*/
 .selected-18Wszc.option-1QI4c9 {
   background-color: var(--Main-Color);
-  border-color: var(--brand-experiment);
-  -webkit-box-shadow: 0 2px 0 hsla(0,calc(var(--saturation-factor, 1)*0%),0%,.3);
-  box-shadow: 0 2px 0 hsla(0,calc(var(--saturation-factor, 1)*0%),0%,.3);
-  opacity: 1;
 }
 /*Overlay position*/
 /*Static*/
 .option-1QI4c9 {
-  position: absolute;
-  width: 24%;
-  height: 24%;
-  margin: 6px;
-  border-radius: 3px;
-  opacity: .6;
   background-color: var(--Third-Color);
-  cursor: pointer;
-  overflow: hidden;
-  text-indent: -999em;
-  font-size: 0;
-  line-height: 0;
 }
 /*Hover*/
 .option-1QI4c9:hover {
-  position: absolute;
-  width: 24%;
-  height: 24%;
-  margin: 6px;
-  border-radius: 3px;
-  opacity: .6;
   background-color: var(--Secondary-Color);
-  cursor: pointer;
-  overflow: hidden;
-  text-indent: -999em;
-  font-size: 0;
-  line-height: 0;
 }
 
 /*Disabled icon color*/
 .disabledIcon-1rpL82 {
-  display: block;
-  width: 100%;
-  height: 100%;
   color: var(--Third-Color);
 }
 
@@ -2068,57 +2012,29 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 /*Settings titles colors*/
 .bd-settings-title {
   color: var(--Main-Color) !important;
-  font-weight: 600;
-  cursor: default;
-  flex: 1;
 }
 
 /*All category titles colors*/
 .bd-setting-header label {
-  font-weight: 500;
-  cursor: pointer;
-  overflow: hidden;
-  word-wrap: break-word;
-  font-size: 16px;
-  line-height: 24px;
   color: var(--Secondary-Color);
 }
 /*All descriptions for sub categoryes colors*/
 .bd-setting-note {
   color: var(--Third-Color);
-  margin-top: 4px;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
 }
 
 /*Sliders (turn on/off things) colors*/ 
 .bd-switch input {
-  position: absolute;
-  z-index: 1;
-  opacity: 0;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 100px;
-  cursor: pointer;
+  transition: none;
   color: var(--Main-Color) !important;
 }
 .bd-switch {
-  position: relative;
-  transition: 250ms cubic-bezier(0,.3,.7,1) filter,250ms cubic-bezier(0,.3,.7,1) opacity;
+  transition: none;
   color: var(--Main-Color) !important;
 }
 .bd-switch-body {
-  --switch-color: var(--Main-Color);
-  --symbol1path: path('M5.13231 6.72963L6.7233 5.13864L14.855 13.2704L13.264 14.8614L5.13231 6.72963Z');
-  --symbol2path: path('M13.2704 5.13864L14.8614 6.72963L6.72963 14.8614L5.13864 13.2704L13.2704 5.13864Z');
-  border-radius: 14px;
-  width: 40px;
-  height: 24px;
+  transition: none;
   background-color: var(--Secondary-Color);
-  transition: 250ms cubic-bezier(0,.3,.7,1) background-color;
-  position: relative;
 }
 
 /*#################### Updates ####################*/
@@ -2129,7 +2045,7 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
   color: var(--Main-Color);
   border-radius: 15px;
   padding: 4px 8px;
-  transition: background-color .17s ease,color .17s ease,opacity 250ms ease;
+  transition: none;
   border: 1px var(--Main-Color) solid;
 }
 /*Hover*/
@@ -2826,9 +2742,66 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
 \$$$$$$  |\$$$$$$  |$$$$$$\ $$$$$$$$\ $$$$$$$  |\$$$$$$  |
  \______/  \______/ \______|\________|\_______/  \______/ 
 */
+
+/*Home tab*/
+.theme-dark .background-fkKrXt {
+  background-color: transparent;
+}
+
+/*Server name and info, active now border*/
+.container-2Hi7Km, .container-xwOzwi {
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 1px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 1px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Content*/
+.container-Jqlbgl {
+  background-color: black;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 1px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 1px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Create a guild user popout*/
+.container-1Lk8p7 {
+  background-color: transparent;
+  color: var(--Main-Color);
+}
+.root-g14mjS {
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+  background-color: black !important;
+}
+.header-1c1AhF, .content-2hZxGK, .footer-31IekZ {
+  background-color: transparent !important;
+}
+/*Footer separator*/
+.theme-light .footerSeparator-VzAYwb {
+  box-shadow: none !important;
+}
+/*Contents, what u want to create*/
+/*Stable*/
+.container-x8Y1ix {
+  background-color: black;
+  border: 1px var(--Main-Color) solid;
+}
+/*Hover*/
+.container-x8Y1ix:hover {
+  background-color: black;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*"Start from a template" text color*/
+.text-xs-bold-1NF1lz, .optionHeader-27AHfD {
+  color: var(--Main-Color) !important;
+}
+
 /*User popout*/
 .userPopout-2j1gM4 {
   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.6)) , var(--loop-gif2) 50% 50%/cover !important;
+  background-color: black !important;
   border-radius: 15px;
   padding: 5px;
   border-color: rgb(var(--Neon-Rgb)) !important;
@@ -2870,7 +2843,7 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
 }
 /*Metioned*/
 .mention-3XBnnZ {
-  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)) , var(--loop-gif4) 50% 50%/cover !important;
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)) , var(--loop-gif3) 50% 50%/cover !important;
   opacity: .9;
   border: solid 2px var(--Secondary-Color);
   border-radius: 15px; 
@@ -2882,7 +2855,6 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
   top: 0px;
   left: 9.5px;
   bottom: 0px;
-  width: 50px;
   border-radius: 20px;
   background: var(--Black);
   border: solid 2px var(--Secondary-Color);
@@ -2906,30 +2878,16 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
 /*Guild Roles*/
 /*Default permissions*/
 .container-_phMUq {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   background-color: transparent;
   color: var(--Main-Color);
   border-radius: 0px;
   padding: 16px 24px 16px 16px;
-  cursor: pointer;
 }
 .container-_phMUq:hover {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   background-color: var(--Black-Color);
   color: var(--Main-Color);
   border-radius: 0px;
   padding: 16px 24px 16px 16px;
-  cursor: pointer;
 }
 /* Search Roles */
 .container-cMG81i {
@@ -2943,41 +2901,20 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
 }
 /*Roles margin left-right*/
 .role-2TIOKu {
-  font-size: 12px;
-  font-weight: 500;
-  background: var(--background-secondary-alt);
-  border-radius: 4px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  height: 22px;
   margin: 0 4px 4px 0;
   padding: 4px;
   margin-right: 200px;
 }
 /*Roles card in guilds*/
 .userPopout-2j1gM4 {
-  -webkit-box-shadow: var(--elevation-high);
-  box-shadow: var(--elevation-high);
-  background-color: var(--background-floating);
   border-radius: 8px;
   border-color: var(--Main-Color);
   overflow: hidden;
-  max-height: calc(100vh - 20px);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 /*+ add roles popout*/
 .container-2O1UgZ {
   width: 250px;
   overflow: hidden;
-  border-radius: 4px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   padding: 8px;
   background-color: var(--Black);
   border: var(--border1);
@@ -3034,10 +2971,6 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
 }
 /*Text Color*/
 .text-sm-medium-3Pz3rB, .text-sm-normal-3Zj3Iv {
-  font-family: var(--font-primary);
-  font-weight: 1000;
-  font-size: 14px;
-  line-height: 18px;
   color: var(--Secondary-Color) !important;
 }
 
@@ -3213,13 +3146,8 @@ $$ |  $$\ $$ |  $$ |$$ |  $$ |$$ |\$$$ |$$ |\$$$ |$$ |      $$ |      $$\   $$ |
 
 /*Channel icon*/
 .emptyChannelIcon-1YdEz2 {
-  width: 68px;
-  height: 68px;
-  margin-top: 16px;
   border-radius: 50%;
   background-color: transparent !important;
-  background-image: url(/assets/750a8ea….svg);
-  background-repeat: no-repeat;
   background-position: 50%;
   color: var(--Main-Color) !important;
 }
