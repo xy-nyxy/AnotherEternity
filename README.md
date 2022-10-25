@@ -17,5 +17,5 @@ If those informations don't interesest anyone, here is a link for a live preview
 - In order to install the theme, first we need to download it: [AnotherEternity](https://downgit.github.io/#/home?url=https:%2F%2Fgithub.com%2Fxy-nyxy%2FAnotherEternity%2Fblob%2Fmain%2FAnotherEternity.theme.css). After downloading the theme, add it to our BetterDiscord themes folder, then head on discord, open Settings, open themes tab and enable it.
 
 # Current project status
-- Release v1.0.6
+- Release v1.0.7
 - Awaiting for BetterDiscord submission.
