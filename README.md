@@ -14,7 +14,7 @@ Enaught spiritual talking. Even tho this project is just a theme, I do put effor
 If those informations don't interesest anyone, here is a link for a live preview of the theme [click](https://gibbu.github.io/ThemePreview/?file=https://xy-nyxy.github.io/AnotherEternity/source.css) this link.
 
 # Installation guide
-- In order to install the theme, first we need to download it: [AnotherEternity](https://downgit.github.io/#/home?url=https:%2F%2Fgithub.com%2Fxy-nyxy%2FAnotherEternity%2Fblob%2Fmain%2FAnotherEternity.theme.css). After downloading the theme, add it to our BetterDiscord themes folder, then head on discord, open Settings, open themes tab and enable it.
+- Click on this link: [AnotherEternity](https://downgit.github.io/#/home?url=https:%2F%2Fgithub.com%2Fxy-nyxy%2FAnotherEternity%2Fblob%2Fmain%2FAnotherEternity.theme.css) to download the theme. After downloading the theme, copy the file in the Themes BetterDiscord folder. In order to do that, first open Discord, head to Settings, scroll down to the BetterDiscord section, click on "Themes" and click the "Open Themes Folder" button. Copy the theme into this folder, open Discord again and enable the theme.
 
 # Changelog v1.0.7
 - User popout had a transparent update since newest discord update.
