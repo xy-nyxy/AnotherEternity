@@ -16,6 +16,11 @@ If those informations don't interesest anyone, here is a link for a live preview
 # Installation guide
 - In order to install the theme, first we need to download it: [AnotherEternity](https://downgit.github.io/#/home?url=https:%2F%2Fgithub.com%2Fxy-nyxy%2FAnotherEternity%2Fblob%2Fmain%2FAnotherEternity.theme.css). After downloading the theme, add it to our BetterDiscord themes folder, then head on discord, open Settings, open themes tab and enable it.
 
-# Current project status
-- Release v1.0.7
-- Awaiting for BetterDiscord submission.
+# Changelog v1.0.7
+- User popout had a transparent update since newest discord update.
+- User popout after clicking the "View profile" button had some broken margins and paddings that now are fixed.
+- Attachement files (Code attachements) were not themed.
+- Edited the new App Directory Tab.
+- Channel topics were bugged. I could'nt figure out why but they are fixed now.
+- Fixed channels scrollbar not showing.
+- Search messages were also bugged, now they are fixed.
