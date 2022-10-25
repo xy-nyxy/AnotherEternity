@@ -108,7 +108,7 @@ $$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
   --status-warning-text: #000;
   --scrollbar-thin-thumb: var(--Main-Color);
   --scrollbar-thin-track: transparent;
-  --scrollbar-auto-thumb: transparent;
+  --scrollbar-auto-thumb: var(--Secondary-Color);
   --scrollbar-auto-track:  transparent;
   --scrollbar-auto-scrollbar-color-thumb: transparent;
   --scrollbar-auto-scrollbar-color-track: transparent;
@@ -230,7 +230,7 @@ $$  /   \$$ |$$ |  $$ |   $$ |   $$$$$$$$\ $$ |  $$ |$$ | \_/ $$ |$$ |  $$ |$$ |
 \__/     \__|\__|  \__|   \__|   \________|\__|  \__|\__|     \__|\__|  \__|\__|  \__|\__|  \__|
 */
 div[class*="typeWindows-"]::after {
-  content: '🔮ANOTHER ETERNITY🔮 v1.0.6';
+  content: '🔮ANOTHER ETERNITY🔮 v1.0.7';
   font-weight: bold;
   font-style: italic;
   font-size: 14px;
@@ -509,34 +509,58 @@ Titlebar top buttons colors. Close, rezise and hide*/
   border-color: rgb(var(--Neon-Rgb));
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
-/*Search Options header color*/
+/*"Search Options" header container, text color*/
 .resultsGroup-cfY57t .header-1BR0Ro {
   color: var(--Main-Color);
 }
 /*Subcategories (from, mentions, has, before, during, after, in, pinned) text color*/
 /*Stable*/
-.searchOption-3u1gRt .filter-2QaH9y {
-  color: var(--Third-Color);
-  font-weight: 600;
+.option-ayUoaq .searchOption-3u1gRt, .searchOption-3u1gRt .filter-2QaH9y, .searchOption-3u1gRt .answer-14OVbQ, .resultsGroup-cfY57t .plusIcon-1RVszG {
+  color: var(--Secondary-Color) !important; 
 }
 /*Hover*/
-.searchOption-3u1gRt .filter-2QaH9y:hover {
-  color: var(--Secondary-Color);
-  font-weight: 600;
+.option-ayUoaq .searchOption-3u1gRt:hover, .searchOption-3u1gRt .filter-2QaH9y:hover, .searchOption-3u1gRt .answer-14OVbQ:hover, .resultsGroup-cfY57t .plusIcon-1RVszG:hover {
+  color: var(--Main-Color) !important; 
 }
-/*Selected*/
-.searchOption-3u1gRt .filter-2QaH9y[aria-selected=true] {
-  color: var(--Main-Color);
-  font-weight: 600;
+/*Search history*/
+/*Stable*/
+.option-ayUoaq, .option-ayUoaq .filter-2QaH9y, .option-ayUoaq .answer-14OVbQ {
+  color: var(--Secondary-Color) !important;
+}
+/*Hover*/
+.option-ayUoaq, .option-ayUoaq .filter-2QaH9y:hover, .option-ayUoaq .answer-14OVbQ:hover {
+  color: var(--Main-Color) !important;
 }
 
-/*Search bar text color*/
-.DraftEditor-editorContainer {
-  background-color: hsla(0,0%,100%,0);
-  border-left: .1px solid transparent;
-  position: relative;
-  z-index: 1;
+/*Delete history*/
+/*Stable*/
+.resultsGroup-cfY57t .searchClearHistory-3nIKUO, .resultsGroup-cfY57t .searchLearnMore-1gNL3A {
   color: var(--Secondary-Color) !important;
+}
+/*Hover*/
+.resultsGroup-cfY57t .searchClearHistory-3nIKUO:hover, .resultsGroup-cfY57t .searchLearnMore-1gNL3A:hover {
+  color: var(--Main-Color) !important;
+}
+
+/*Search input text color*/
+.search-2Mwzzq .DraftEditor-root .public-DraftStyleDefault-block {
+  color: var(--Main-Color) !important;
+}
+
+/*After searching text color*/
+.queryText-j8z984, .theme-dark .queryContainer-ZunrLZ strong  {
+  color: var(--Secondary-Color) !important;
+}
+.queryShortcut-GrmI-7 {
+  background-color: black !important;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+}
+.theme-dark .keybindShortcut-3zF1P9, .theme-dark .keybindShortcut-3zF1P9 .key-N5VmHN {
+  background-color: transparent !important;
+  color: var(--Main-Color);
+  box-shadow: none !important;
 }
 
 /*Also in this popout, the last thing thing from a button*/
@@ -1015,6 +1039,44 @@ Titlebar top buttons colors. Close, rezise and hide*/
   color: var(--Secondary-Color);
 }
 
+/*Code upload (as a file) box container*/
+.container-rr3Ruk {
+  background-color: black;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 1px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 1px rgb(var(--Neon-Rgb)) !important;
+}
+/*Change language popout fix*/
+.languageSelector-2e1IuO {
+  background-color: black;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 1px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 1px rgb(var(--Neon-Rgb)) !important;
+}
+/*Languages list*/
+/*Stable*/
+.item-1BCeuB {
+  color: var(--Secondary-Color);
+}
+/*Hover*/
+.item-1BCeuB:hover {
+  color: var(--Main-Color) !important;
+}
+
+/*Attachement name, code size text colors */
+/*Stable*/
+.attachmentName-vgRpzs, .formattedSize-1YbZww {
+  color: var(--Secondary-Color);
+}
+/*Hover + Expand code, open full view, code size and change language icons on hover colors*/
+.attachmentName-vgRpzs:hover, .toggleExpandSection-1710zV:hover, .openFullPreviewSection-31zc2v:hover, .formattedSize-1YbZww:hover, .attachmentName-vgRpzs:hover, .codeIcon-Ni8XUA:hover {
+  color: var(--Main-Color);
+}
+
+/*New popout about nitro (update 25.10.2022)*/
+.contentPremium-_Y0-cX {
+  background-color: black !important;
+}
 /*#################### Invite modal ####################*/
 .theme-dark .contentWrapper-3oy4Xo {
   background-color: transparent;
@@ -1588,12 +1650,14 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
   border-bottom: none !important;
   text-decoration: none !important;
   color: var(--Third-Color);
+  padding: 5px 10px 5px 10px;
 }
 /*Hover*/
 .tabBarItem-MeqDhW:hover {
   padding: 10px !important;
   margin-right: 0px;
   color: var(--Secondary-Color) !important;
+  padding: 5px 10px 5px 10px;
 }
 /*Selected*/
 .top-K_jibn .item-3XjbnG[aria-selected=true] {
@@ -2732,6 +2796,63 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
   box-shadow: inset 0px 0px 1px 1px rgb(var(--Neon-Rgb2)), 0px 0px 15px 1px rgb(var(--Neon-Rgb2)) !important;
 }
 
+/*#################### App directory tab ####################*/
+/*Background*/
+.theme-dark .directoryModal-YJsOMv {
+  background-color: black;
+}
+
+/*Discord logo color*/
+.logo-ScFp2k {
+  color: var(--Main-Color);
+}
+
+/*Category icons colors*/
+.icon-3xkfFv {
+  color: var(--Main-Color);
+}
+
+/*All containers*/
+.textContainer-TzRfgH {
+  color: var(--Main-Color);
+  border-radius: 15px;
+  border: 1px var(--Main-Color) solid;
+}
+
+/*After clicking a random app > overview text color*/
+.detailedDescription-no5P98 {
+  color: var(--Main-Color) !important;
+}
+/*Show more/less text and icon color*/
+.showMoreButtonText-1jnEQf, .showMoreButtonIcon-3D4iRn {
+  color: var(--Third-Color);
+}
+
+/*Other icon colors*/
+.defaultIcon-27uYKL, .listIcon-1_fckz {
+  color: var(--Main-Color);
+}
+
+/*Command text color*/
+.commandName-SDgdgz {
+  color: var(--Third-Color) !important;
+}
+
+/*Utility tab icons colors*/
+.icon-14PytS {
+  color: var(--Main-Color) !important;
+}
+
+/*Back icon color*/
+/*Stable*/
+.backHeader-2Yfz4X, .backIcon-3OYRTx {
+  color: var(--Secondary-Color);
+}
+/*Hover*/
+.backHeader-2Yfz4X:hover, .backIcon-3OYRTx:hover, .back-1RLxsC:hover {
+  color: var(--Main-Color) !important;
+}
+
 /*
  $$$$$$\  $$\   $$\ $$$$$$\ $$\       $$$$$$$\   $$$$$$\  
 $$  __$$\ $$ |  $$ |\_$$  _|$$ |      $$  __$$\ $$  __$$\ 
@@ -2744,26 +2865,45 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
 */
 
 /*User popout (update 25.10.2022)*/
-#popout_1641.theme-dark .layer-2aCOJ3 {
+/*The master one*/
+.userPopoutOuter-3AVBmJ {
   background-color: black;
-  border-radius: 15px;
-}
-
-.userPopoutInner-1hXSeY .userProfileInner-3F03PX .userProfileInnerWithBanner-3CJ1Og, .userProfileInnerWithBanner-3CJ1Og {
-  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.6)) , var(--loop-gif2) 50% 50%/cover !important;
-  background-color: black !important;
-  border-color: rgb(var(--Neon-Rgb)) !important;
-  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
-}
-theme-dark .layer-2aCOJ3 {
   border-color: rgb(var(--Neon-Rgb)) !important;
   box-shadow: inset 0px 0px 1px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 1px rgb(var(--Neon-Rgb)) !important;
 }
-
-.userProfileInnerNonPremium-1XjSjn {
+/*The premium/nonpremium one*/
+.userProfileInnerNonPremium-1XjSjn, .userProfileInnerWithBanner-3CJ1Og {
   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.6)) , var(--loop-gif2) 50% 50%/cover !important;
+}
+
+/*Actions buttons (update 25.10.2022)*/
+/*On popout*/
+.buttonColor-XIRMbp {
+  color: var(--Secondary-Color);
+  background-color: transparent;
+  border-radius: 15px;
+  border: 1px var(--Main-Color) solid;
+}
+.buttonColor-XIRMbp:hover {
+  color: var(--Main-Color);
+  background-color: transparent;
+  border-radius: 15px;
   border-color: rgb(var(--Neon-Rgb)) !important;
-  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 1px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 1px rgb(var(--Neon-Rgb)) !important;
+}
+/*When viewing user profile popout actions button color (update 25.10.2022)*/
+.actionColor-3JIzOn {
+  color: var(--Secondary-Color);
+  background-color: transparent;
+  border-radius: 15px;
+  border: 1px var(--Main-Color) solid;
+}
+.actionColor-3JIzOn:hover {
+  color: var(--Main-Color);
+  background-color: transparent;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 1px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 1px rgb(var(--Neon-Rgb)) !important;
 }
 
 /*Home tab*/
@@ -3122,6 +3262,11 @@ $$ |  $$\ $$ |  $$ |$$ |  $$ |$$ |\$$$ |$$ |\$$$ |$$ |      $$ |      $$\   $$ |
 /*Guild Channel Slow Mode warning*/
 .base-3bcbY3 .cooldownWrapper-2k1jHK {
   color: var(--Main-Color)!important;
+}
+
+/*Channel topic color*/
+.topic-11NuQZ {
+  color: var(--Third-Color);
 }
 
 /*In guild hover on voice channel popout (playing, listening to spotify)*/
