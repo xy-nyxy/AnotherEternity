@@ -2743,6 +2743,29 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
  \______/  \______/ \______|\________|\_______/  \______/ 
 */
 
+/*User popout (update 25.10.2022)*/
+#popout_1641.theme-dark .layer-2aCOJ3 {
+  background-color: black;
+  border-radius: 15px;
+}
+
+.userPopoutInner-1hXSeY .userProfileInner-3F03PX .userProfileInnerWithBanner-3CJ1Og, .userProfileInnerWithBanner-3CJ1Og {
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.6)) , var(--loop-gif2) 50% 50%/cover !important;
+  background-color: black !important;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+theme-dark .layer-2aCOJ3 {
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 1px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 1px rgb(var(--Neon-Rgb)) !important;
+}
+
+.userProfileInnerNonPremium-1XjSjn {
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.6)) , var(--loop-gif2) 50% 50%/cover !important;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
 /*Home tab*/
 .theme-dark .background-fkKrXt {
   background-color: transparent;
