@@ -24,3 +24,6 @@ If those informations don't interesest anyone, here is a link for a live preview
 - Channel topics were bugged. I could'nt figure out why but they are fixed now.
 - Fixed channels scrollbar not showing.
 - Search messages were also bugged, now they are fixed.
+
+# Bugs
+- Currently I am aware that in Settings in the Profiles tab some things changed and broke since the last update. I will fix that very soon.
