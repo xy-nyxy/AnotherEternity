@@ -2,32 +2,20 @@
 
 # 🪐AnotherEternity🪐
 
-### There is another world, another place that everyone can visit...
-![PreviewImage](https://github.com/xy-nyxy/AnotherEternity/blob/main/preview/Preview2.png?raw=true)
-
-# 🌠Informations🌠
-
 </div>
 
-### How do I install?
+![PreviewImage](https://github.com/xy-nyxy/AnotherEternity/blob/main/preview/Preview2.png?raw=true)
 
-▸ In order to install the theme, first we need to download it: 
-> <div><a href="https://downgit.github.io/#/home?url=https:%2F%2Fgithub.com%2Fxy-nyxy%2FAnotherEternity%2Fblob%2Fmain%2FAnotherEternity.theme.css" target="_blank">AnotherEternity.theme.css</a></div>
-After downloading the theme, add it to our BetterDiscord themes folder, then head on discord, open Settings, open themes tab and enable it.
+# About the theme and concept
+- Everyone loves neat, yet black, abstract, neon style themes. A place where you can feel yourself safe and calm. This theme offers exactly those things. A wonderful and nice enviroment to give everyone a good vibe. 
+Enaught spiritual talking. Even tho this project is just a theme, I do put effort and love into this. I would like to let everyone know that the theme is still under developement and if there's any issues or bugs, everyone can contact me over on discord. My discord is nyxy🖤#6415.
 
-### When it will be the next update?
+- When Discord announces a new update, I will update the project as soon as possible. The idea is that I highly proritize and pay attention to discord updates because I want to have happy users with the new discord changelogs. Everyone that uses the theme needs to be happy.
+If those informations don't interesest anyone, here is a link for a live preview of the theme [click](https://gibbu.github.io/ThemePreview/?file=https://xy-nyxy.github.io/AnotherEternity/source.css) this link.
 
-▸ I try to fix and update the theme as soon as possible after a new discord update is annouced so I can keep the users up to date with everything new that comes with discord.
+# Installation guide
+- In order to install the theme, first we need to download it: [AnotherEternity](https://downgit.github.io/#/home?url=https:%2F%2Fgithub.com%2Fxy-nyxy%2FAnotherEternity%2Fblob%2Fmain%2FAnotherEternity.theme.css). After downloading the theme, add it to our BetterDiscord themes folder, then head on discord, open Settings, open themes tab and enable it.
 
-### Can I see a live preview?
-
-▸ Sure, click the link below (Thanks to @Gibbu for the preview):
-> <div><a href="https://gibbu.github.io/ThemePreview/?file=https://xy-nyxy.github.io/AnotherEternity/source.css" target="_blank">AnotherEternity Live Preview</a></div>
-
-### Who is the creator?
-
-▸ The theme is under developement and it's made by nyxy🖤#6415
-
-### What is the current status about the theme?
-
-> Current status: Working on fixes, adding new features, recreating the scripts and solving problems.
+# Current project status
+- Release v1.0.6
+- Awaiting for BetterDiscord submission.
