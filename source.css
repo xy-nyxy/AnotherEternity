@@ -11,7 +11,7 @@ $$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
 :root {
   /*Global variables that were made/edited by me*/
   --Main-Color: rgb(250, 0, 158); /*main master color*/
-  --Secondary-Color: rgb(190, 0, 158); /*secondary color*/
+  --Secondary-Color: rgb(170, 0, 158); /*secondary color*/
   --Third-Color: rgb(110,0,158); /*third color*/
   --Color-4: rgb(90,0,158); /*color number 4*/
   --Color-5: hsla(320, 40%, 40%, 0.366); /*color number 5*/
@@ -76,16 +76,16 @@ $$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
   --header-secondary: #7a7f86;
   --text-normal: #fff;
   --text-muted: #55585d;
-  --text-link: hsl(197,calc(var(--saturation-factor, 1)*100%),47.8%);
-  --text-link-low-saturation: hsl(197,calc(var(--saturation-factor, 1)*100%),52.9%);
+  --text-link: var(--Main-Color);
+  --text-link-low-saturation: var(--Secondary-Color);
   --text-positive: hsl(139,calc(var(--saturation-factor, 1)*66.8%),58.6%);
   --text-warning: hsl(38,calc(var(--saturation-factor, 1)*95.7%),54.1%);
   --text-danger: hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%);
   --text-brand: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
-  --interactive-normal: #72767d;
-  --interactive-hover: #fff;
-  --interactive-active: #fff;
-  --interactive-muted: #55585d;
+  --interactive-normal: var(--Third-Color);
+  --interactive-hover: var(--Secondary-Color);
+  --interactive-active: var(--Main-Color);
+  --interactive-muted: var(--Color-4);
   --background-primary: transparent;
   --background-secondary: transparent;
   --background-secondary-alt: transparent;
@@ -124,7 +124,7 @@ $$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
   --background-message-hover: transparent;
   --background-message-automod: transparent;
   --background-message-automod-hover: transparent;
-  --channels-default: #8e9297;
+  --channels-default: var(--Secondary-Color);
   --guild-header-text-shadow: 0 1px 1px rgba(0,0,0,0.4);
   --channeltextarea-background: transparent;
   --activity-card-background: #202225;
@@ -142,6 +142,7 @@ $$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
   --deprecated-text-input-border-disabled: #202225;
   --deprecated-text-input-prefix: #dcddde;
   --button--underline-color: transparent !important;
+  --channel-icon: var(--Secondary-Color);
 }
 
 /*Brand experminet things (idk what i did here but works)*/
@@ -193,6 +194,7 @@ $$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
 	--brand-experiment-95a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.95);
 }
 
+
 /*Bold font EVERYWHERE*/
 *{font-weight: 900 !important}
 
@@ -230,7 +232,7 @@ $$  /   \$$ |$$ |  $$ |   $$ |   $$$$$$$$\ $$ |  $$ |$$ | \_/ $$ |$$ |  $$ |$$ |
 \__/     \__|\__|  \__|   \__|   \________|\__|  \__|\__|     \__|\__|  \__|\__|  \__|\__|  \__|
 */
 div[class*="typeWindows-"]::after {
-  content: '🔮ANOTHER ETERNITY🔮 v1.0.7';
+  content: '🔮ANOTHER ETERNITY🔮 v1.0.8';
   font-weight: bold;
   font-style: italic;
   font-size: 14px;
@@ -489,6 +491,9 @@ Titlebar top buttons colors. Close, rezise and hide*/
 .divider-2rZFJK {
   border-top: var(--border2);
 }
+.cozy-VmLDNB .timestamp-p1Df1m {
+  color: var(--Third-Color) !important;
+}
 
 /*Emoji searching, matching When typing for an emoji in chat "ex: :wink"*/
 .theme-dark .autocomplete-3NRXG8 {
@@ -693,7 +698,7 @@ Titlebar top buttons colors. Close, rezise and hide*/
 /*Stable*/
 .button-f2h6uQ .contents-3ca1mk {
   --button--underline-color: transparent;
-  color: var(--Secondary-Color) !important;
+  color: var(--Main-Color) !important;
   border-radius: 15px;
 }
 /*Hover*/
@@ -759,6 +764,12 @@ Titlebar top buttons colors. Close, rezise and hide*/
   color: var(--Secondary-Color);
 }
 
+/*Icons colors*/
+/*First > thread in a forum icon color from beggining. Second > forum name > thread name, the ">" color*/
+.icon-3gfzEo, .caret-1le2LN {
+  color: var(--Main-Color);
+}
+
 /*Create new thread from message*/
 /*Icon color when container opened*/
 .icon-382itv {
@@ -780,6 +791,10 @@ Titlebar top buttons colors. Close, rezise and hide*/
 .inputWrapper-1YNMmM {
   border-radius: 15px;
   background-color: var(--Color-5);
+}
+.inputWrapper-1YNMmM {
+  padding-left: 5px;
+  padding-bottom: 2px;
 }
 
 /*Nitro gifts in dms/channels*/
@@ -1077,6 +1092,17 @@ Titlebar top buttons colors. Close, rezise and hide*/
 .contentPremium-_Y0-cX {
   background-color: black !important;
 }
+
+/*Links with popouts*/
+/*Description color*/
+.embedDescription-1DrJxZ {
+  color: var(--Secondary-Color);
+}
+/*Background*/
+.grid-1aWVsE {
+  background-color: black;
+}
+
 /*#################### Invite modal ####################*/
 .theme-dark .contentWrapper-3oy4Xo {
   background-color: transparent;
@@ -1676,12 +1702,37 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
   padding: 10px !important;
   margin-right: 0px;
 }
+/*"Example button" color*/
+.buttonColor-1u-3JF {
+  background-color: black;
+  border-radius: 15px;
+  border: 1px var(--Main-Color) solid;
+}
+.buttonColor-1u-3JF:hover {
+  background-color: black;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*User probile pag layout*/
+.sectionsContainer-3BlPu4 {
+  max-width: 400px !important;
+  max-height: 540px !important;
+}
 
 /*Preview banners*/
 .profileBannerPreview-3mLIdO {
   background-color: black;
   border-color: rgb(var(--Neon-Rgb)) !important;
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+.bannerSVGWrapper-qc0szY {
+  max-width: 342px !important;
+}
+.overlayBackground-1KgwVi {
+  background-color: transparent !important;
+  background: transparent !important;
 }
 
 /*Nitro tab profile view*/
@@ -1692,6 +1743,15 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
   border-color: rgb(var(--Neon-Rgb)) !important;
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
   background: black;
+}
+.background-3N0xBT {
+  background: transparent;
+  border-radius: 15px;
+}
+.premiumFeatureBorder-3vL7bn {
+  background: black !important;
+  border: 1px solid var(--Main-Color) !important;
+  border-radius: 15px;
 }
 
 /*Banner color, Color picker popout*/
@@ -2872,7 +2932,7 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
   box-shadow: inset 0px 0px 1px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 1px rgb(var(--Neon-Rgb)) !important;
 }
 /*The premium/nonpremium one*/
-.userProfileInnerNonPremium-1XjSjn, .userProfileInnerWithBanner-3CJ1Og {
+.userProfileInnerNonPremium-1XjSjn, .userProfileInnerWithBanner-3CJ1Og, .userProfileInnerThemedNonPremium-1gT-zY {
   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.6)) , var(--loop-gif2) 50% 50%/cover !important;
 }
 

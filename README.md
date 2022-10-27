@@ -14,8 +14,14 @@ Enaught spiritual talking. Even tho this project is just a theme, I do put effor
 If those informations don't interesest anyone, here is a link for a live preview of the theme [click](https://gibbu.github.io/ThemePreview/?file=https://xy-nyxy.github.io/AnotherEternity/source.css) this link.
 
 # Installation guide
-- In order to install the theme, first we need to download it: [AnotherEternity](https://downgit.github.io/#/home?url=https:%2F%2Fgithub.com%2Fxy-nyxy%2FAnotherEternity%2Fblob%2Fmain%2FAnotherEternity.theme.css). After downloading the theme, add it to our BetterDiscord themes folder, then head on discord, open Settings, open themes tab and enable it.
+- Click on this [link](https://downgit.github.io/#/home?url=https:%2F%2Fgithub.com%2Fxy-nyxy%2FAnotherEternity%2Fblob%2Fmain%2FAnotherEternity.theme.css) to download the theme. After downloading the theme, copy the file in the Themes BetterDiscord folder. In order to do that, first open Discord, head to Settings, scroll down to the BetterDiscord section, click on "Themes" and click the "Open Themes Folder" button. Copy the theme into this folder, open Discord again and enable the theme.
 
-# Current project status
-- Release v1.0.7
-- Awaiting for BetterDiscord submission.
+# Changelog v1.0.8
+- Fixed a bug in the Profiles tab that caused the page to have a weird size and location.
+- Fixed the user profile popout in guilds.
+- Moved the Search option within the Forums channels. 
+- Changed buttons text hover colors.
+- Added colors for channels, voice channels, muted channels, categoryes, others.
+- Changed text color for timesptamps.
+- Added background to the links that come with a popout.
+- Some small tweaks that I don't think are needed to mention.
