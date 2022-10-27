@@ -25,3 +25,5 @@ If those informations don't interesest anyone, here is a link for a live preview
 - Changed text color for timesptamps.
 - Added background to the links that come with a popout.
 - Some small tweaks that I don't think are needed to mention.
+
+- Everyone can see the changelogs here: [Changelogs Folder](https://github.com/xy-nyxy/AnotherEternity/tree/main/changelogs)
