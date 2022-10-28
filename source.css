@@ -48,7 +48,7 @@ $$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
   --rs-large-width: 4px;
   --rs-avatar-shape: 50%;
   --rs-online-color: #21df00;
-  --rs-idle-color: #ffffff;
+  --rs-idle-color: #faa81a;
   --rs-dnd-color: #ee0000;
   --rs-offline-color: #636b75;
   --rs-streaming-color: #b300fa;
@@ -121,7 +121,7 @@ $$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
   --control-brand-foreground-new: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
   --background-mentioned: transparent;
   --background-mentioned-hover: transparent;
-  --background-message-hover: transparent;
+  --background-message-hover: var(--Color-5);
   --background-message-automod: transparent;
   --background-message-automod-hover: transparent;
   --channels-default: var(--Secondary-Color);
@@ -199,29 +199,6 @@ $$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
 *{font-weight: 900 !important}
 
 /*
-$$$$$$$\   $$$$$$\  $$$$$$$\  $$$$$$\  $$$$$$\  $$\              $$$$$$\  $$$$$$$$\  $$$$$$\  $$$$$$$$\ $$\   $$\  $$$$$$\  
-$$  __$$\ $$  __$$\ $$  __$$\ \_$$  _|$$  __$$\ $$ |            $$  __$$\ \__$$  __|$$  __$$\ \__$$  __|$$ |  $$ |$$  __$$\ 
-$$ |  $$ |$$ /  $$ |$$ |  $$ |  $$ |  $$ /  $$ |$$ |            $$ /  \__|   $$ |   $$ /  $$ |   $$ |   $$ |  $$ |$$ /  \__|
-$$$$$$$  |$$$$$$$$ |$$ |  $$ |  $$ |  $$$$$$$$ |$$ |            \$$$$$$\     $$ |   $$$$$$$$ |   $$ |   $$ |  $$ |\$$$$$$\  
-$$  __$$< $$  __$$ |$$ |  $$ |  $$ |  $$  __$$ |$$ |             \____$$\    $$ |   $$  __$$ |   $$ |   $$ |  $$ | \____$$\ 
-$$ |  $$ |$$ |  $$ |$$ |  $$ |  $$ |  $$ |  $$ |$$ |            $$\   $$ |   $$ |   $$ |  $$ |   $$ |   $$ |  $$ |$$\   $$ |
-$$ |  $$ |$$ |  $$ |$$$$$$$  |$$$$$$\ $$ |  $$ |$$$$$$$$\       \$$$$$$  |   $$ |   $$ |  $$ |   $$ |   \$$$$$$  |\$$$$$$  |
-\__|  \__|\__|  \__|\_______/ \______|\__|  \__|\________|       \______/    \__|   \__|  \__|   \__|    \______/  \______/ 
-*/
-/*Idle status color to white status color*/
-.status-2DiCMd {
-  width: 100%;
-  height: 100%;
-  background-color: var(--Black-Color) !important;
-}
-.pointerEvents-9SZWKj {
-  pointer-events: auto;
-  background-color: rgb(0,0,0) !important;
-  color: rgb(0,0,0) !important;
-}
-
-
-/*
 $$\      $$\  $$$$$$\  $$$$$$$$\ $$$$$$$$\ $$$$$$$\  $$\      $$\  $$$$$$\  $$$$$$$\  $$\   $$\ 
 $$ | $\  $$ |$$  __$$\ \__$$  __|$$  _____|$$  __$$\ $$$\    $$$ |$$  __$$\ $$  __$$\ $$ | $$  |
 $$ |$$$\ $$ |$$ /  $$ |   $$ |   $$ |      $$ |  $$ |$$$$\  $$$$ |$$ /  $$ |$$ |  $$ |$$ |$$  / 
@@ -232,7 +209,7 @@ $$  /   \$$ |$$ |  $$ |   $$ |   $$$$$$$$\ $$ |  $$ |$$ | \_/ $$ |$$ |  $$ |$$ |
 \__/     \__|\__|  \__|   \__|   \________|\__|  \__|\__|     \__|\__|  \__|\__|  \__|\__|  \__|
 */
 div[class*="typeWindows-"]::after {
-  content: '🔮ANOTHER ETERNITY🔮 v1.0.8';
+  content: '🔮ANOTHER ETERNITY🔮 v1.0.9';
   font-weight: bold;
   font-style: italic;
   font-size: 14px;
@@ -332,7 +309,10 @@ Titlebar top buttons colors. Close, rezise and hide*/
 
 /*"You are viewing older messages" popout*/
 .jumpToPresentBar-1cEnH0 {
-  border: none;
+  border: 1px solid var(--Secondary-Color);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding-bottom: 4px ;
   background: black !important;
 }
 /*"You are viewing older messages" color*/
@@ -445,9 +425,19 @@ Titlebar top buttons colors. Close, rezise and hide*/
 /*Left click on friends tab popout*/
 .menu-1QACrS {
   background: black !important;
+  border-radius: 15px;
   border-color: rgb(var(--Neon-Rgb));
   box-shadow: inset 0px 0px 5px 2.5px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
+.accountProfilePopoutWrapper-3GskID [class^=menu-1QACrS]{
+  background: none !important;
+  box-shadow: none;
+}
+.scroller-1bVxF5 {
+  background-color: transparent;
+  border: transparent !important;
+}
+
 /*Button clicked*/
 .colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) {
   background-color: transparent;
@@ -1101,6 +1091,8 @@ Titlebar top buttons colors. Close, rezise and hide*/
 /*Background*/
 .grid-1aWVsE {
   background-color: black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 /*#################### Invite modal ####################*/
@@ -1562,6 +1554,10 @@ $$ | \_/ $$ |$$$$$$$$\ $$ | \$$ |   $$ |   $$$$$$\  $$$$$$  |$$ | \$$ |\$$$$$$  
 .mentioned-Tre-dv:before {
   background-color: transparent;
 }
+.message-2CShn3.selected-2LX7Jy, .mouse-mode.full-motion .message-2CShn3:hover, .message-2CShn3.mentioned-Tre-dv.selected-2LX7Jy, .mouse-mode.full-motion .mentioned-Tre-dv:hover {
+  background-color: var(--Color-5) !important;
+  border-radius: 15px;
+}
 
 /*Unread mentioned badge after channel in guild*/
 .mentionsBadge-3H1BKJ {
@@ -1862,6 +1858,33 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 
 /*#################### Billing settings ####################*/
 /*#################### Nitro tab ####################*/
+
+/*Unleash more fun with nitro card*/
+.settingsContainer-36qZZ9 {
+  background: black;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+/*Stars colors*/
+.sparkleStar-J6zUP3 {
+  color: var(--Main-Color);
+}
+/*"Plan starts at..." text color*/
+.description-2_tPhd {
+  color: var(--Main-Color) !important;
+}
+
+/*Nitro classic card*/
+/*background*/
+.tier0-17mYUd {
+  background-image: none;
+  background-color: black;
+  background: black;
+}
+/*Nitro basic text color*/
+.tier0LogoContainer-cNnIFm {
+  color: var(--Main-Color);
+}
 
 /*Nitro card (Make discord yours)*/
 .hero-1aNo0v {
@@ -2192,6 +2215,26 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 .bd-addon-list .bd-description {
   color: var(--Secondary-Color);
 }
+
+/*#################### HypeSquad tab ####################*/
+/*"You're exited about..." text color*/
+.defaultColor-24IHKz {
+  color: var(--Secondary-Color);
+}
+
+/*Perks of being hype, titles & descriptions colors*/
+.title-2pQsrN {
+  color: var(--Main-Color);
+}
+.description-22Sl9U {
+  color: var(--Secondary-Color);
+}
+
+/*"Intereseted in repping..." text color from the bottom of the page*/
+.attendeeCTA-2etnq5 {
+  color: var(--Main-Color);
+}
+
 /*
  $$$$$$\  $$$$$$$$\ $$$$$$$\  $$\    $$\ $$$$$$$$\ $$$$$$$\         $$$$$$\  $$$$$$$$\ $$$$$$$$\ $$$$$$$$\ $$$$$$\ $$\   $$\  $$$$$$\   $$$$$$\  
 $$  __$$\ $$  _____|$$  __$$\ $$ |   $$ |$$  _____|$$  __$$\       $$  __$$\ $$  _____|\__$$  __|\__$$  __|\_$$  _|$$$\  $$ |$$  __$$\ $$  __$$\ 
@@ -2501,13 +2544,13 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
   color: var(--Main-Color);
   border-radius: 15px;
   border-color: rgb(var(--Neon-Rgb)) !important;
-  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 3px 1px rgb(var(--Neon-Rgb)), 0px 0px 10px 1px rgb(var(--Neon-Rgb)) !important;
 }
 
 /*Edit role container*/
 .header-JUTO-g {
   background-color: black;
-  height: 240px;
+  height: 280px;
   margin-top: 60px;
   border-radius: 15px;
   border-color: rgb(var(--Neon-Rgb)) !important;
@@ -2525,6 +2568,7 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
   height: 60px;
   margin: 5px !important;
   margin-left: 15px;
+  border-bottom: 0px !important;
 }
 /*Display, permissions, manage members colors and margins fix*/
 /*Stable*/
@@ -2554,12 +2598,13 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 /*Role icon > Choose image button*/
 /*Normal*/
 .lookOutlined-3yKVGo.colorWhite-1H92hK {
-  color: var(--Main-Color);
+  color: var(--Main-Color) !important;
+  border-color: var(--Main-Color) !important;
   border: 1px var(--Main-Color) solid;
   border-radius: 15px;
 }
 .lookOutlined-3yKVGo.colorWhite-1H92hK:hover {
-  color: var(--Secondary-Color);
+  color: var(--Secondary-Color) !important;
   border-color: rgb(var(--Neon-Rgb)) !important;
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
@@ -2636,8 +2681,7 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 /*normal*/
 .lookFilled-yCfaCM.colorWhite-1H92hK {
   background-color: transparent;
-  border-color: rgb(var(--Neon-Rgb));
-  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+  border: 1px solid var(--Main-Color);
 }
 /*hover*/
 .lookFilled-yCfaCM.colorWhite-1H92hK:hover {
@@ -2663,7 +2707,8 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 /*All tiers headers*/
 .theme-dark .tierHeaderLocked-30MLlO, .theme-dark .tierHeaderUnlocked-1OpOLf {
   background-color: black !important;
-  border-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 /*Buy level buttons*/
@@ -2685,10 +2730,21 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 .theme-dark .tierHeaderLocked-30MLlO {
   background-color: transparent;
 }
+.tierHeaderWithoutCardBody-1iT8o_ {
+  margin-bottom: 0px;
+}
+/*Middle*/
+.grid-5BH14o {
+  background-color: black;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
 
 /*Second tier body (middle)*/
 .theme-dark .tierBody-1d3UiS {
-  background-color: transparent;
+  background-color: black;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 /*"Boost server & Learn more" buttons colors*/
@@ -2745,10 +2801,6 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 .quickSelect-i8mQq1 {
   padding-right: 50px;
 }
-/*Exit button padding*/
-.container-O54IuJ {
-  padding-left: 60px;
-}
 
 /*Audit log containers*/
 /*Stable*/
@@ -2778,6 +2830,14 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 /*#################### Bans tab ####################*/
 
 /* #################### Community tab #################### */
+/*Cannot click on "Get Started" button fix*/
+/*Page layout fix*/
+.container-2CHEay {
+  min-height: 1550px !important;
+}
+.banner-3-oqyl {
+  height: 356px;
+}
 
 /* #################### Server boost status tab #################### */
 /*Nitro card below*/
@@ -2787,6 +2847,11 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 }
 /*Nitro title, icons colors*/
 .tier2Title-8gwAVr, .icon-2iprHa {
+  color: var(--Main-Color);
+}
+
+/*All percs text color*/
+.perkText-3nOGp0, .previousPerks-2h1eyr {
   color: var(--Main-Color);
 }
 
@@ -2934,6 +2999,25 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
 /*The premium/nonpremium one*/
 .userProfileInnerNonPremium-1XjSjn, .userProfileInnerWithBanner-3CJ1Og, .userProfileInnerThemedNonPremium-1gT-zY {
   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.6)) , var(--loop-gif2) 50% 50%/cover !important;
+}
+/*Tag color fix*/
+.discrimBase-KriZSj {
+  color: var(--interactive-active);
+}
+
+/*Border role color no nitro no themed*/
+.rolePill-2IJ1vo {
+  color: var(--Secondary-Color);
+  border-color: var(--Third-Color);
+  border-radius: 15px;
+  border: 1.7px solid;
+  font-size: 12px;
+}
+/*Border and role text color nitro themed*/
+.rolePillBorder-RiRiuN {
+  color: var(--Secondary-Color);
+  border-color: var(--Third-Color);
+  border-radius: 15px;
 }
 
 /*Actions buttons (update 25.10.2022)*/
@@ -3145,7 +3229,10 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
 
 /*Unread message bar "X+ new messages since XX:XXPM/AM" color and background*/
 .newMessagesBar-1hF-9G {
-  border: var(--border1);
+  border: 1px solid var(--Main-Color);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top: transparent;
   background: black !important;
 }
 
@@ -3209,13 +3296,14 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
 .lookInverted-2mDUMi.colorBrand-I6CyqQ {
   color: var(--Secondary-Color);
   background-color: transparent;
-  border-color: rgb(var(--Neon-Rgb)) !important;
-  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+  border: 1px solid var(--Main-Color);
+  border-radius: 15px;
 }
 /*hover*/
 .lookInverted-2mDUMi.colorBrand-I6CyqQ:hover {
   color: var(--Main-Color);
   background-color: transparent;
+  border-radius: 15px;
   border-color: rgb(var(--Neon-Rgb)) !important;
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
@@ -3479,11 +3567,6 @@ $$ $$\$$ |$$ |  $$ |$$ |               $$ |   $$ |  $$ |  $$ |  $$ |\$$$ |$$ |  
  \___$$$\  \______/ \________|         \__|   \__|  \__|\______|\__|  \__| \______/  \______/ 
      \___|
 */
-/*Rounded Context Popouts (by Lonk#6942)*/
-.menu-1QACrS, .colorDefault-CDqZdO { 
-  border-radius: 15px; 
-}
-
 /*Blur spolier text instead of hiding it (by rye.#3861)*/
 .spoilerText-27bIiA,
 .spoilerText-27bIiA.hidden-3B-Rum {
