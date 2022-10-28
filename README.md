@@ -12,7 +12,7 @@ Enaught spiritual talking. Even tho this project is just a theme, I do put effor
 
 - When Discord announces a new update, I will update the project as soon as possible. The idea is that I highly proritize and pay attention to discord updates because I want to have happy users with the new discord changelogs. Everyone that uses the theme needs to be happy.
 If those informations don't interesest anyone, here is a link for a live preview of the theme [click](https://gibbu.github.io/ThemePreview/?file=https://xy-nyxy.github.io/AnotherEternity/source.css) this link. 
-- Everyone can see the changelogs here: [Changelogs Folder](https://github.com/xy-nyxy/AnotherEternity/tree/main/changelogs)
+- Everyone can see the changelogs here: [Changelogs Folder](https://github.com/xy-nyxy/AnotherEternity/blob/main/changelogs.md)
 
 # Installation guide
 - Click on this [link](https://downgit.github.io/#/home?url=https:%2F%2Fgithub.com%2Fxy-nyxy%2FAnotherEternity%2Fblob%2Fmain%2FAnotherEternity.theme.css) to download the theme. After downloading the theme, copy the file in the Themes BetterDiscord folder. In order to do that, first open Discord, head to Settings, scroll down to the BetterDiscord section, click on "Themes" and click the "Open Themes Folder" button. Copy the theme into this folder, open Discord again and enable the theme.
