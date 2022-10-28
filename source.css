@@ -1556,11 +1556,11 @@ $$ | \_/ $$ |$$$$$$$$\ $$ | \$$ |   $$ |   $$$$$$\  $$$$$$  |$$ | \$$ |\$$$$$$  
 /*In guild channels*/
 /*Mentioned background (the yellow name)*/
 .mentioned-Tre-dv {
-  position: relative;
-  background-color: var(--background-primary);
+  background-color: var(--Color-5);
+  border-radius: 15px;
 }
 .mentioned-Tre-dv:before {
-  background-color: var(--background-primary);
+  background-color: transparent;
 }
 
 /*Unread mentioned badge after channel in guild*/
