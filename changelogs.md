@@ -111,7 +111,7 @@
 ## Disclaimer: In guilds. If there's a message sent by the theme user and he tries to click the icon to change his Global name or Server side name, the popout will just dissapear. This is a bug from discord last update.
 
 ## v1.1.0
->> Global Changes
+> Global Changes
 - All buttons borders and fixed some issues.
 - Added back the backgrounds for hovering and selecting users in Memberlist in guilds and DMs.
 - Removed the bold text. Added back the normal text.
