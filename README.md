@@ -4,7 +4,7 @@
 
 </div>
 
-![PreviewImage](https://github.com/xy-nyxy/AnotherEternity/blob/main/preview/Preview2.png?raw=true)
+![PreviewImage](https://raw.githubusercontent.com/xy-nyxy/AnotherEternity/main/preview/Another%20Eternity%20Logo.png)
 
 # About the theme and concept
 - Everyone loves neat, yet black, abstract, neon style themes. A place where you can feel yourself safe and calm. This theme offers exactly those things. A wonderful and nice enviroment to give everyone a good vibe. 
