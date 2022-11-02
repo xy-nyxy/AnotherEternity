@@ -15,6 +15,7 @@ $$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
   --Third-Color: rgb(110,0,158); /*third color*/
   --Color-4: rgb(90,0,158); /*color number 4*/
   --Color-5: hsla(320, 40%, 40%, 0.366); /*color number 5*/
+  --Color-6: hsla(320, 50%, 50%, 0.466); /*color number 6*/
   --Grey-Color: rgb(31, 31, 31); /*grey color*/
   --Black: rgb(0,0,0); /*black color*/
   --White: rgb(255,255,255); /*white color*/
@@ -194,10 +195,6 @@ $$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
 	--brand-experiment-95a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.95);
 }
 
-
-/*Bold font EVERYWHERE*/
-*{font-weight: 900 !important}
-
 /*
 $$\      $$\  $$$$$$\  $$$$$$$$\ $$$$$$$$\ $$$$$$$\  $$\      $$\  $$$$$$\  $$$$$$$\  $$\   $$\ 
 $$ | $\  $$ |$$  __$$\ \__$$  __|$$  _____|$$  __$$\ $$$\    $$$ |$$  __$$\ $$  __$$\ $$ | $$  |
@@ -209,7 +206,7 @@ $$  /   \$$ |$$ |  $$ |   $$ |   $$$$$$$$\ $$ |  $$ |$$ | \_/ $$ |$$ |  $$ |$$ |
 \__/     \__|\__|  \__|   \__|   \________|\__|  \__|\__|     \__|\__|  \__|\__|  \__|\__|  \__|
 */
 div[class*="typeWindows-"]::after {
-  content: '🔮ANOTHER ETERNITY🔮 v1.0.9';
+  content: '🔮ANOTHER ETERNITY🔮 v1.1.0';
   font-weight: bold;
   font-style: italic;
   font-size: 14px;
@@ -690,12 +687,16 @@ Titlebar top buttons colors. Close, rezise and hide*/
   --button--underline-color: transparent;
   color: var(--Main-Color) !important;
   border-radius: 15px;
+  background-image: none !important;
+  text-decoration: none !important;
 }
 /*Hover*/
 .button-f2h6uQ .contents-3ca1mk:hover {
   --button--underline-color: transparent;
   color: var(--Main-Color) !important;
   border-radius: 15px;
+  background-image: none !important;
+  text-decoration: none !important;
 }
 /*Change phone number? and Remove email button*/
 /*Stable*/
@@ -1117,20 +1118,6 @@ $$ |  $$ | $$$$$$  |$$ | \_/ $$ |$$$$$$$$\
   background-color: transparent !important;
 }
 
-/*Friends, nitro tabs and dms colors*/
-/*Stable*/
-.content-66wMin, .name-2m3Cms {
-  color: var(--Third-Color);
-}
-/*Hover*/
-.content-66wMin, .name-2m3Cms:hover {
-  color: var(--Secondary-Color);
-}
-/*Selected*/
-.content-66wMin, .name-2m3Cms[aria-selected=true] {
-  color: var(--Main-Color);
-}
-
 /*Activity cards background "In a voice channel"*/
 /*Stable*/
 .wrapper-2RrXDg {
@@ -1330,8 +1317,19 @@ $$ |  $$ | $$$$$$  |$$ | \_/ $$ |$$$$$$$$\
 
 /*#################### Discovery tab ####################*/
 /*Main background*/
+.interactive-iyXY_x {
+  background-color: transparent;
+}
 .scroller-3j5xK2 {
-  background-color: black;
+  background-color: black !important;
+}
+.interactive-iyXY_x:hover {
+  border-radius: 15px;
+  background-color: var(--Color-5);
+}
+.interactive-iyXY_x[aria-selected=true], .selected-3veCBZ {
+  border-radius: 15px;
+  background-color: var(--Color-6);
 }
 
 /*Search thing*/
@@ -1359,6 +1357,11 @@ $$ |  $$ | $$$$$$  |$$ | \_/ $$ |$$$$$$$$\
   border-radius: 15px;
   border-color: rgb(var(--Neon-Rgb)) !important;
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Student hubs headertext colors*/
+.text-lg-semibold-2iEErr {
+  color: var(--Main-Color) !important;
 }
 
 
@@ -1656,12 +1659,6 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 .text-md-medium-2avxhQ, .text-md-normal-304U3g {
   line-height: 20px;
   color: var(--Main-Color) !important;
-}
-
-/*Reveal buttons*/
-.button-f2h6uQ .contents-3ca1mk{
-  background-image: none !important;
-  text-decoration: none !important;
 }
 
 /* #################### Profiles tab #################### */
@@ -3005,6 +3002,19 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
   color: var(--interactive-active);
 }
 
+/*Memberlist*/
+.member-2gU6Ar {
+  background-color: transparent;
+}
+.member-2gU6Ar:hover {
+  border-radius: 15px;
+  background-color: var(--Color-5);
+}
+.member-2gU6Ar[aria-selected=true] {
+  border-radius: 15px;
+  background-color: var(--Color-6);
+}
+
 /*Border role color no nitro no themed*/
 .rolePill-2IJ1vo {
   color: var(--Secondary-Color);
@@ -3332,7 +3342,7 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
 
 /*Emoji button color*/
 .emojiButton-3FRTuj:not(:hover)>div>.sprite-2lxwfc{
-  filter: invert(22%) sepia(91%) saturate(3877%) hue-rotate(310deg) brightness(107%) contrast(100%) !important;
+  filter: invert(11%) sepia(98%) saturate(6887%) hue-rotate(284deg) brightness(65%) contrast(111%) !important;
 }
 
 /*System messages channel disabled messages*/
@@ -3554,6 +3564,16 @@ $$ |  $$\ $$ |  $$ |$$ |  $$ |$$ |\$$$ |$$ |\$$$ |$$ |      $$ |      $$\   $$ |
 /*Rest container*/
 .container-1S70rv .sectionTag-28mLyE {
   background-color: transparent;
+}
+
+/*NSFW channel alert text color*/
+/*Header*/
+.title-FyH9jw {
+  color: var(--Main-Color) !important;
+}
+/*Description*/
+.description-fPkcPm {
+  color: var(--Secondary-Color) !important;
 }
 
 /*
