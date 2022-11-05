@@ -109,3 +109,18 @@
 - Community Tab, fixed Page Layout and the "Get started" button was not working.
 - Server Boost Status Tab, some backgrounds and text colors because they broke since the last discord update.
 ## Disclaimer: In guilds. If there's a message sent by the theme user and he tries to click the icon to change his Global name or Server side name, the popout will just dissapear. This is a bug from discord last update.
+
+## v1.1.0
+> Global Changes
+- All buttons borders and fixed some issues.
+- Added back the backgrounds for hovering and selecting users in Memberlist in guilds and DMs.
+- Removed the bold text. Added back the normal text.
+- Made some fixes in the Discovery Tab.
+- Emoji button color.
+- Nsfw channel alert message.
+> User Settings 
+- Backgrounds and issues in Profiles tab.
+> Server Settings
+- N/A.
+> Other
+- Did some changes and finishing touches.
