@@ -34,6 +34,7 @@ $$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
   --loop-gif2: url('https://github.com/xy-nyxy/AnotherEternity/blob/main/background/loop-gif2.gif?raw=true'); /*Used in guild popouts > User popout*/
   --loop-gif3: url('https://github.com/xy-nyxy/AnotherEternity/blob/main/background/loop-gif3.gif?raw=true'); /*Used in guild popouts > Mentioned card*/
   --loop-gif-diamond: url('https://github.com/xy-nyxy/AnotherEternity/blob/main/background/loop-gif-diamond.gif?raw=true'); /*Used on home icon*/
+  --logo-photo: url('https://raw.githubusercontent.com/xy-nyxy/AnotherEternity/main/background/Wumpus%20Pink.gif'); /*Used in Friends tab when no friends are online*/
   /*Borders*/
   --border1: 2px solid var(--Secondary-Color); /*master border*/
   --border2: 2px solid var(--Third-Color); /*border 2*/
@@ -206,9 +207,8 @@ $$  /   \$$ |$$ |  $$ |   $$ |   $$$$$$$$\ $$ |  $$ |$$ | \_/ $$ |$$ |  $$ |$$ |
 \__/     \__|\__|  \__|   \__|   \________|\__|  \__|\__|     \__|\__|  \__|\__|  \__|\__|  \__|
 */
 div[class*="typeWindows-"]::after {
-  content: '🔮ANOTHER ETERNITY🔮 v1.1.0';
+  content: '🔮ANOTHER ETERNITY🔮 v1.1.1';
   font-weight: bold;
-  font-style: italic;
   font-size: 14px;
   line-height: 30px;
   top: 0;
@@ -434,6 +434,11 @@ Titlebar top buttons colors. Close, rezise and hide*/
   background-color: transparent;
   border: transparent !important;
 }
+.item-1OdjEX:hover {
+  color: var(--Main-Color) !important;
+  background-color: var(--Color-5) !important;
+  border-radius: 12px;
+}
 
 /*Button clicked*/
 .colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) {
@@ -501,18 +506,18 @@ Titlebar top buttons colors. Close, rezise and hide*/
   border-color: rgb(var(--Neon-Rgb));
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
+/*Icon and "Search" text colors*/
+.search-2Mwzzq .DraftEditor-root .public-DraftEditorPlaceholder-root, .icon-18rqoe {
+  color: var(--Third-Color);
+}
+
 /*"Search Options" header container, text color*/
 .resultsGroup-cfY57t .header-1BR0Ro {
   color: var(--Main-Color);
 }
 /*Subcategories (from, mentions, has, before, during, after, in, pinned) text color*/
-/*Stable*/
 .option-ayUoaq .searchOption-3u1gRt, .searchOption-3u1gRt .filter-2QaH9y, .searchOption-3u1gRt .answer-14OVbQ, .resultsGroup-cfY57t .plusIcon-1RVszG {
   color: var(--Secondary-Color) !important; 
-}
-/*Hover*/
-.option-ayUoaq .searchOption-3u1gRt:hover, .searchOption-3u1gRt .filter-2QaH9y:hover, .searchOption-3u1gRt .answer-14OVbQ:hover, .resultsGroup-cfY57t .plusIcon-1RVszG:hover {
-  color: var(--Main-Color) !important; 
 }
 /*Search history*/
 /*Stable*/
@@ -520,8 +525,9 @@ Titlebar top buttons colors. Close, rezise and hide*/
   color: var(--Secondary-Color) !important;
 }
 /*Hover*/
-.option-ayUoaq, .option-ayUoaq .filter-2QaH9y:hover, .option-ayUoaq .answer-14OVbQ:hover {
-  color: var(--Main-Color) !important;
+.option-ayUoaq:hover {
+  background-color: var(--Color-5);
+  border-radius: 15px;
 }
 
 /*Delete history*/
@@ -578,7 +584,7 @@ Titlebar top buttons colors. Close, rezise and hide*/
 
 /*Custom background for home icon and for guilds with no photos*/
 .childWrapper-1j_1ub {
-  background: linear-gradient(rgba(255, 0, 0, 0.4),rgba(255, 0, 0, 0.3)) , var(--loop-gif-diamond) 50% 100%/cover !important;
+  background: linear-gradient(rgba(170, 0, 158, 0.4),rgba(170, 0, 158, 0.3)) , var(--loop-gif-diamond) 50% 100%/cover !important;
   color: var(--text-normal);
 }
 
@@ -943,6 +949,13 @@ Titlebar top buttons colors. Close, rezise and hide*/
   color: var(--Main-Color);
   background-color: var(--Color-5);
 }
+
+/*Channels list hover*/
+.result-u66Ywh[aria-selected=true] {
+  background-color: var(--Color-5);
+  border-radius: 15px;
+}
+
 /*Previous channels headers*/
 .header-1ZpMzy {
   color: var(--Main-Color);
@@ -1096,10 +1109,114 @@ Titlebar top buttons colors. Close, rezise and hide*/
   border-bottom-right-radius: 15px;
 }
 
-/*#################### Invite modal ####################*/
-.theme-dark .contentWrapper-3oy4Xo {
-  background-color: transparent;
+/*Add a server & explore public servers icons colors*/
+.circleIconButton-1VxDrg {
+  color: var(--Third-Color);
+  background-color: var(--Color-5);
+}
+.circleIconButton-1VxDrg.selected-2r1Hvo {
+  color: var(--Main-Color);
+  background-color: var(--Color-6);
+}
+
+/*Server invites paused icon on server*/
+.pauseBackground-1zgiN0 {
+  background-color: var(--Third-Color);
+  color: var(--Main-Color) !important;
+}
+
+/*In call "focus, more, show chat" icons*/
+.controlIcon-10O-4h {
+  color: var(--Third-Color);
+}
+.controlIcon-10O-4h:hover {
+  color: var(--Secondary-Color);
+}
+
+/*Invite button color*/
+.buttonColor-28DXIe {
   border-radius: 15px;
+  background-color: black;
+  border: 1px solid var(--Third-Color);
+}
+.buttonColor-28DXIe:hover {
+  background-color: black;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Control buttons*/
+/*When stable all icons colors*/
+.colorable-3rVGna.primaryDark-2UJt1G, .colorable-3rVGna.primaryDark-2UJt1G .centerIcon-JYpTUi {
+  color: var(--Main-Color);
+}
+/*When stable unmuted, camera, activity, share screen activity, emoji icon colors*/
+.colorable-3rVGna.primaryDark-2UJt1G {
+  background-color: var(--Color-5);
+}
+/*When muted icon color*/
+.colorable-3rVGna.white-11auuQ .centerIcon-JYpTUi {
+  color: var(--Main-Color);
+}
+/*When muted icon color*/
+.colorable-3rVGna.white-11auuQ {
+  background-color: var(--Color-4);
+}
+/*When hover on unmute and emoji icon color*/
+.colorable-3rVGna.white-11auuQ.active-3D763s, .colorable-3rVGna.white-11auuQ:hover {
+  background-color: var(--Color-6);
+}
+/*When hover on camera, activity, share screen colors*/
+.colorable-3rVGna.primaryDark-2UJt1G.active-3D763s, .colorable-3rVGna.primaryDark-2UJt1G:hover {
+  background-color: var(--Color-6);
+}
+/*Stable disconnect icon*/
+.colorable-3rVGna.red-3T8maV {
+  background-color: var(--Color-5);
+  color: var(--Main-Color);
+}
+/*When hover on disconnect*/
+.colorable-3rVGna.red-3T8maV:hover {
+  background-color: var(--Color-6);
+  border-color: rgb(var(--Neon-Rgb2)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb2)), 0px 0px 15px 4px rgb(var(--Neon-Rgb2)) !important;
+}
+/*Disconnect color icon*/
+.centerIcon-JYpTUi, .centerIcon-JYpTUi:hover {
+  color: var(--Main-Color) !important;
+}
+
+/*Invite button from no one else is here yet, invite people to join*/
+.button-3Vyz67 {
+  background-color: var(--Color-5);
+}
+.button-3Vyz67:hover {
+  background-color: var(--Color-6);
+}
+
+/*Name background color*/
+.overlayTitle-2efoIF {
+  background-color: var(--Color-5);
+}
+
+/*Muted/deafen icon*/
+.status-15kcmy {
+  color: var(--Main-Color);
+  background-color: var(--Color-5);
+}
+
+/*When someone is speaking border*/
+.border-2Vy6FN.speaking-7QZEkv {
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Emoji colors*/
+.slots-paZlX-, .slotsContainer-3Li39W {
+  background-color: black;
+}
+.container-3a5mk- {
+  background-color: black;
 }
 
 /*
@@ -1116,6 +1233,15 @@ $$ |  $$ | $$$$$$  |$$ | \_/ $$ |$$$$$$$$\
 /*Main container background*/
 .theme-dark .container-2cd8Mz {
   background-color: transparent !important;
+}
+
+/*"No one is around to play with wumpus" text message*/
+.text-27cdrj, .title-2CL_z0 {
+  color: var(--Secondary-Color);
+}
+/*The image*/
+.image-20MDYu {
+  background-image: var(--logo-photo) !important;
 }
 
 /*Activity cards background "In a voice channel"*/
@@ -1232,6 +1358,11 @@ $$ |  $$ | $$$$$$  |$$ | \_/ $$ |$$$$$$$$\
   color: var(--Main-Color) !important;
 }
 
+/*Know as (friend name in guild) color*/
+.tooltip-C5N4wl {
+  color: var(--Secondary-Color);
+}
+
 /*Find or start a conversation Text Color*/
 /*Stable*/
 .searchBar-3TnChZ .searchBarComponent-3N7dCG {
@@ -1243,6 +1374,11 @@ $$ |  $$ | $$$$$$  |$$ | \_/ $$ |$$$$$$$$\
 }
 
 /*#################### Invite modal ####################*/
+/*Backgrounds*/
+.theme-dark .contentWrapper-3oy4Xo {
+  background-color: transparent;
+  border-radius: 15px;
+}
 .modal-atz_3z {
   border-radius: 15px !important;
 }
@@ -1364,6 +1500,15 @@ $$ |  $$ | $$$$$$  |$$ | \_/ $$ |$$$$$$$$\
   color: var(--Main-Color) !important;
 }
 
+/*Blur blocked users list*/
+/*Stable*/
+.listItemContents-f4Uz5J {
+  filter: blur(8px) !important;
+}
+/*Hover*/
+.listItemContents-f4Uz5J:hover {
+  filter: blur(0px) !important;
+}
 
 /*
  $$$$$$\  $$$$$$$$\ $$$$$$$\  $$$$$$$$\  $$$$$$\  $$\      $$\ $$$$$$\ $$\   $$\  $$$$$$\  
@@ -2157,7 +2302,10 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 .bd-settings-title {
   color: var(--Main-Color) !important;
 }
-
+/*Lines color*/
+.bd-settings-group.collapsible .bd-settings-title::before {
+  background-color: var(--Color-5);
+}
 /*All category titles colors*/
 .bd-setting-header label {
   color: var(--Secondary-Color);
@@ -2165,6 +2313,29 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 /*All descriptions for sub categoryes colors*/
 .bd-setting-note {
   color: var(--Third-Color);
+}
+
+/*All lists/popouts and inputs backgrounds*/
+.bd-select, .bd-number-input {
+  background-color: var(--Color-5);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+/*Popouts*/
+.bd-select .bd-select-options {
+  background-color: black;
+  color: var(--Third-Color);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.bd-select-option:hover {
+  background-color: var(--Color-5) !important;
+  border-radius: 12px;
+}
+
+/*Arrow dropdowns*/
+.bd-settings-group.collapsible .bd-settings-title::after {
+  background-color: var(--Main-Color);
 }
 
 /*Sliders (turn on/off things) colors*/ 
@@ -2202,6 +2373,17 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
 
+/*Icon checkmark color*/
+.bd-filled-checkmark, .bd-empty-updates svg {
+  background-color: var(--Color-5);
+  border-radius: 15px;
+}
+
+/*Updates status description*/
+.bd-empty-updates {
+  color: var(--Main-Color);
+}
+
 /*BD-addon list, disease theme script fix transparent background*/
 .bd-addon-card:hover .bd-description-wrap, .bd-addon-card:hover {
   background-color: black;
@@ -2211,6 +2393,39 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 /*Description color*/
 .bd-addon-list .bd-description {
   color: var(--Secondary-Color);
+}
+
+/*#################### Custom Css ####################*/
+/*Header color*/
+#bd-editor-controls {
+  background-color: black;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/*################### Plugins & Themes ###################*/
+/*Sort by: & Order: text colors*/
+.bd-select-wrapper label {
+  color: var(--Main-Color);
+}
+
+/*Selected things (name / ascendending)*/
+.bd-select-value {
+  color: var(--Secondary-Color);
+}
+
+/*Buttons List/Grid View*/
+.bd-addon-views .bd-view-button.selected {
+  background-color: var(--Color-6);
+  border: none !important;
+}
+.bd-addon-views .bd-view-button {
+  border: none !important;
+}
+
+/*Themes and plugins names colors*/
+.bd-name {
+  color: var(--Main-Color);
 }
 
 /*#################### HypeSquad tab ####################*/
@@ -2253,12 +2468,15 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 }
 /*Hover*/
 .brand-3g5E0C.item-3XjbnG, .themed-2-lozF.item-3XjbnG:hover {
-  background-color: transparent;
   color: var(--Secondary-Color);
+  background-color: var(--Color-5) !important;
+  border-radius: 15px;
 }
 /*When sub-category selected > border and color*/
 .brand-3g5E0C.item-3XjbnG, .themed-2-lozF.item-3XjbnG[aria-selected=true] {
   color: var(--Main-Color);
+  background-color: var(--Color-6) !important;
+  border-radius: 15px;
 }
 
 /*Server boost status color text and background*/
@@ -2431,12 +2649,10 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 .roleRow-230vCm {
   border-radius: 15px;
   margin: 5px;
-  border: 1px var(--Main-Color) solid;
 }
 /*Hover*/
 .roleRow-230vCm:hover {
-  border-color: rgb(var(--Neon-Rgb)) !important;
-  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+  background-color: var(--Color-5) !important;
 }
 
 /*Roles cards > members count > icon color*/
@@ -2533,15 +2749,14 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 /*Hover*/
 .row-LoqnA5:hover {
   color: var(--Main-Color);
-  border: 1px var(--Main-Color) solid;
+  background-color: var(--Color-5) !important;
   border-radius: 15px;
 }
 /*Selected*/
 .row-LoqnA5[aria-selected=true] {
   color: var(--Main-Color);
   border-radius: 15px;
-  border-color: rgb(var(--Neon-Rgb)) !important;
-  box-shadow: inset 0px 0px 3px 1px rgb(var(--Neon-Rgb)), 0px 0px 10px 1px rgb(var(--Neon-Rgb)) !important;
+  background-color: var(--Color-6) !important;
 }
 
 /*Edit role container*/
@@ -2997,9 +3212,12 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
 .userProfileInnerNonPremium-1XjSjn, .userProfileInnerWithBanner-3CJ1Og, .userProfileInnerThemedNonPremium-1gT-zY {
   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.6)) , var(--loop-gif2) 50% 50%/cover !important;
 }
-/*Tag color fix*/
+/*Tag color and name fix*/
+.username-28Thtk, .discriminator-3_S3CG {
+  color: var(--Main-Color);
+}
 .discrimBase-KriZSj {
-  color: var(--interactive-active);
+  color: var(--Main-Color);
 }
 
 /*Memberlist*/
@@ -3013,6 +3231,11 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
 .member-2gU6Ar[aria-selected=true] {
   border-radius: 15px;
   background-color: var(--Color-6);
+}
+
+/*Edit profile (new fix 04/11/2022) icon*/
+.pencilIcon-1MUmnO {
+  color: var(--Main-Color);
 }
 
 /*Border role color no nitro no themed*/
@@ -3058,6 +3281,11 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
   border-radius: 15px;
   border-color: rgb(var(--Neon-Rgb)) !important;
   box-shadow: inset 0px 0px 1px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 1px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Dropdown arrow color after server name*/
+.button-2BMPJJ {
+  color: var(--Main-Color);
 }
 
 /*Home tab*/
@@ -3394,6 +3622,34 @@ $$ |  $$\ $$ |  $$ |$$ |  $$ |$$ |\$$$ |$$ |\$$$ |$$ |      $$ |      $$\   $$ |
     color: var(--Main-Color);
 }
 
+/*More active threads popout of all threads in that channel*/
+.popout-TdhJ6Z {
+  background-color: black !important;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+/*Hovering on threads list*/
+.row-1qtctT:hover {
+  border-radius: 15px;
+  background-color: var(--Color-5);
+}
+/*See all button*/
+.more-2c3Z-T:hover {
+  text-decoration: none !important;
+  background-color: var(--Color-5);
+  border-radius: 15px;
+}
+/*Threads name in text channels*/
+/*header*/
+.name-13vPlv {
+  color: var(--Main-Color);
+}
+/*The small text preview and timestamp color*/
+.threadMessageAccessoryPreview-13YRmc, .timestamp-1VMnSc {
+  color: var(--Secondary-Color);
+}
+
 /*All in channel Icons, Threads, Notifications, Pinned messages, Hide member List, Notes*/
 /*Stable*/
 .clickable-ZD7xvu .icon-2xnN2Y {
@@ -3473,7 +3729,7 @@ $$ |  $$\ $$ |  $$ |$$ |  $$ |$$ |\$$$ |$$ |\$$$ |$$ |      $$ |      $$\   $$ |
 /*Channel icon*/
 .emptyChannelIcon-1YdEz2 {
   border-radius: 50%;
-  background-color: transparent !important;
+  background-color: var(--Color-5);
   background-position: 50%;
   color: var(--Main-Color) !important;
 }
@@ -3499,7 +3755,7 @@ $$ |  $$\ $$ |  $$ |$$ |  $$ |$$ |\$$$ |$$ |\$$$ |$$ |      $$ |      $$\   $$ |
 /*#################### Channel Permissions #########################*/
 /*Header category color*/
 .lineClamp1-1iDPU7 {
-  color: var(--Secondary-Color) !important;
+  color: var(--Main-Color) !important;
 }
 
 /*########## Permissions ##########*/
@@ -3601,4 +3857,25 @@ $$ $$\$$ |$$ |  $$ |$$ |               $$ |   $$ |  $$ |  $$ |  $$ |\$$$ |$$ |  
 /*Fix for nonsense text flickering*/
 html, span:not(.spinner-item) {
   backface-visibility: hidden;
+}
+
+/*
+$$$$$$$\  $$\       $$\   $$\  $$$$$$\  $$$$$$\ $$\   $$\  $$$$$$\         $$$$$$\  $$\   $$\ $$$$$$$\  $$$$$$$\   $$$$$$\  $$$$$$$\  $$$$$$$$\ 
+$$  __$$\ $$ |      $$ |  $$ |$$  __$$\ \_$$  _|$$$\  $$ |$$  __$$\       $$  __$$\ $$ |  $$ |$$  __$$\ $$  __$$\ $$  __$$\ $$  __$$\ \__$$  __|
+$$ |  $$ |$$ |      $$ |  $$ |$$ /  \__|  $$ |  $$$$\ $$ |$$ /  \__|      $$ /  \__|$$ |  $$ |$$ |  $$ |$$ |  $$ |$$ /  $$ |$$ |  $$ |   $$ |   
+$$$$$$$  |$$ |      $$ |  $$ |$$ |$$$$\   $$ |  $$ $$\$$ |\$$$$$$\        \$$$$$$\  $$ |  $$ |$$$$$$$  |$$$$$$$  |$$ |  $$ |$$$$$$$  |   $$ |   
+$$  ____/ $$ |      $$ |  $$ |$$ |\_$$ |  $$ |  $$ \$$$$ | \____$$\        \____$$\ $$ |  $$ |$$  ____/ $$  ____/ $$ |  $$ |$$  __$$<    $$ |   
+$$ |      $$ |      $$ |  $$ |$$ |  $$ |  $$ |  $$ |\$$$ |$$\   $$ |      $$\   $$ |$$ |  $$ |$$ |      $$ |      $$ |  $$ |$$ |  $$ |   $$ |   
+$$ |      $$$$$$$$\ \$$$$$$  |\$$$$$$  |$$$$$$\ $$ | \$$ |\$$$$$$  |      \$$$$$$  |\$$$$$$  |$$ |      $$ |       $$$$$$  |$$ |  $$ |   $$ |   
+\__|      \________| \______/  \______/ \______|\__|  \__| \______/        \______/  \______/ \__|      \__|       \______/ \__|  \__|   \__|   
+*/
+/*#################### Image Utilities (DevilBro) ####################*/
+/*Image details text color */
+.imageDetails-1t6Zms > span {
+  color: var(--Main-Color);
+}
+
+/*Download image icon color*/
+.cursorPointer-B3uwDA {
+  color: var(--Main-Color);
 }
