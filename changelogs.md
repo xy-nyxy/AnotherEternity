@@ -124,3 +124,23 @@
 - N/A.
 > Other
 - Did some changes and finishing touches.
+
+## v1.1.1
+> Global Changes
+- Wumpus from friends tab got a new color (when no one is online).
+- Backgrounds for lists when hovering over options. Example: left click on friends popout, hovering over the options.
+- Search option, "Search" and icon colors changed.
+- Reworked all icons, buttons, backgrounds and control buttons for the in call container.
+- Friend AKA color.
+- Added a fix for the Invite Modal background.
+- Added blur effect for blocked users in home tab. The blur goes away when hovering over an user.
+- New fix for the Name and Tag color withing the user popout. 
+- v1.0.9 Bug solved by Discord. For the Edit Profile icon in the user popout. Changed the icon color for the theme.
+- The Popout when hovering over a channel that contains Threads. 
+- Added Plugin Support.
+- Image Utilities text and download colors.
+> User Settings
+- Multiple changes over BetterDiscord Settings tab, Themes tab, Plugins tab and Updates. Those include text, backgrounds, popouts changes.
+> Server Settings
+- Backgrounds for lists when hovering over options (exactly like the Global Changes one).
+- Roles cards no longer have the borders.
