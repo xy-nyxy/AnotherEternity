@@ -8,7 +8,6 @@ $$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
 \$$$$$$  |$$$$$$$$\  $$$$$$  |$$$$$$$  |$$ |  $$ |$$$$$$$$\ \$$$$$$  |
  \______/ \________| \______/ \_______/ \__|  \__|\________| \______/ 
 */
-
 :root {
   /*Global variables that were made/edited by me*/
   --Main-Color: rgb(250, 0, 158); /*main master color*/
@@ -208,7 +207,7 @@ $$  /   \$$ |$$ |  $$ |   $$ |   $$$$$$$$\ $$ |  $$ |$$ | \_/ $$ |$$ |  $$ |$$ |
 \__/     \__|\__|  \__|   \__|   \________|\__|  \__|\__|     \__|\__|  \__|\__|  \__|\__|  \__|
 */
 div[class*="typeWindows-"]::after {
-  content: '🔮ANOTHER ETERNITY🔮 v1.1.1';
+  content: '🔮ANOTHER ETERNITY🔮 v1.1.2';
   font-weight: bold;
   font-size: 14px;
   line-height: 30px;
@@ -284,6 +283,9 @@ Titlebar top buttons colors. Close, rezise and hide*/
 }
 .channelTextArea-1VQBuV {
   background-color: black !important;
+}
+.editor-H2NA06 {
+  caret-color: var(--Secondary-Color) !important;
 }
 
 /*Upload files button color*/
@@ -687,6 +689,10 @@ Titlebar top buttons colors. Close, rezise and hide*/
 .top-K_jibn .selected-g-kMVV.themed-2-lozF.item-3XjbnG, .top-K_jibn .themed-2-lozF.item-3XjbnG {
   border-bottom: none;
 }
+/*divider backgrounds*/
+.divider-1tWBgZ {
+  background-color: transparent !important;
+}
 
 /*Almost all buttons*/
 /*Stable*/
@@ -987,7 +993,7 @@ Titlebar top buttons colors. Close, rezise and hide*/
 /*"Careful -- You have unsaved changes!" popout*/
 .container-20TyK0 {
   background-color: black !important;
-  width: 2000px;
+  width: 1000px;
   position: static !important;
   border-color: rgb(var(--Neon-Rgb)) !important;
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
@@ -3052,6 +3058,25 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
   height: 356px;
 }
 
+/*Server insights text color and icon color*/
+.text-dIcRfJ, .icon-2iwvYS {
+  color: var(--Main-Color);
+}
+
+/*Welcome screen read the rules & read info text color*/
+.text-md-semibold-3xVVGu {
+  color: var(--Main-Color) !important;
+}
+/*icon colors*/
+.channelTitleIcon-3BTw9v {
+  color: var(--Secondary-Color);
+}
+
+/*Server name color*/
+.welcomeTitle-13oDgb strong {
+  color: var(--Main-Color);
+}
+
 /* #################### Server boost status tab #################### */
 /*Nitro card below*/
 .tier2-qNjKTW {
@@ -3237,6 +3262,10 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
 /*Edit profile (new fix 04/11/2022) icon*/
 .pencilIcon-1MUmnO {
   color: var(--Main-Color);
+}
+/*After clicking the icon, server/profile user settings, the description color*/
+.colorDefault-CDqZdO .subtext-2GlkbE {
+  color: var(--Secondary-Color);
 }
 
 /*Border role color no nitro no themed*/
@@ -3586,6 +3615,27 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
 /*"All messages", "Only @mentions" text color*/
 .title-1yyp9V {
   color: var(--Secondary-Color);
+}
+
+/*The video and play on spotify buttons when hovering over a channel fix*/
+.button-1Ofqs0 {
+  border: 2px var(--Main-Color) solid;
+  border-radius: 15px;
+}
+/*Song name color*/
+.headerLink-1hmZgL {
+  color: var(--Main-Color);
+}
+.headerLink-1hmZgL:hover {
+  color: var(--Secondary-Color);
+}
+
+/*Noise cancelation popout*/
+.noiseCancellationPopout-2-e5Xz {
+  background-color: black !important;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
 
 /*
