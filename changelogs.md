@@ -144,3 +144,14 @@
 > Server Settings
 - Backgrounds for lists when hovering over options (exactly like the Global Changes one).
 - Roles cards no longer have the borders.
+
+## v1.1.2
+> Global Changes
+- Edit Profile icon in the user popout, changed the descriptions colors.
+- Fixed the "Play Video", "Listen on Spotify" buttons when hovering over a channel in guilds.
+- Fixed the Noise Supression popout.
+> User Settings
+- Fixed the "Careful -- You have unsaved changes!" popout.
+> Server Settings
+- Removed the divider between name and roles.
+- Text and icon colors that were not themed in the Inshights and Welcome screen tabs.
