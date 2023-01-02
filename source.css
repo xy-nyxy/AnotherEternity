@@ -207,7 +207,7 @@ $$  /   \$$ |$$ |  $$ |   $$ |   $$$$$$$$\ $$ |  $$ |$$ | \_/ $$ |$$ |  $$ |$$ |
 \__/     \__|\__|  \__|   \__|   \________|\__|  \__|\__|     \__|\__|  \__|\__|  \__|\__|  \__|
 */
 div[class*="typeWindows-"]::after {
-  content: '🔮ANOTHER ETERNITY🔮 v1.1.2';
+  content: '🔮ANOTHER ETERNITY🔮 v1.1.3';
   font-weight: bold;
   font-size: 14px;
   line-height: 30px;
@@ -1517,6 +1517,7 @@ $$ |  $$ | $$$$$$  |$$ | \_/ $$ |$$$$$$$$\
   filter: blur(0px) !important;
 }
 
+
 /*
  $$$$$$\  $$$$$$$$\ $$$$$$$\  $$$$$$$$\  $$$$$$\  $$\      $$\ $$$$$$\ $$\   $$\  $$$$$$\  
 $$  __$$\ \__$$  __|$$  __$$\ $$  _____|$$  __$$\ $$$\    $$$ |\_$$  _|$$$\  $$ |$$  __$$\ 
@@ -1754,6 +1755,10 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
   min-width: 460px;
   min-height: 100%;
 }
+/*name and tag colors*/
+.username-3JLfHz, .discriminator-2m-MqL {
+  color: var(--Main-Color) !important;
+}
 
 /*Headers Text Colors (Username, Email, Phone Number, Two Factor Authentification, Sms Backup Authentification, Account removal)*/
 .h5-2RwDNl {
@@ -1837,7 +1842,8 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
   text-decoration: none !important;
   color: var(--Main-Color);
-  padding: 5px 10px 5px 10px;
+  padding-right: 10px !important;
+  margin-right: 10px !important;
 }
 .tabBar-2hXqzU, .tabBarItem-30Te4- {
   padding: 10px;
@@ -1864,6 +1870,12 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 .sectionsContainer-3BlPu4 {
   max-width: 400px !important;
   max-height: 540px !important;
+}
+
+/*Avatar decoration card background*/
+.limitedBackground-2ogRHb, .limitedFeatureBorder-hpm0GQ {
+  background-color: var(--Black);
+  border-color: var(--Black) !important;
 }
 
 /*Preview banners*/
@@ -2035,6 +2047,19 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
   color: var(--Main-Color);
 }
 
+/*New nitro cards backgrounds*/
+.ctaWrapperTier2-1hk2M8, .ctaWrapperTier0-1GlgHE {
+  background-image: none !important;
+  background-color: var(--Black) !important;
+}
+
+/*Nitro tier text colors*/
+.tier0CtaLogoContainer-1tt-UU, .ctaLogo-hfS4Fj {
+  color: var(--Main-Color) !important;
+}
+
+/*Limited time holiday card background color*/
+
 /*Nitro card (Make discord yours)*/
 .hero-1aNo0v {
   background-image: none;
@@ -2125,6 +2150,10 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 /*#################### Gift inventory ####################*/
 /*"Reedem codes" text area input*/
 .input-2g-os5 {
+  color: var(--Main-Color) !important;
+  background-color: transparent;
+}
+.input-2g-os5:hover {
   color: var(--Main-Color) !important;
   background-color: transparent;
 }
@@ -2478,6 +2507,8 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
   color: var(--Secondary-Color);
   background-color: var(--Color-5) !important;
   border-radius: 15px;
+  padding-right: 10px !important;
+  margin-right: 10px !important;
 }
 /*When sub-category selected > border and color*/
 .brand-3g5E0C.item-3XjbnG, .themed-2-lozF.item-3XjbnG[aria-selected=true] {
@@ -2662,6 +2693,12 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
   background-color: var(--Color-5) !important;
 }
 
+/*Roles cards hover*/
+.container-1zDvAE:hover {
+  background-color: var(--Color-5);
+  border-radius: 12px;
+}
+
 /*Roles cards > members count > icon color*/
 /*Stable*/
 .person-2z4Mcy {
@@ -2769,7 +2806,7 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 /*Edit role container*/
 .header-JUTO-g {
   background-color: black;
-  height: 280px;
+  height: 290px;
   margin-top: 60px;
   border-radius: 15px;
   border-color: rgb(var(--Neon-Rgb)) !important;
@@ -2805,8 +2842,8 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 }
 /*Selected*/
 .tabBarItem-3nPo4Z[aria-selected=true] {
-  padding: 19px 10px 10px 10px !important;
-  margin: 0px 20px 0px 20px !important;
+  padding-right: 10px !important;
+  margin-right: 10px !important;
 }
 
 /*Edit role > Options menu (The 3 dots) color*/
@@ -2877,6 +2914,11 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 /*Hover*/
 .removeButton-JGNeoQ:hover {
   color: var(--Main-Color);
+}
+/* #################### Roles tab #################### */
+.theme-dark .emojiAliasInput-3ZhdKx .emojiInput-B8MGXq, .theme-dark .emojiAliasInput-3ZhdKx .emojiInput-B8MGXq:hover {
+  color: rgba(255, 255, 255, 0) !important;
+  background-color: transparent !important;
 }
 
 /* #################### Stickers tab #################### */
@@ -3012,6 +3054,19 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 .icon-3TvnqF, .detailsIcon-2NtTO9 {
   color: var(--Main-Color);
 }
+/*Bots and apps*/
+/*Headers text colors*/
+.defaultColor-1GKx81 {
+  color: var(--Main-Color) !important;
+}
+/*Banner description*/
+.permissionV3BannerDescription-_RTKq- {
+  color: var(--Secondary-Color);
+}
+/*Icons bot colors*/
+.featureIcon-3rvFkz {
+  color: var(--Secondary-Color);
+}
 
 /*#################### Safety setup tab ####################*/
 
@@ -3049,7 +3104,6 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 /*#################### Bans tab ####################*/
 
 /* #################### Community tab #################### */
-/*Cannot click on "Get Started" button fix*/
 /*Page layout fix*/
 .container-2CHEay {
   min-height: 1550px !important;
@@ -3605,7 +3659,8 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
 
 /*System messages channel disabled messages*/
 .title-2dsDLn {
-  color: var(--Secondary-Color);
+  color: var(--Main-Color);
+  padding-left: 5px;
 }
 
 /*Default notification settings, circle buttons*/
@@ -3880,6 +3935,23 @@ $$ |  $$\ $$ |  $$ |$$ |  $$ |$$ |\$$$ |$$ |\$$$ |$$ |      $$ |      $$\   $$ |
 }
 /*Description*/
 .description-fPkcPm {
+  color: var(--Secondary-Color) !important;
+}
+
+/*Browse Channels tab*/
+/*background*/
+.theme-dark .container-1um7CU {
+  background-color: transparent !important;
+}
+.theme-dark .container-2IKOsH, .theme-dark .header-3xB4vB {
+  background-color: transparent !important; 
+}
+/*headers text*/
+.text-xs-bold-1NF1lz, .text-xs-semibold-3E_l31 {
+  color: var(--Main-Color) !important;
+}
+/*follow category text color*/
+.text-xs-medium-2LRpEj {
   color: var(--Secondary-Color) !important;
 }
 
