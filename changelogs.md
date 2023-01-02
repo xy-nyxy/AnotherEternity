@@ -155,3 +155,19 @@
 > Server Settings
 - Removed the divider between name and roles.
 - Text and icon colors that were not themed in the Inshights and Welcome screen tabs.
+
+## v1.1.3
+> Global Changes
+- Edited the Browse Channels new page from discord.
+- Changed the Nitro cards background and text colors from the Nitro tab.
+> User Settings
+- Edited the username and tag colors
+- Changed the background color for the new card in the Profiles tab.
+- Fixed the Profiles tab buttons.
+> Server Settings
+- Added a hover function for the permissions in the Default Roles tab.
+- Solved a problem with the emoji names on emoji tab.
+- Text colors in the Bots and Apps from the Integrations tab.
+- Icons colors in the Integrations tab.
+- The button from the Community tab that was not working.
+- Fixed the Roles buttons from Default Roles tab.
