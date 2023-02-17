@@ -9,7 +9,7 @@
 # Disclaimer
 - Updates for the project have been discontinued for a while. To be notified when I update the theme, stay tuned by turning on the watch button.
 - Do not copy-paste and sell the project to anyone.
-- Do not copy-paste then modify the project to upload it to Better Dicord.
+- Do not copy-paste then modify the project to upload it on the internet anywhere or submit it to Better Discord.
 - Thanks for understanding.
 
 # About the theme and concept
