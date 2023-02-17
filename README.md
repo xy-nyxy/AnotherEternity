@@ -6,6 +6,8 @@
 
 ![PreviewImage](https://raw.githubusercontent.com/xy-nyxy/AnotherEternity/main/preview/Another%20Eternity%20Logo.png)
 
+# Updates for the project have been discontinued for a while. To be notified when I update the theme, stay tuned by turning on the watch button.
+
 # About the theme and concept
 - Everyone loves neat, yet black, abstract, neon style themes. A place where you can feel yourself safe and calm. This theme offers exactly those things. A wonderful and nice enviroment to give everyone a good vibe. 
 Enaught spiritual talking. Even tho this project is just a theme, I do put effort and love into this. I would like to let everyone know that the theme is still under developement and if there's any issues or bugs, everyone can contact me over on discord. My discord is nyxy#6415.
